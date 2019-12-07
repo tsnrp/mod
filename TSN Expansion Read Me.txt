@@ -1,6 +1,6 @@
 About:
 The Terran Stellar Navy Expansion
-Version 2.009, February 2019
+Version 2.010, April 2019
 For Artemis Version 2.7.1
 
 -----------------Credits ------------------
@@ -44,10 +44,12 @@ Changed: icon-blackhole.png, icon-nebula.png, scienceReticle.png, tacShldA1.png,
 VesselData Changes:
 Changed: hullRace 'Terran' to 'USFP'
 Added hullRace 9 - 18: USFP, N'Tani, Hjorden, Unakalhai, Caltron, Euphini Pirates, Kralien, Arvonian, Torgoth, Rumarian
-Added Player ships 17 - 23: Nemesis Interceptor, Chimera Light Carrier, Ares Class Light Cruiser, Valkyrie Class Light Cruiser, Apollo Class Light Cruiser, Allegiance Class Battlecruiser, Discovery Class Science vessel
+Added Player ships 17 - 24: Nemesis Interceptor, Chimera Light Carrier, Ares Class Light Cruiser, Valkyrie Class Light Cruiser, Apollo Class Light Cruiser, 
+	Allegiance Class Battlecruiser, Discovery Class Science vessel, Hjorden Cruiser with adapted TSN technology (we were trapped behind enemy lines and had to improvise)
 Added Single-seat ships 200 - 201: Superiority Fighter, Heavy bomber
 Added Static and bases 1050 - : Denabite refinery, Factory, TSN Weapons Platform, USFP Shipyard, Sensor & Comms relays, N'Tani base, Pirate asteroid base, Hegemony defense platform
-Added new broad types: daemon (for USN heavy ships), static (for neutrals that do not move), industrial (for factory and refinary facilities), network (for relays and buoys), transport (for ship carrying personnel ie not cargo)
+Added new broad types: daemon (for USN heavy ships), static (for neutrals that do not move), industrial (for factory and refinary facilities), 
+	network (for relays and buoys), transport (for ship carrying personnel ie not cargo)
 Changed: standard player vessel Light Cruiser to Artemis Class and updated descriptions
 Changed: Shields and beam damage reduced by a factor of 4.
 Changed: shipEfficiency improved to 0.6
@@ -58,7 +60,6 @@ Added USN Daemon Class vessels 1750 - 1755: Retarius, Sagittarius, Thraex, Samni
 Added Rumarian race 7500 - 7501: Stalker and Hunter
 Added Ulikai race 7600 - 7612: Modified Kralien ships
 Added Ulikai race bases 1400-1450
-Added playable Hjorden Cruiser with adapted TSN technology (we were trapped behind enemy lines and had to improvise)
 
 ------------------------------------------------
 Artemis.ini Changes:
