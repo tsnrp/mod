@@ -152,10 +152,10 @@
     <engine_port x="-82.93" y="5" z="-240.89"/>
     <engine_port x="0" y="-9.22" z="-300"/>
     <engine_port x="0" y="29.64" z="-300"/>
-	<maneuver_point x=" 82.93" y="5" z="-240.89"/>
-	<maneuver_point x="-82.93" y="5" z="-240.89"/>
-	<impulse_point x="0" y="-9.22" z="-300"/> 
-    <impulse_point x="0" y="29.64" z="-300"/>
+    <impulse_point x="0" y="29.64" z="-278.6"/> <!-- UpMid Main -->
+    <impulse_point x="0" y="-9.22" z="-271.5"/> <!-- LowMid Main-->
+    <maneuver_point x="145" y="10" z="79"/> <!-- Starboard -->
+    <maneuver_point x="-145" y="10" z="79"/> <!-- Port -->
 	<drone_port x="0" y="8.35" z="258.74" damage="20" cycletime="30.0" range="5000"/>  
     <drone_port x="0" y="8.35" z="258.74" damage="20" cycletime="30.0" range="2000"/> 
     <long_desc text="TSN Artemis Class Light Cruiser.^General purpose patrol vessel of the TSN and first of the Light Cruiser classes to be designed.^2 Standard beams^2 Torpedo tubes^Stores for 2 nukes, 8 homing, 6 mines, 4 EMP, 4 PShock."/>
@@ -181,8 +181,10 @@
     <engine_port x="0" y="-9.22" z="-300"/>
     <engine_port x="0" y="29.64" z="-300"/>
 	<drone_port x="0" y="8.35" z="258.74" damage="20" cycletime="30.0" range="5000"/>  
-    <impulse_point x="0" y="-9.22" z="-300"/>   
-    <impulse_point x="0" y="29.64" z="-300"/> 
+    <impulse_point x="0" y="29.64" z="-262.75"/> <!-- UpMid Main -->
+    <impulse_point x="0" y="-9.22" z="-255.4"/> <!-- LowMid Main-->
+    <maneuver_point x="101.48" y="10" z="81"/> <!-- Starboard -->
+    <maneuver_point x="-101.48" y="10" z="81"/> <!-- Port -->
     <long_desc text="TSN Scout^Long range scout vessel of the TSN.^1 forward beam^1 Torpedo tube^Stores for 6 homing, 2 mines, 2 ECM, 1 PShock."/>
   </vessel>
 
@@ -671,6 +673,10 @@
 	<engine_port x="90.755783" y="-35.202168" z="-145.740082"/>
 	<engine_port x="-60" y="67.875313" z="-210.449524"/>
 	<engine_port x="60" y="67.875313" z="-210.449524"/>
+    <impulse_point x="0" y="29.25" z="-242"/> <!-- MidHigh Z-242.68 -->
+    <impulse_point x="0" y="-8" z="-230"/> <!-- MidLow X0.45 Z-230.72"-->
+    <maneuver_point x="94.61" y="-33.77" z="-143.99"/> <!-- Starboard -->
+    <maneuver_point x="-94.61" y="-33.77" z="-143.99"/> <!-- Port -->
 	<long_desc text="Nemesis Class Interceptor^Combat scout designed for high-speed interception and strafing runs.^2 standard beams, configured for narrow firing arc, longer range, and reduced intensity.^2 low-intensity beams.^1 Torpedo tube with stores for 8 Homing, 2 EMP, 1 Mine, 8 PShock."/>
   </vessel>
   
@@ -703,10 +709,10 @@
 		<!-- Weapons and Shields modified (1/4)-->
     <shields front="20" back="20" />
     <performance turnrate="0.004" topspeed="0.6" shipefficiency="0.6" warpefficiency="0.3" jumpefficiency="1.0" />
-    <beam_port x="0.00" y="-8.35" z="220.0" damage="0.38" playerdamage="3.75" arcwidth="0.12" cycletime="30.0" range="800" />
-	<beam_port x="0.00" y="-8.35" z="220.0" damage="0.38" playerdamage="3.75" arcwidth="0.12" cycletime="30.0" range="800" />
-	<beam_port x="0.00" y="-8.35" z="220.0" damage="0.38" playerdamage="3.75" arcwidth="0.12" cycletime="30.0" range="800" />
-    <beam_port x="0.0" y="24.00" z="170.0" damage="0.25" playerdamage="2.25" arcwidth="0.4" cycletime="5.0" range="1000" />
+    <beam_port x="0.00" y="0" z="287" damage="0.38" playerdamage="3.75" arcwidth="0.12" cycletime="30.0" range="800" />
+	<beam_port x="0.00" y="0" z="287" damage="0.38" playerdamage="3.75" arcwidth="0.12" cycletime="30.0" range="800" />
+	<beam_port x="0.00" y="0" z="287" damage="0.38" playerdamage="3.75" arcwidth="0.12" cycletime="30.0" range="800" />
+    <beam_port x="0.0" y="50" z="224" damage="0.25" playerdamage="2.25" arcwidth="0.4" cycletime="5.0" range="1000" />
     <torpedo_tube x="0" y="8.35" z="258.74" />
     <torpedo_tube x="0" y="8.35" z="258.74" />
 	<torpedo_storage type="trp" amount="10"/>  <!-- Homing"-->
@@ -723,6 +729,10 @@
     <engine_port x="45" y="29.64" z="-250" />
     <engine_port x="-45" y="-9.22" z="-250" />
     <engine_port x="-45" y="29.64" z="-250" />
+    <impulse_point x="45" y="29.64" z="-250"/> <!-- Starboard Main -->
+    <impulse_point x="-45" y="29.64" z="-250"/> <!-- Port Main-->
+    <maneuver_point x="146.21" y="8.86" z="81.51"/> <!-- Starboard -->
+    <maneuver_point x="-146.21" y="8.86" z="81.51"/> <!-- Port -->
     <long_desc text="Ares Class Light Cruiser^Strike cruiser designed to blast foes at point blank range in a single volley.^Triple R.A.M. Ion beam^1 Standard beam, reduced intensity.^2 Torpedo tubes^Stores for 10 Homing, 2 Nuke, 4 Mine, 4 EMP, 10 PShock."/>
   </vessel>
 
@@ -732,8 +742,8 @@
 	<!-- Weapons and Shields modified (1/4)-->
     <shields front="18" back="18" />
     <performance turnrate="0.004" topspeed="0.6" shipefficiency="0.6" warpefficiency="0.3" jumpefficiency="1.0" />
-    <beam_port x="-110" y="8.35" z="258.74" damage="0.25" playerdamage="2" arcwidth="0.5" cycletime="6.0" range="1000" />
-    <beam_port x="110" y="8.35" z="258.74" damage="0.25" playerdamage="2" arcwidth="0.5" cycletime="6.0" range="1000" />
+    <beam_port x="-117" y="8.35" z="272.63" damage="0.25" playerdamage="2" arcwidth="0.5" cycletime="6.0" range="1000" />
+    <beam_port x="117" y="8.35" z="272.63" damage="0.25" playerdamage="2" arcwidth="0.5" cycletime="6.0" range="1000" />
     <torpedo_tube x="0" y="8.35" z="258.74" />
     <torpedo_tube x="0" y="8.35" z="258.74" />
     <torpedo_tube x="0" y="8.35" z="258.74" />
@@ -751,6 +761,10 @@
     <engine_port x="0" y="34.64" z="-240" />
     <engine_port x="0" y="99.1" z="-255.5" />
     <engine_port x="0" y="-81.0" z="-173.7" />
+    <impulse_point x="0" y="30" z="-240"/> <!-- UpMid Main -->
+    <impulse_point x="0" y="-7.4" z="-230"/> <!-- LowMid Main-->
+    <maneuver_point x="145.63" y="10" z="97"/> <!-- Starboard -->
+    <maneuver_point x=" -145.63" y="10" z="97"/> <!-- Port -->
     <long_desc text="Valkyrie Class Light Cruiser^Torpedo cruiser designed to engage foes at any range.^2 Standard beams, reduced intensity.^3 Torpedo tubes^Stores for 18 Homing, 4 Nuke, 3 Mine, 6 EMP, 18 PShock." />
   </vessel>
   
@@ -776,6 +790,10 @@
     <engine_port x="-82.93" y="5" z="-240.89" />
     <engine_port x="0" y="-9.22" z="-300" />
     <engine_port x="0" y="29.64" z="-300" />
+    <impulse_point x="0" y="29.64" z="-278.6"/> <!-- UpMid Main -->
+    <impulse_point x="0" y="-9.22" z="-271.5"/> <!-- LowMid Main-->
+    <maneuver_point x="145" y="10" z="79"/> <!-- Starboard -->
+    <maneuver_point x="-145" y="10" z="79"/> <!-- Port -->
     <long_desc text="Apollo Class Light Cruiser^Assault cruiser designed for sustained close-quarters fighting.^2 heavy beams, configured for close range^2 Torpedo tubes^Stores for 10 Homing, 1 Nuke, 2 Mine, 6 EMP, 6 PShock." />
   </vessel>
   
