@@ -762,8 +762,8 @@
     <shields front="500" back="0"/>
     <!-- the base has only one shield facing, the "front" -->
     <beam_port x="0" y="55" z="0" damage="7" arcwidth="0.4" cycletime="6.0" range="1000"/>
-    <carrierload baycount="10"/>
-    <long_desc text="Arvonian Starbase. It has strong shields, a base beam, and carries a complement of 10 fighters."/>
+    <carrierload baycount="14"/>
+    <long_desc text="Arvonian Starbase. It has strong shields, a base beam, and carries a complement of 14 fighters."/>
   </vessel>
 
   <vessel    uniqueID="1007"    side="4"       classname="Base" broadType="base">
@@ -772,7 +772,7 @@
     <shields front="800" back="0"/>
     <!-- the base has only one shield facing, the "front" -->
     <beam_port x="0" y="2100" z="0" damage="7" arcwidth="0.4" cycletime="6.0" range="1500"/>
-    <drone_port x="0" y="-10" z="0" damage="30.0" cycletime="15.0" range="5000"/>
+    <drone_port x="0" y="-10" z="0" damage="30.0" cycletime="9.0" range="7000"/>
     <long_desc text="Torgoth Starbase. It has very powerful shields, a long range base beam, and can fire drones."/>
   </vessel>
 
@@ -968,7 +968,7 @@
              glowFile="dat/ship4B_glow.png"    specularFile="dat/ship4B_specular.png" scale="0.2" pushRadius="200"/>
     <shields front="120" back="120"/>
     <performance turnrate="0.003" topspeed="0.3"/>
-    <carrierload baycount="4"/>
+    <carrierload baycount="8"/>
     <fleet_ai commonality="50"/>
     <beam_port x=" 116" y="-7" z="246" damage="1.0" arcwidth="0.3" cycletime="6.0" range="1200"/>
     <beam_port x="-116" y="-7" z="246" damage="1.0" arcwidth="0.3" cycletime="6.0" range="1200"/>
@@ -982,7 +982,7 @@
     <impulse_point x="-168" y="-27" z="-76"/>
     <maneuver_point x=" 162" y="-26" z="79"/>
     <maneuver_point x="-162" y="-26" z="79"/>
-    <long_desc text="Displacement: 25 kt. Armament: 4 medium beams. Complement: 4 fighters."/>
+    <long_desc text="Displacement: 25 kt. Armament: 4 medium beams. Complement: 8 fighters."/>
   </vessel>
 
 
@@ -992,7 +992,7 @@
              glowFile="dat/ship4C_glow.png"    specularFile="dat/ship4C_specular.png"  scale="0.3" pushRadius="200"/>
     <shields front="200" back="200"/>
     <performance turnrate="0.003" topspeed="0.3"/>
-    <carrierload baycount="6"/>
+    <carrierload baycount="12"/>
     <fleet_ai commonality="25"/>
     <beam_port x=" 125" y="-17" z="139" damage="1.0" arcwidth="0.3" cycletime="6.0" range="1400"/>
     <beam_port x="-125" y="-17" z="139" damage="1.0" arcwidth="0.3" cycletime="6.0" range="1400"/>
@@ -1007,7 +1007,7 @@
     <impulse_point x="-82" y="9" z="149"/>
     <maneuver_point x=" 140" y="-22" z="-166"/>
     <maneuver_point x="-140" y="-22" z="-166"/>
-    <long_desc text="Displacement: 45 kt. Armament: 6 long-range beams. Complement: 6 fighters."/>
+    <long_desc text="Displacement: 45 kt. Armament: 6 long-range beams. Complement: 12 fighters."/>
   </vessel>
 
 
@@ -1026,7 +1026,7 @@
     <beam_port x=" 128" y="-6" z=" 69" damage="1.0" arcwidth="0.3" cycletime="6.0" range="1200"/>
     <beam_port x=" -81" y="-6" z="244" damage="1.0" arcwidth="0.3" cycletime="6.0" range="1200"/>
     <beam_port x="  81" y="-6" z="244" damage="1.0" arcwidth="0.3" cycletime="6.0" range="1200"/>
-    <drone_port x="0" y="-10" z="0" damage="30.0" cycletime="30.0" range="5000"/>
+    <drone_port x="0" y="-10" z="0" damage="30.0" cycletime="20.0" range="7000"/>
     <engine_port x="-107" y="36" z="-328"/>
     <engine_port x=" 107" y="36" z="-328"/>
     <engine_port x="-134" y="-14" z="-328"/>
@@ -1051,7 +1051,7 @@
     <beam_port x="0" y="-11" z="367" damage="2.0" arcwidth="0.2" cycletime="6.0" range="2000"/>
     <beam_port x=" 59" y="40" z="-30" damage="1.0" arcwidth="0.3" cycletime="6.0" range="1100"/>
     <beam_port x="-59" y="40" z="-30" damage="1.0" arcwidth="0.3" cycletime="6.0" range="1100"/>
-    <drone_port x="0" y="-10" z="0" damage="30.0" cycletime="30.0" range="5000"/>
+    <drone_port x="0" y="-10" z="0" damage="30.0" cycletime="20.0" range="7000"/>
     <engine_port x=" 125" y="18" z="-178"/>
     <engine_port x="-125" y="18" z="-178"/>
     <engine_port x=" 166" y="-11" z="-369"/>
@@ -1081,7 +1081,7 @@
     <beam_port x=" 128" y="0" z=" 144" damage="1.0" arcwidth="0.3" cycletime="4.0" range="1000"/>
     <beam_port x=" -96" y="0" z=" 288" damage="1.0" arcwidth="0.3" cycletime="4.0" range="1000"/>
     <beam_port x="  96" y="0" z=" 288" damage="1.0" arcwidth="0.3" cycletime="4.0" range="1000"/>
-    <drone_port x="0" y="-10" z="0" damage="30.0" cycletime="30.0" range="5000"/>
+    <drone_port x="0" y="-10" z="0" damage="30.0" cycletime="15.0" range="7000"/>
     <engine_port x=" 66" y="22" z="-383"/>
     <engine_port x="-66" y="22" z="-383"/>
     <engine_port x=" 54" y="41" z="-370"/>

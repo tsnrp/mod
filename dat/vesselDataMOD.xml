@@ -1,7 +1,7 @@
 <!-- vessel_data is the big wrapper for all the vessel objects -->
-<!-- TSN Mod Version 2.011 -->
+<!-- TSN Mod Version 2.012 -->
 <!--
- See GitHub reference for patch notes.
+ See GitHub reference for patch notes: https://github.com/tsnrp/mod
 -->
 
 <vessel_data version="2.6">
@@ -158,7 +158,7 @@
     <impulse_point x="0" y="29.64" z="-300"/>
 	<drone_port x="0" y="8.35" z="258.74" damage="20" cycletime="30.0" range="5000"/>  
     <drone_port x="0" y="8.35" z="258.74" damage="20" cycletime="30.0" range="2000"/> 
-    <long_desc text="TSN Artemis Class Light Cruiser.^General purpose patrol vessel of the TSN and first of the Light Cruiser classes to be designed.^2 Standard beams^2 Torpedo tubes^Stores for 2 nukes, 8 homing, 6 mines, 4 EMP, 4 PShock."/>
+    <long_desc text="Artemis Class Light Cruiser.^General purpose patrol vessel and first of the Light Cruiser classes to be designed.^2 Standard beams^2 Torpedo tubes^Stores for 2 nukes, 8 homing, 6 mines, 4 EMP, 4 PShock."/>
   </vessel>
 
   <vessel    uniqueID="1"    side="0"       classname="Scout" broadType="player">
@@ -732,8 +732,8 @@
 	<!-- Weapons and Shields modified (1/4)-->
     <shields front="18" back="18" />
     <performance turnrate="0.004" topspeed="0.6" shipefficiency="0.6" warpefficiency="0.3" jumpefficiency="1.0" />
-    <beam_port x="-110" y="8.35" z="258.74" damage="0.25" playerdamage="2" arcwidth="0.5" cycletime="6.0" range="1000" />
-    <beam_port x="110" y="8.35" z="258.74" damage="0.25" playerdamage="2" arcwidth="0.5" cycletime="6.0" range="1000" />
+    <beam_port x="-110" y="8.35" z="258.74" damage="0.25" playerdamage="2.8" arcwidth="0.5" cycletime="6.0" range="1000" />
+    <beam_port x="110" y="8.35" z="258.74" damage="0.25" playerdamage="2.8" arcwidth="0.5" cycletime="6.0" range="1000" />
     <torpedo_tube x="0" y="8.35" z="258.74" />
     <torpedo_tube x="0" y="8.35" z="258.74" />
     <torpedo_tube x="0" y="8.35" z="258.74" />
@@ -852,6 +852,32 @@
     <engine_port x="-100" y="20" z="-270"/>
     <engine_port x="100" y="20" z="-270"/>
     <long_desc text="Patrach-Edwards Necessity Class ^experimental field-modified Hjorden system defence vessel ^with TSN propulsion and ordnance adaptations"/>
+  </vessel>
+  
+  <vessel uniqueID="25" side="0" classname="Orion Class" broadType="player">
+	 <!--  Created by Rakaydos -->
+    <art meshfile="dat/artemis-scout.dxs" diffuseFile="dat/artemis_diffuse.png" glowFile="dat/artemis_illum.png" specularFile="dat/artemis_specular.png" scale="0.2" pushRadius="150"/>
+	<internal_data file="dat/TSN/Player/orion.snt"/>
+	<!-- Weapons and Shields modified (1/4) -->
+	<shields front="15" back="15"/>
+	<performance turnrate="0.006" topspeed="0.8" shipefficiency="0.42" warpefficiency="0.21" jumpefficiency="1.0"/>
+	<beam_port x="0" y="17.8" z="289.0" damage="0.25" playerdamage="3" arcwidth="0.4" cycletime="6.0" range="1000"/>
+	<beam_port x="0" y="8.35" z="1" damage="0.00001" playerdamage="0" arcwidth="0.05" cycletime="3" range="2200"/>
+	<torpedo_tube x="0" y="8.35" z="258.74"/>
+	<torpedo_storage type="trp" amount="6"/> <!-- Homing"-->
+	<torpedo_storage type="nuk" amount="0"/> <!-- LR Nuke-->
+	<torpedo_storage type="min" amount="2"/> <!-- Mine"-->
+	<torpedo_storage type="emp" amount="2"/> <!-- EMP"-->
+	<torpedo_storage type="shk" amount="1"/> <!-- Plasma Shock"-->
+	<torpedo_storage type="bea" amount="8"/> <!-- Beacon"-->
+	<torpedo_storage type="pro" amount="8"/> <!-- Probe"-->
+	<torpedo_storage type="tag" amount="8"/> <!-- Tag"-->
+	<engine_port x="0" y="-9.22" z="-300"/>
+	<engine_port x="0" y="29.64" z="-300"/>
+	<drone_port x="0" y="8.35" z="258.74" damage="20" cycletime="30.0" range="5000"/>
+	<impulse_point x="0" y="-9.22" z="-300"/>
+	<impulse_point x="0" y="29.64" z="-300"/>
+	<long_desc text="Orion class Modified Scout^1 forward beam, 1 Focused Ionic Disruptor^1 Torpedo tube^Stores for 6 homing, 2 mines, 2 ECM, 1 PShock."/>
   </vessel>
   
   <!-- ****************************** single-seat ships (fighters, bombers, shuttles) 100 - 131 **************************************** -->
@@ -1011,7 +1037,7 @@
     <beam_port x="0" y="0" z="0" damage="0.04" playerdamage="0.5" arcwidth="0.2" cycletime="0.8" range="1200"/>
     <engine_port x="-15.533172" y="-3.027038" z="-50.354633"/>
     <engine_port x=" 15.533172" y="-3.027038" z="-50.354633"/>
-	<torpedo_storage type="0" amount="0"/>
+	<torpedo_storage type="trp" amount="0"/>
 	<!-- Type 1 Homing"-->
     <long_desc text="Superiority Fighter^High-speed fighter armed with a heavy pulse beam."/>
   </vessel>
@@ -1059,7 +1085,7 @@
     <art     meshfile="dat/stationWings.dxs"    diffuseFile="dat/stationA_wings_diffuse.png"
              glowFile="dat/stationA_wings_illum.png"    specularFile="dat/stationA_wings_specular.png" />
 	<!-- Weapons and Shields modified (1/4)-->
-    <shields front="100" back="0"/>
+    <shields front="100" back="100"/>
     <!-- the base has only one shield facing, the "front" -->
     <beam_port x="0" y="250" z="0" damage="1.75" arcwidth="0.4" cycletime="6.0" range="1000"/>
     <production coeff="1.0"/>
@@ -1071,7 +1097,7 @@
     <art     meshfile="dat/station-4donuts.dxs"    diffuseFile="dat/player_station_color_04.png"
              glowFile="dat/player_station_glow_04.png"    specularFile="dat/player_station_spec_04.png" scale="0.6" pushRadius="250"/>
 	<!-- Weapons and Shields modified (1/4)-->
-    <shields front="100" back="0"/>
+    <shields front="100" back="100"/>
     <!-- the base has only one shield facing, the "front" -->
     <production coeff="0.5"/>
     <long_desc text="Civilian Starbase built by a local government. It is unarmed, but can manufacture torpedoes for your ship, at a reduced rate. Stations need help if attacked."/>
@@ -1082,7 +1108,7 @@
     <art     meshfile="dat/station-starfish.dxs"    diffuseFile="dat/player_station_color_03.png"
              glowFile="dat/player_station_glow_03.png"    specularFile="dat/player_station_spec_03.png" scale="0.3" pushRadius="250"/>
 	<!-- Weapons and Shields modified (1/4)-->
-    <shields front="200" back="0"/>
+    <shields front="200" back="200"/>
     <!-- the base has only one shield facing, the "front" -->
     <beam_port x="0" y="150" z="0" damage="1.75" arcwidth="0.4" cycletime="6.0" range="1000"/>
     <torpedo_station_port x="0" y="-10" z="0" damage="7.5" cycletime="30.0" range="5000"/>
@@ -1095,7 +1121,7 @@
     <art     meshfile="dat/station-big1.dxs"    diffuseFile="dat/player_station_color_02.png"
              glowFile="dat/player_station_glow_02.png"    specularFile="dat/player_station_spec_02.png" scale="0.6" pushRadius="400"/>
 	<!-- Weapons and Shields modified (1/4)-->
-    <shields front="100" back="0"/>
+    <shields front="100" back="100"/>
     <!-- the base has only one shield facing, the "front" -->
     <production coeff="3.0"/>
     <long_desc text="Manufacturing Starbase owned by a large Corporation. It is unarmed, but can build torpedoes at triple speed. Its defense should be a priority."/>
@@ -1106,7 +1132,7 @@
     <art     meshfile="dat/station-science.dxs"    diffuseFile="dat/player_station_color_01.png"
              glowFile="dat/player_station_glow_01.png"    specularFile="dat/player_station_spec_01.png" scale="0.3" pushRadius="400"/>
 	<!-- Weapons and Shields modified (1/4)-->
-    <shields front="100" back="0"/>
+    <shields front="100" back="100"/>
     <!-- the base has only one shield facing, the "front" -->
     <production coeff="0.5"/>
     <long_desc text="Research Starbase studying this sector. It is unarmed, but can manufacture torpedoes at a reduced rate. Stations need help if attacked."/>
@@ -1117,7 +1143,7 @@
     <art     meshfile="dat/kralien-station.dxs"    diffuseFile="dat/kraliens_station_color.png"
              glowFile="dat/kraliens_station_glow.png"    specularFile="dat/kraliens_station_spec.png" scale="0.3" pushRadius="250"/>
 	<!-- Weapons and Shields modified (1/4)-->
-    <shields front="100" back="0"/>
+    <shields front="100" back="100"/>
     <!-- the base has only one shield facing, the "front" -->
     <beam_port x="0" y="300" z="0" damage="1.75" arcwidth="0.4" cycletime="6.0" range="1000"/>
     <long_desc text="Kralien Starbase. It has standard shields, and a base beam."/>
@@ -1127,10 +1153,10 @@
     <art     meshfile="dat/arvonian-station.dxs"    diffuseFile="dat/arvonian_station_color.png"
              glowFile="dat/arvonian_station_glow.png"    specularFile="dat/arvonian_station_spec.png" scale="0.3" pushRadius="450"/>
 	<!-- Weapons and Shields modified (1/4)-->
-    <shields front="125" back="0"/>
+    <shields front="125" back="125"/>
     <!-- the base has only one shield facing, the "front" -->
     <beam_port x="0" y="55" z="0" damage="1.75" arcwidth="0.4" cycletime="6.0" range="1000"/>
-    <carrierload baycount="10"/>
+    <carrierload baycount="14"/>
     <long_desc text="Arvonian Starbase. It has strong shields, a base beam, and carries a complement of 10 fighters."/>
   </vessel>
 
@@ -1138,7 +1164,7 @@
     <art     meshfile="dat/torgoth-station.dxs"    diffuseFile="dat/torgoth_color.png"
              glowFile="dat/torgoth_glow.png"    specularFile="dat/torgoth_spec.png" scale="0.3" pushRadius="450"/>
 	<!-- Weapons and Shields modified (1/4)-->
-    <shields front="200" back="0"/>
+    <shields front="200" back="200"/>
     <!-- the base has only one shield facing, the "front" -->
     <beam_port x="0" y="2100" z="0" damage="1.75" arcwidth="0.4" cycletime="6.0" range="1500"/>
     <drone_port x="0" y="-10" z="0" damage="7.5" cycletime="15.0" range="5000"/>
@@ -1149,7 +1175,7 @@
     <art     meshfile="dat/skaraan-station.dxs"    diffuseFile="dat/skaraan_station_color.png"
              glowFile="dat/skaraan_station_glow.png"    specularFile="dat/skaraan_station_spec.png" scale="0.3" pushRadius="250"/>
 	<!-- Weapons and Shields modified (1/4)-->
-    <shields front="150" back="0"/>
+    <shields front="150" back="150"/>
     <!-- the base has only one shield facing, the "front" -->
     <beam_port x="0" y="300" z="0" damage="1.75" arcwidth="0.4" cycletime="6.0" range="1000"/>
     <beam_port x="0" y="-200" z="0" damage="1.75" arcwidth="0.4" cycletime="6.0" range="1000"/>
@@ -1198,13 +1224,13 @@
     <long_desc text="Small shipyard suitable for major repairs, refits and construction of most vessels." />
   </vessel>
   
-  <vessel uniqueID="1054" side="9" classname="Sensor Relay" broadType="static network">
+  <vessel uniqueID="1054" side="9" classname="Sensor Buoy" broadType="static network">
     <art meshfile="dat/TSN/USFP/sensorrelay.dxs" diffuseFile="dat/TSN/USFP/sensorrelay_color.png" glowFile="dat/TSN/USFP/sensorrelay_color.png" specularFile="dat/TSN/USFP/sensorrelay_color.png" scale="0.2" pushRadius="50" />
     <!-- Weapons and Shields modified (1/4)-->
 	<shields front="38" back="38" />
     <performance turnrate="0.0" topspeed="0.0" />
 	<fleet_ai commonality="1"/>
-    <long_desc text="Sensor station and relay. Part of a long range detection network." />
+    <long_desc text="Platform for passive and active sensors and countermeasures. Part of a long range detection and electronic warfare network." />
   </vessel>
   
   <vessel uniqueID="1055" side="9" classname="Comms Relay" broadType="static network">
@@ -1213,13 +1239,13 @@
 	<shields front="38" back="38" />
     <performance turnrate="0.0" topspeed="0.0" />
 	<fleet_ai commonality="1"/>
-    <long_desc text="Communication relay. Receives and transmits communication messages, or boosts signal in areas with natural or artificial interference." />
+    <long_desc text="Communications relay. Receives and transmits messages, or boosts signal in areas with natural or artificial interference." />
   </vessel>
   
   <vessel uniqueID="1056" side="9" classname="Bio Base" broadType="base">
     <art meshfile="dat/TSN/USFP/biospherestation.dxs" diffuseFile="dat/TSN/USFP/biosphere_color.png" glowFile="dat/TSN/USFP/biosphere_glow.png" specularFile="dat/TSN/USFP/biosphere_spec.png" scale="1.0" pushRadius="400"/>
     <!-- Weapons and Shields modified (1/4)-->
-	<shields front="875" back="0"/>
+	<shields front="875" back="875"/>
     <long_desc text="Bioengineering station with strong shields. It is unarmed, but can manufacture torpedoes for your ship. Stations need help if attacked."/>
     <production coeff="0.5"/>
     <performance turnrate="0.000" topspeed="0.0"/>
@@ -1229,7 +1255,7 @@
   <vessel uniqueID="1100" side="10" classname="Civilian Base" broadType="base">
     <art meshfile="dat/TSN/Hjorden/hjorden-base.dxs" diffuseFile="dat/TSN/Hjorden/hjorden-base_color.png" glowFile="dat/TSN/Hjorden/hjorden-base_glow.png" specularFile="dat/TSN/Hjorden/hjorden-base_spec.png" scale="1.6" pushRadius="400"/>
     <!-- Weapons and Shields modified (1/4)-->
-	<shields front="875" back="0"/>
+	<shields front="875" back="875"/>
     <long_desc text="Hjorden civilian starbase with strong shields. It is unarmed, but can manufacture torpedoes for your ship. Stations need help if attacked."/>
     <production coeff="1.5"/>
   </vessel>
@@ -1242,7 +1268,7 @@
   <vessel uniqueID="1250" side="13" classname="Asteroid Base" broadType="base">
     <art meshfile="dat/TSN/Pirates/asteroid-fortress-base.dxs" diffuseFile="dat/TSN/Pirates/asteroid-fortress-base.png" glowFile="dat/TSN/Pirates/asteroid-fortress-baseGlow.png" specularFile="dat/TSN/Pirates/asteroid-fortress-baseSpec.png" scale="0.5" pushRadius="600"/>
     <!-- Weapons and Shields modified (1/4)-->
-	<shields front="1125" back="0"/>
+	<shields front="1125" back="1125"/>
 	<carrierload baycount="5"/>
     <beam_port x="0" y="2100" z="0" damage="0.38" arcwidth="0.4" cycletime="6.0" range="1500"/>
     <drone_port x="0" y="-10" z="0" damage="3.75" cycletime="14.5" range="5000"/>
@@ -1256,7 +1282,7 @@
   <vessel uniqueID="1300" side="14" classname="Fortified Base" broadType="base">
     <art meshfile="dat/TSN/NTani/ntani-base.dxs" diffuseFile="dat/TSN/NTani/ntani-base.png" glowFile="dat/TSN/NTani/ntani-baseGlow.png" specularFile="dat/TSN/NTani/ntani-baseSpec.png" scale="1.6" pushRadius="400"/>
    <!-- Weapons and Shields modified (1/4)-->
-	<shields front="875" back="0"/>
+	<shields front="875" back="875"/>
     <beam_port x="-100" y="8.35" z="150" damage="0.13" arcwidth="0.5" cycletime="5.0" range="1500"/>
     <beam_port x="0" y="0" z="100" damage="3.75" arcwidth="1.0" cycletime="60.0" range="3500"/>
     <beam_port x="100" y="8.35" z="150" damage="0.13" arcwidth="0.5" cycletime="5.0" range="1500"/>
@@ -1283,13 +1309,31 @@
     <beam_port x="-86" y="23" z="142" damage="0.25" arcwidth="0.25" cycletime="6.0" range="2500"/>
     <long_desc text="Static defence platform armed with 6 beams in a radial formation and a small QRF launch bay."/>
   </vessel>
+  
+  <vessel uniqueID="1351" side="15" classname="Sensor Buoy" broadType="static network">
+    <art meshfile="dat/TSN/Hegemony/KralienSensorBuoy.dxs" diffuseFile="dat/TSN/Hegemony/KralienSensorBuoy-diffuse.png" glowFile="dat/TSN/Hegemony/KralienSensorBuoy-glow.png" specularFile="dat/TSN/Hegemony/KralienSensorBuoy-spec.png" scale="0.1" pushRadius="50"/>
+    <!-- Weapons and Shields modified (1/4)-->
+	<shields front="50" back="50"/>
+    <performance turnrate="0.0" topspeed="0.0"/>
+	<fleet_ai commonality="1"/>
+    <long_desc text="Sensor buoy used by hegemony forces for various purposes ^including sensor disruption, signal relay or scanning."/>
+  </vessel>
+
+  <vessel uniqueID="1352" side="15" classname="Comms Relay" broadType="static network">
+    <art meshfile="dat/TSN/Hegemony/KralienSensorBuoy.dxs" diffuseFile="dat/TSN/Hegemony/KralienCommsRelay-diffuse.png" glowFile="dat/TSN/Hegemony/KralienCommsRelay-glow.png" specularFile="dat/TSN/Hegemony/KralienCommsRelay-spec.png" scale="0.1" pushRadius="50"/>
+    <!-- Weapons and Shields modified (1/4)-->
+	<shields front="50" back="50"/>
+    <performance turnrate="0.0" topspeed="0.0"/>
+	<fleet_ai commonality="1"/>
+    <long_desc text="Comms relay node used by hegemony forces for long range communications."/>
+  </vessel>
 
    <!--**Free/Ulikai Bases 1400 - 1450**-->  
   <vessel    uniqueID="1400"    side="19"       classname="Station" broadType="base">
     <art     meshfile="dat/kralien-station.dxs"    diffuseFile="dat/kraliens_station_color.png"
              glowFile="dat/kraliens_station_glow.png"    specularFile="dat/kraliens_station_spec.png" scale="0.3" pushRadius="250"/>
 	<!-- Weapons and Shields modified (1/4)-->
-    <shields front="115" back="0"/>
+    <shields front="115" back="115"/>
     <!-- the base has only one shield facing, the "front" -->
     <beam_port x="0" y="300" z="0" damage="1.0" arcwidth="0.4" cycletime="4.0" range="1500"/>
     <beam_port x="0" y="300" z="0" damage="1.0" arcwidth="0.4" cycletime="4.0" range="1500"/>
@@ -1319,7 +1363,7 @@
     <art     meshfile="dat/kralien-station.dxs"    diffuseFile="dat/kraliens_station_color.png"
              glowFile="dat/kraliens_station_glow.png"    specularFile="dat/kraliens_station_spec.png" scale="0.3" pushRadius="250"/>
 	<!-- Weapons and Shields modified (1/4)-->
-    <shields front="150" back="0"/>
+    <shields front="150" back="150"/>
     <!-- the base has only one shield facing, the "front" -->
     <beam_port x="0" y="250" z="0" damage="1.75" arcwidth="0.4" cycletime="6.0" range="1000"/>
     <beam_port x="0" y="250" z="0" damage="1.75" arcwidth="0.4" cycletime="6.0" range="1000"/>
@@ -1332,7 +1376,7 @@
     <art     meshfile="dat/kralien-station.dxs"    diffuseFile="dat/kraliens_station_color.png"
              glowFile="dat/kraliens_station_glow.png"    specularFile="dat/kraliens_station_spec.png" scale="0.3" pushRadius="250"/>
 	<!-- Weapons and Shields modified (1/4)-->
-    <shields front="100" back="0"/>
+    <shields front="100" back="100"/>
     <!-- the base has only one shield facing, the "front" -->
     <production coeff="0.5"/>
     <long_desc text="Civilian Starbase. It is unarmed, and has very minor manufacturing capability."/>
@@ -1343,7 +1387,7 @@
     <art     meshfile="dat/kralien-station.dxs"    diffuseFile="dat/kraliens_station_color.png"
              glowFile="dat/kraliens_station_glow.png"    specularFile="dat/kraliens_station_spec.png" scale="0.35" pushRadius="300"/>
 	<!-- Weapons and Shields modified (1/4)-->
-    <shields front="250" back="0"/>
+    <shields front="250" back="250"/>
     <!-- the base has only one shield facing, the "front" -->
     <carrierload baycount="6"/>
     <beam_port x="0" y="300" z="0" damage="1.0" arcwidth="0.4" cycletime="4.0" range="1500"/>
@@ -1358,7 +1402,7 @@
     <art     meshfile="dat/kralien-station.dxs"    diffuseFile="dat/kraliens_station_color.png"
              glowFile="dat/kraliens_station_glow.png"    specularFile="dat/kraliens_station_spec.png" scale="0.3" pushRadius="250"/>
 	<!-- Weapons and Shields modified (1/4)-->
-    <shields front="100" back="0"/>
+    <shields front="100" back="100"/>
     <!-- the base has only one shield facing, the "front" -->
     <production coeff="3.0"/>
     <long_desc text="Manufacturing Starbase. Unarmed with very high manufacturing capacity."/>
@@ -1369,7 +1413,7 @@
     <art     meshfile="dat/kralien-station.dxs"    diffuseFile="dat/kraliens_station_color.png"
              glowFile="dat/kraliens_station_glow.png"    specularFile="dat/kraliens_station_spec.png" scale="0.3" pushRadius="250"/>
 	<!-- Weapons and Shields modified (1/4)-->
-    <shields front="100" back="0"/>
+    <shields front="100" back="100"/>
     <!-- the base has only one shield facing, the "front" -->
     <production coeff="0.5"/>
     <long_desc text="Research Starbase. Unarmed with minor manufacturing capability"/>
@@ -1420,7 +1464,7 @@
   <vessel uniqueID="1412" side="19" classname="Bio Base" broadType="base">
     <art meshfile="dat/TSN/USFP/biospherestation.dxs" diffuseFile="dat/TSN/USFP/biosphere_color.png" glowFile="dat/TSN/USFP/biosphere_glow.png" specularFile="dat/TSN/USFP/biosphere_spec.png" scale="1.0" pushRadius="400"/>
     <!-- Weapons and Shields modified (1/4)-->
-	<shields front="275" back="0"/>
+	<shields front="275" back="275"/>
     <long_desc text="Bioengineering station with strong shields. It is unarmed, but can manufacture torpedoes for your ship. Stations need help if attacked."/>
     <production coeff="0.5"/>
     <performance turnrate="0.000" topspeed="0.0"/>
@@ -1751,7 +1795,7 @@
    <!-- Weapons and Shields modified (1/4)-->
 	<shields front="30" back="30"/>
     <performance turnrate="0.003" topspeed="0.3"/>
-    <carrierload baycount="4"/>
+    <carrierload baycount="8"/>
     <fleet_ai commonality="50"/>
     <beam_port x=" 116" y="-7" z="246" damage="0.25" arcwidth="0.3" cycletime="6.0" range="1200"/>
     <beam_port x="-116" y="-7" z="246" damage="0.25" arcwidth="0.3" cycletime="6.0" range="1200"/>
@@ -1774,7 +1818,7 @@
     <!-- Weapons and Shields modified (1/4)-->
 	<shields front="50" back="50"/>
     <performance turnrate="0.003" topspeed="0.3"/>
-    <carrierload baycount="6"/>
+    <carrierload baycount="12"/>
     <fleet_ai commonality="25"/>
     <beam_port x=" 125" y="-17" z="139" damage="0.25" arcwidth="0.3" cycletime="6.0" range="1400"/>
     <beam_port x="-125" y="-17" z="139" damage="0.25" arcwidth="0.3" cycletime="6.0" range="1400"/>
