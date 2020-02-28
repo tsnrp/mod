@@ -1,7 +1,7 @@
 About:
 The Terran Stellar Navy Expansion
-Version 2.012, December 2019
-For Artemis Version 2.7.4
+Version 2.013, February 2020
+For Artemis Version 2.7.5
 
 -----------------Credits ------------------
   3D Design and Creation   Maurice (JMR) (everything except specified others)
@@ -50,7 +50,8 @@ VesselData Changes:
 Changed: hullRace 'Terran' to 'USFP'
 Added hullRace 9 - 18: USFP, N'Tani, Hjorden, Unakalhai, Caltron, Euphini Pirates, Kralien, Arvonian, Torgoth, Rumarian
 Added Player ships 17 - 25: Nemesis Interceptor, Ares Class Light Cruiser, Valkyrie Class Light Cruiser, Apollo Class Light Cruiser, Orion Class Scout, Scout Mk2
-	Allegiance Class Battlecruiser, Discovery Class Science vessel, Hjorden Cruiser with adapted TSN technology
+	Allegiance Class Battlecruiser, Athena Class Cataphract cruiser, Zeus Class Dreadnaught
+Added NPC TSN Ships: 1700 - 1707: Ares II class, Alliegence class, Apollo class, Valkyrie class, Nemesis class, Athena class, Zeus class
 Added Single-seat ships 200 - 201: Superiority Fighter, Heavy bomber
 Added Static and bases 1050 - : Denabite refinery, Factory, TSN Weapons Platform, USFP Shipyard, Sensor & Comms relays, N'Tani base, Pirate asteroid base, Hegemony defense platform
 Added new broad types: daemon (for USN heavy ships), static (for neutrals that do not move), industrial (for factory and refinary facilities), 

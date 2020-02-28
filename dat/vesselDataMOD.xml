@@ -1,5 +1,5 @@
 <!-- vessel_data is the big wrapper for all the vessel objects -->
-<!-- TSN Mod Version 2.012 -->
+<!-- TSN Mod Version 2.013 -->
 <!--
  See GitHub reference for patch notes: https://github.com/tsnrp/mod
 -->
@@ -806,54 +806,85 @@
     <long_desc text="Allegiance Class Battlecruiser^Advanced battlecruiser designed for long duration patrols^2 Standard beams^1 Heavy beam^2 Torpedo tubes^Stores for 10 Homing, 2 Nuke, 6 Mine, 4 EMP, 8 PShock." />
   </vessel>
   
-  <vessel uniqueID="23" side="0" classname="Discovery Class" broadType="player">
-	<art meshfile="dat/science-vessel.dxs" diffuseFile="dat/Science_Vessel_color.png" glowFile="dat/Science_Vessel_glow.png" specularFile="dat/Science_Vessel_spec.png" scale="0.32" pushRadius="150" />
-    <internal_data file="dat/TSN/USFP/science-vessel.snt" />
+  <vessel    uniqueID="23"    side="0"       classname="Athena Class" broadType="player">
+    <art     meshfile="dat/TSN/Player/Cataphract.dxs"    diffuseFile="dat/artemis_diffuse.png"
+             glowFile="dat/artemis_illum.png"    specularFile="dat/artemis_specular.png" scale="0.22" pushRadius="150"/>
+    <internal_data file="dat/TSN/Player/Cataphract2.snt"/>
 	<!-- Weapons and Shields modified (1/4)-->
-    <shields front="8" back="8" />
-    <performance turnrate="0.0075" topspeed="0.7" shipefficiency="1.0" warpefficiency="1.0" jumpefficiency="1.0" />
-    <beam_port x="0.54" y="24.76" z="96.31" damage="0.5" playerdamage="2" arcwidth="0.75" cycletime="5" range="300" />
-    <torpedo_tube x="-17.02" y="18.44" z="96.32" />
-	<torpedo_storage type="trp" amount="0"/>  <!-- Homing"-->
-    <torpedo_storage type="nuk" amount="0"/>  <!-- LR Nuke-->
-    <torpedo_storage type="min" amount="0"/>  <!-- Mine"-->
-    <torpedo_storage type="emp" amount="4"/>  <!-- EMP"-->
-    <torpedo_storage type="shk" amount="0"/>  <!-- Plasma Shock"-->
-    <torpedo_storage type="bea" amount="5"/>  <!-- Beacon"-->
-    <torpedo_storage type="pro" amount="10"/>  <!-- Probe"-->
-    <torpedo_storage type="tag" amount="10"/>  <!-- Tag"-->
-    <engine_port x="-51" y="-3.155422" z="26.135927"/>
-    <engine_port x=" 51" y="-3.155422" z="26.135927"/>
-    <long_desc text="Discovery Class Science Vessel^A long-range exploration ship. The hull is a Ximni design.^1 close-range, defensive beam." />
-  </vessel>
-  
-  <vessel uniqueID="24" side="0" classname="Necessity Class" broadType="medium warship">
-    <art meshfile="dat/TSN/Hjorden/hjordencruiser.dxs" diffuseFile="dat/TSN/Hjorden/hjordencruiser_color.png" glowFile="dat/TSN/Hjorden/hjordencruiser_glow.png" specularFile="dat/TSN/Hjorden/hjordencruiser_spec.png" scale="0.2" pushRadius="100"/>
-    <internal_data file="dat/TSN/Hjorden/hjordencruiser.snt" />
-    <!-- Weapons and Shields modified (1/4)-->
-    <shields front="35" back="25"/>
-    <performance turnrate="0.0045" topspeed="0.57" shipefficiency="0.57" warpefficiency="0.35" jumpefficiency="1.0" />
-    <beam_port x="-60" y="8.35" z="258.74" playerdamage="2.5" damage="0.5" arcwidth="0.4" cycletime="3.0" range="1100"/>
-    <beam_port x="60" y="8.35" z="258.74" playerdamage="2.5" damage="0.5" arcwidth="0.4" cycletime="3.0" range="1100"/>
-    <torpedo_tube x="0" y="8.35" z="258.74"/>
-    <torpedo_storage type="trp" amount="8"/>  <!-- Homing"-->
-    <torpedo_storage type="nuk" amount="0"/>  <!-- LR Nuke-->
-    <torpedo_storage type="min" amount="2"/>  <!-- Mine"-->
-    <torpedo_storage type="emp" amount="2"/>  <!-- EMP"-->
-    <torpedo_storage type="shk" amount="6"/>  <!-- Plasma Shock"-->
+    <shields front="40" back="30"/>
+	<!-- NPC Shields front="80" back="45" -->
+    <performance turnrate="0.0035" topspeed="1.0" shipefficiency="0.6" warpefficiency="1.2" jumpefficiency="1.1"/>
+  <beam_port x="0" y="50" z="222" damage="10.5" playerdamage="73.5" arcwidth="0.05" cycletime="300.0" range="1500"/>
+  <beam_port x="0" y="-40" z="210" damage=".4762" playerdamage="3.34" arcwidth="0.285" cycletime="6" range="1100"/>
+  <beam_port x="126.5" y="22" z="122" damage=".286" playerdamage="2" arcwidth=".425" cycletime="6" range="800"/>
+  <beam_port x="-126.5" y="22" z="122" damage=".286" playerdamage="2" arcwidth=".425" cycletime="6" range="800"/>
+	<!-- RAM beams have been set to fighter-killing levels of the NPC beams- 7x Saber's damage and 7x their cooldown-they require 265% manual to get saber's fire rate of 30 seconds -->
+    <beam_port x="70.60" y="7.42" z="-19.08" damage="10.5" playerdamage="73.5" arcwidth="0.1" cycletime="210.0" range="600"/>
+    <beam_port x="-70.60" y="7.42" z="-19.08" damage="10.5" playerdamage="73.5" arcwidth="0.1" cycletime="210.0" range="600"/>
+    <torpedo_tube x="0" y="122" z="-176"/>
+    <torpedo_tube x="0" y="122" z="-176"/>
+    <torpedo_storage type="trp" amount="15"/>  <!-- Homing"-->
+    <torpedo_storage type="nuk" amount="3"/>  <!-- LR Nuke-->
+    <torpedo_storage type="min" amount="5"/>  <!-- Mine"-->
+    <torpedo_storage type="emp" amount="8"/>  <!-- EMP"-->
+    <torpedo_storage type="shk" amount="15"/>  <!-- Plasma Shock"-->
     <torpedo_storage type="bea" amount="2"/>  <!-- Beacon"-->
     <torpedo_storage type="pro" amount="4"/>  <!-- Probe"-->
     <torpedo_storage type="tag" amount="1"/>  <!-- Tag"-->
-    <engine_port x="0" y="65" z="75"/>
-    <engine_port x="0" y="-22" z="75"/>
-    <engine_port x="50" y="20" z="70"/>
-    <engine_port x="-50" y="20" z="70"/>
-    <engine_port x="0" y="20" z="-140"/>
-    <engine_port x="-100" y="20" z="-270"/>
-    <engine_port x="100" y="20" z="-270"/>
-    <long_desc text="Patrach-Edwards Necessity Class ^experimental field-modified Hjorden system defence vessel ^with TSN propulsion and ordnance adaptations"/>
+    <engine_port x="0" y="-9.22" z="-300"/>
+    <engine_port x="0" y="29.64" z="-300"/>
+    <engine_port x="-111.755783" y="-44.202168" z="-242.740082"/>
+    <engine_port x="111.755783" y="-44.202168" z="-242.740082"/>
+    <engine_port x="0" y="97.875313" z="-181.449524"/>
+    <impulse_point x="-111.755783" y="-44.202168" z="-242.740082"/> <!-- UE Dec2019 -->
+    <impulse_point x="111.755783" y="-44.202168" z="-242.740082"/> <!-- UE Dec2019 -->
+    <maneuver_point x="-146" y="8.75" z="79.37"/> <!-- UE Dec2019 -->
+    <maneuver_point x="146" y="8.75" z="79.37"/> <!-- UE Dec2019 -->
+    <long_desc text="Athena class System Defense Battleship^2 Light Beams, 1 Heavy beam, ^1 Inertial Artillery hardpoint, 2 fighter defense RAMs^ 1 Torpedo tube, Stores for 3 nuke, 15 homing, 5 mines, 8 EMP, 15 PShock.^Battle hardened systems and redundant shield nodes."/>
   </vessel>
   
+      <vessel    uniqueID="24"    side="0"       classname="Zeus class" broadType="player carrier">
+    <art     meshfile="dat/artemis-5.dxs"    diffuseFile="dat/artemis_diffuse.png"
+             glowFile="dat/artemis_illum.png"    specularFile="dat/artemis_specular.png" scale="0.3" pushRadius="150"/>
+    <internal_data file="dat/TSN/Player/Zeus.snt"/>
+	<!-- Weapons and Shields modified (1/4)-->
+    <shields front="75" back="50"/>
+	<!-- NPC 300% front shields (0 coolant, 15 nodes) 200% rear shields (0 coolant, 8 nodes) total NPC values front="225" back="100"-->
+    <performance turnrate="0.003" topspeed="0.75" shipefficiency="0.72" warpefficiency="1.44" jumpefficiency="1.2"/>
+	<!-- NPC 265% beam output, 8 coolant = x7 damage. NPC stats will have 1/7 the damage and fire rate to better mimic the PC ship. -->
+    <beam_port x="0" y="40" z="212" damage=".8572" playerdamage="6" arcwidth="0.2" cycletime="6.0" range="2000"/>
+    <beam_port x="11.31" y="-16.15" z="15.67" damage=".536" playerdamage="3.75" arcwidth="0.4" cycletime="6.0" range="1000"/>
+    <beam_port x="-11.31" y="-16.15" z="15.67" damage=".536" playerdamage="3.75" arcwidth="0.4" cycletime="6.0" range="1000"/>
+    <beam_port x="-122.9" y="6.98" z="-169.6" damage=".072" playerdamage=".5" arcwidth="0.2" cycletime="1.5" range="700"/>
+    <beam_port x="122.9" y="6.98" z="-169.6" damage=".072" playerdamage=".5" arcwidth="0.2" cycletime="1.5" range="700"/>
+	<!-- RAM beams have been set to fighter-killing levels of the NPC beams- 7x Saber's damage and 7x their cooldown-they require 265% manual to get saber's fire rate of 30 seconds -->
+    <beam_port x="67.53" y="8.30" z="-23.30" damage="10.5" playerdamage="73.5" arcwidth="0.2" cycletime="210.0" range="800"/>
+    <beam_port x="-67.53" y="8.30" z="-23.30" damage="10.5" playerdamage="73.5" arcwidth="0.2" cycletime="210.0" range="800"/>
+    <torpedo_tube x="0" y="8.35" z="258.74"/>
+    <torpedo_tube x="0" y="8.35" z="258.74"/>
+    <torpedo_tube x="0" y="8.35" z="258.74"/>
+    <torpedo_storage type="trp" amount="30"/>  <!-- Homing"-->
+    <torpedo_storage type="nuk" amount="8"/>  <!-- LR Nuke-->
+    <torpedo_storage type="min" amount="6"/>  <!-- Mine"-->
+    <torpedo_storage type="emp" amount="12"/>  <!-- EMP"-->
+    <torpedo_storage type="shk" amount="20"/>  <!-- Plasma Shock"-->
+    <torpedo_storage type="bea" amount="2"/>  <!-- Beacon"-->
+    <torpedo_storage type="pro" amount="2"/>  <!-- Probe"-->
+    <torpedo_storage type="tag" amount="2"/>  <!-- Tag"-->
+    <engine_port x="0" y="-9.22" z="-300"/>
+    <engine_port x="0" y="29.64" z="-300"/>
+    <engine_port x="-81.6" y="5.1" z="-235.4"/>
+    <engine_port x="81.6" y="5.1" z="-235.4"/>
+    <engine_port x="-153.0" y="10.9" z="-187.4"/>
+    <engine_port x="153.0" y="10.9" z="-187.4"/>
+    <impulse_point x="-82" y="22" z="-233.7"/> <!-- UE Dec2019 -->
+    <impulse_point x="82" y="22" z="-233.7"/> <!-- UE Dec2019 -->
+    <maneuver_point x="-114.64" y="8.35" z="35.87"/> <!-- UE Dec2019 -->
+    <maneuver_point x="114.64" y="8.35" z="35.87"/> <!-- UE Dec2019 -->
+    <long_desc text="Zeus class Dreadnought^Standard TSN Heavy Division Flagship^2 heavy beams, 1 Main Beam Cannon^ 2 Fighter defense RAM arrays, 2 rear defense beams^3 Torpedo tubes, 2 cloak-defense Fighter bays^Stores for 8 nukes, 30 homing, 6 mines, 12 ECM, 20 PShock."/>
+    <carrierload baycount="2" bomber="0"/>
+  </vessel>
+    
   <vessel uniqueID="25" side="0" classname="Orion Class" broadType="player">
 	 <!--  Created by Rakaydos -->
     <art meshfile="dat/artemis-scout.dxs" diffuseFile="dat/artemis_diffuse.png" glowFile="dat/artemis_illum.png" specularFile="dat/artemis_specular.png" scale="0.2" pushRadius="150"/>
@@ -1667,7 +1698,190 @@
 	<maneuver_point x="1.882262" y="122.503403" z="-186.591629"/>
     <long_desc text="Small mobile shipyard suitable for major repairs, and refits of most TSN vessels." />
   </vessel>
+  
+      <!-- ** MOD TSN NPC VESSELS 1700 - 1800** -->
 
+  <vessel    uniqueID="1700"    side="1"       classname="Zeus class" broadType="command warship">
+    <art     meshfile="dat/artemis-5.dxs"    diffuseFile="dat/artemis_diffuse.png"
+             glowFile="dat/artemis_illum.png"    specularFile="dat/artemis_specular.png" scale="0.3" pushRadius="150"/>
+	<!-- Weapons and Shields modified (1/4)-->
+    <shields front="225" back="100"/>
+	<!-- NPC 300% front shields (0 coolant, 15 nodes) 200% rear shields (0 coolant, 8 nodes) total NPC values front="225" back="100"-->
+    <performance turnrate="0.002" topspeed="0.5" shipefficiency=".72" warpefficiency="1.44" jumpefficiency="1.2"/>
+	<!-- NPC 265% beam output, 8 coolant = x7 damage. NPC stats reflect x7 fire rate from that power setting, and recieve 7x damage from difficulty -->
+    <beam_port x="0" y="40" z="212" damage=".8572" playerdamage="6" arcwidth="0.2" cycletime=".857" range="2000"/>
+    <beam_port x="11.31" y="-16.15" z="15.67" damage=".536" playerdamage="3.75" arcwidth="0.4" cycletime=".857" range="1000"/>
+    <beam_port x="-11.31" y="-16.15" z="15.67" damage=".536" playerdamage="3.75" arcwidth="0.4" cycletime=".857" range="1000"/>
+<!-- Point defense beams at 300%, no-manual equivilance. Requires Anti-torp to be useful -->
+    <beam_port x="-122.9" y="6.98" z="-169.6" damage=".072" playerdamage=".5" arcwidth="0.2" cycletime=".5" range="700"/>
+    <beam_port x="122.9" y="6.98" z="-169.6" damage=".072" playerdamage=".5" arcwidth="0.2" cycletime=".5" range="700"/>
+	<!-- RAM beams have been set to fighter-killing levels of the NPC beams- 7x Saber's damage and 7x their cooldown-they require 265% manual to get saber's fire rate-->
+    <beam_port x="67.53" y="8.30" z="-23.30" damage="10.5" playerdamage="73.5" arcwidth="0.2" cycletime="30.0" range="800"/>
+    <beam_port x="-67.53" y="8.30" z="-23.30" damage="10.5" playerdamage="73.5" arcwidth="0.2" cycletime="30.0" range="800"/>
+	<!-- NPC fire two homings and a pshock at minimal cycle times at 100% tube power, 0 coolant -->
+	<drone_port x="0" y="8.35" z="258.74" damage="25" cycletime="15" range="4900"/>
+	<drone_port x="0" y="8.35" z="258.74" damage="25" cycletime="15" range="4800"/>
+	<drone_port x="0" y="8.35" z="258.74" damage="70" cycletime="15.2" range="4700"/>
+    <engine_port x="0" y="-9.22" z="-300"/>
+    <engine_port x="0" y="29.64" z="-300"/>
+    <engine_port x="-81.6" y="5.1" z="-235.4"/>
+    <engine_port x="81.6" y="5.1" z="-235.4"/>
+    <engine_port x="-153.0" y="10.9" z="-187.4"/>
+    <engine_port x="153.0" y="10.9" z="-187.4"/>
+    <impulse_point x="-82" y="22" z="-233.7"/> <!-- UE Dec2019 -->
+    <impulse_point x="82" y="22" z="-233.7"/> <!-- UE Dec2019 -->
+    <maneuver_point x="-114.64" y="8.35" z="35.87"/> <!-- UE Dec2019 -->
+    <maneuver_point x="114.64" y="8.35" z="35.87"/> <!-- UE Dec2019 -->
+    <long_desc text="Zeus class Dreadnought, fully crewed for optimum performance.^Inefficient warp geometry gives it great combat power but poor cruising range.^Combat Power settings: ^265%/8 Beams,    100%/0 Tubes, ^200%/4 Impulse,  100%/0 Warp ^300%/0 F shield, 200%/0 R shield"/>
+  </vessel>
+  
+  <vessel    uniqueID="1701"    side="1"       classname="Athena Class" broadType="medium warship">
+    <art     meshfile="dat/Cataphract.dxs"    diffuseFile="dat/artemis_diffuse.png"
+             glowFile="dat/artemis_illum.png"    specularFile="dat/artemis_specular.png" scale="0.28" pushRadius="150"/>
+    <internal_data file="dat/Cataphract2.snt"/>
+	<!-- Weapons and Shields modified (1/4)-->
+    <shields front="80" back="45"/>
+	<!-- PC Shields front="40" back="30" -->
+    <performance turnrate="0.0035" topspeed=".66" shipefficiency=".6" warpefficiency="1.2" jumpefficiency="1.1"/>
+  <beam_port x="0" y="50" z="222" damage="10.5" playerdamage="73.5" arcwidth="0.05" cycletime="43.0" range="1500"/>
+  <beam_port x="0" y="-40" z="210" damage=".4762" playerdamage="3.34" arcwidth="0.285" cycletime=".857" range="1100"/>
+  <beam_port x="126.5" y="22" z="122" damage=".286" playerdamage="1.5" arcwidth=".425" cycletime=".857" range="800"/>
+  <beam_port x="-126.5" y="22" z="122" damage=".286" playerdamage="1.5" arcwidth=".425" cycletime=".857" range="800"/>
+	<!-- RAM beams have been set to fighter-killing levels of the NPC beams- 7x Saber's damage and 7x their cooldown-they require 265% manual to get saber's fire rate of 30 seconds -->
+    <beam_port x="70.60" y="7.42" z="-19.08" damage="10.5" playerdamage="73.5" arcwidth="0.1" cycletime="30.0" range="600"/>
+    <beam_port x="-70.60" y="7.42" z="-19.08" damage="10.5" playerdamage="73.5" arcwidth="0.1" cycletime="30.0" range="600"/>
+	<drone_port x="0" y="8.35" z="258.74" damage="70" cycletime="15.0" range="1450"/>
+	<drone_port x="0" y="8.35" z="258.74" damage="25" cycletime="15.0" range="1450"/>
+    <engine_port x="0" y="-9.22" z="-300"/>
+    <engine_port x="0" y="29.64" z="-300"/>
+    <engine_port x="-111.755783" y="-44.202168" z="-242.740082"/>
+    <engine_port x="111.755783" y="-44.202168" z="-242.740082"/>
+    <engine_port x="0" y="97.875313" z="-181.449524"/>
+    <impulse_point x="-111.755783" y="-44.202168" z="-242.740082"/> <!-- UE Dec2019 -->
+    <impulse_point x="111.755783" y="-44.202168" z="-242.740082"/> <!-- UE Dec2019 -->
+    <maneuver_point x="-146" y="8.75" z="79.37"/> <!-- UE Dec2019 -->
+    <maneuver_point x="146" y="8.75" z="79.37"/> <!-- UE Dec2019 -->
+    <long_desc text="Athena class System Defense Battleship^Well armed and shielded, but lacking cruising range for deployments requiring stellar cartography^Combat Power/coolant settings: ^265%/8 Beams,    100%/0 Tubes ^200%/4 Impulse,  100%/0 Warp ^200%/0 F shield, 150%/0 R shield"/>
+  </vessel>
+  
+  <vessel  uniqueID="1702" side="1" classname="Nemesis Class"   broadType="medium warship">
+    <art meshfile="dat/TSN/Player/nemesis.dxs" diffuseFile="dat/TSN/Player/nemesis_diffuse.png" glowFile="dat/TSN/Player/nemesis_illum.png" specularFile="dat/TSN/Player/artemis_specular.png" scale="0.2" pushRadius="150"/>
+    <internal_data file="dat/TSN/Player/nemesis.snt"/>
+	<!-- Weapons and Shields modified (1/4)-->	
+	<!-- shields front="20" back="15" 200%/2 front, 150%/0 rear (1/4)-->
+    <shields front="40" back="22.5" />
+	<performance   turnrate="0.0068" topspeed="3.3333" shipefficiency="0.6" warpefficiency="0.3" jumpefficiency="1.0"/>
+	<beam_port   x="-55.4"  y="8.3" z="215.74" damage="0.1666667" playerdamage="1.5" arcwidth="0.4" cycletime=".641" range="800"/>
+    <beam_port   x="55.4"  y="8.3" z="215.74" damage="0.1666667" playerdamage="1.5" arcwidth="0.4" cycletime=".641" range="800"/>
+    <beam_port   x="-35.764229"  y="8.3" z="255.250519" damage="0.357143" playerdamage="2.5" arcwidth="0.1" cycletime=".641" range="1100"/>
+	<beam_port   x="35.764229"  y="8.3" z="255.250519" damage="0.357143" playerdamage="2.5" arcwidth="0.1" cycletime=".641" range="1100"/>
+	<drone_port x="0" y="8.35" z="258.74" damage="1" cycletime="10.0" range="4500"/>
+	<engine_port x="0" y="-9.22" z="-240" />
+	<engine_port x="0"  y="29.64" z="-245"/>
+	<engine_port x="-90.755783" y="-35.202168" z="-145.740082"/>
+	<engine_port x="90.755783" y="-35.202168" z="-145.740082"/>
+	<engine_port x="-60" y="67.875313" z="-210.449524"/>
+	<engine_port x="60" y="67.875313" z="-210.449524"/>
+    <impulse_point x="0" y="29.25" z="-242"/> <!-- MidHigh Z-242.68 -->
+    <impulse_point x="0" y="-8" z="-230"/> <!-- MidLow X0.45 Z-230.72"-->
+    <maneuver_point x="94.61" y="-33.77" z="-143.99"/> <!-- Starboard -->
+    <maneuver_point x="-94.61" y="-33.77" z="-143.99"/> <!-- Port -->
+	<long_desc text="Nemesis Class high-firepower Beam Interceptor^Approaching the firepower of a Dreadnought with the fastest warp engines in the fleet, it sacrifices shields and carries a minimal decoy launcher. ^Combat power settings:^265%/8 Beams,    166%/2 Tubes ^100%/0 Impulse,  100%/0 Warp ^200%/2 F shield, 150%/0 R shield"/>
+  </vessel>
+
+  <vessel uniqueID="1703" side="1" classname="Valkyrie Class" broadType="medium warship">
+    <art meshfile="dat/TSN/Player/missile-cruiser-mkII.dxs" diffuseFile="dat/TSN/Player/artemis_diffuse_mkII.png" glowFile="dat/TSN/Player/artemis_illum_mkII.png" specularFile="dat/TSN/Player/artemis_specular.png" scale="0.2" pushRadius="150" />
+    <internal_data file="dat/TSN/Player/missile-cruiser-mkII.snt" />
+	<!-- Weapons and Shields modified (1/4)-->
+    <shields front="36" back="36" />
+    <performance turnrate="0.004" topspeed="2" shipefficiency="0.6" warpefficiency="0.3" jumpefficiency="1.0" />
+    <beam_port x="-110" y="8.35" z="258.74" damage="0.25" playerdamage="2.8" arcwidth="0.5" cycletime="6.0" range="1000" />
+    <beam_port x="110" y="8.35" z="258.74" damage="0.25" playerdamage="2.8" arcwidth="0.5" cycletime="6.0" range="1000" />
+	<drone_port x="0" y="8.35" z="258.74" damage="25" cycletime="5.66" range="4500"/>
+	<drone_port x="0" y="8.35" z="258.74" damage="25" cycletime="5.76" range="4000"/>
+	<drone_port x="0" y="8.35" z="258.74" damage="70" cycletime="5.86" range="3500"/>
+    <engine_port x=" 115.00" y="6" z="-240.89" />
+    <engine_port x="-115.00" y="6" z="-240.89" />
+    <engine_port x="0" y="-5.22" z="-230" />
+    <engine_port x="0" y="34.64" z="-240" />
+    <engine_port x="0" y="99.1" z="-255.5" />
+    <engine_port x="0" y="-81.0" z="-173.7" />
+    <impulse_point x="0" y="30" z="-240"/> <!-- UpMid Main -->
+    <impulse_point x="0" y="-7.4" z="-230"/> <!-- LowMid Main-->
+    <maneuver_point x="145.63" y="10" z="97"/> <!-- Starboard -->
+    <maneuver_point x=" -145.63" y="10" z="97"/> <!-- Port -->
+    <long_desc text="Valkyrie Class Torpedo Cruiser^Fast artillery cruiser with deep magazines.^Combat Power Settings:^100%/0 Beams,    265%/8 Tubes ^100%/0 Impulse,  100%/0 Warp ^200%/2 F shield, 200%/2 R shield" />
+  </vessel>
+  
+  <vessel uniqueID="1704" side="1" classname= "Apollo Class" broadType="medium warship">
+    <art meshfile="dat/artemis.dxs" diffuseFile="dat/LightCruiser_Diffuse.png" glowFile="dat/LightCruiser_Glow.png" specularFile="dat/LightCruiser_Specular.png" scale="0.2" pushRadius="150" />
+    <internal_data file="dat/artemis.snt" />
+	<!-- Weapons and Shields modified (1/4)-->
+    <shields front="83" back="27" />
+    <performance turnrate="0.004" topspeed="2" shipefficiency="0.6" warpefficiency="0.3" jumpefficiency="1.0" />
+    <beam_port x="-10" y="8.35" z="258.74" damage="0.536" playerdamage="3.75" arcwidth="0.35" cycletime=".7143" range="1000" />
+    <beam_port x="10" y="8.35" z="258.74" damage="0.536" playerdamage="3.75" arcwidth="0.35" cycletime=".7143" range="1000" />
+	<drone_port x="0" y="8.35" z="258.74" damage="25" cycletime="5.76" range="4000"/>
+	<drone_port x="0" y="8.35" z="258.74" damage="70" cycletime="5.86" range="3500"/>
+    <engine_port x=" 82.93" y="5" z="-240.89" />
+    <engine_port x="-82.93" y="5" z="-240.89" />
+    <engine_port x="0" y="-9.22" z="-300" />
+    <engine_port x="0" y="29.64" z="-300" />
+    <impulse_point x="0" y="29.64" z="-256.6"/> <!-- UpMid Main -->
+    <impulse_point x="0" y="-9.22" z="-256"/> <!-- LowMid Main-->
+    <maneuver_point x="145" y="10" z="79"/> <!-- Starboard -->
+    <maneuver_point x="-145" y="10" z="79"/> <!-- Port -->
+    <long_desc text="Apollo Class Heavy Cruiser^Well defended cruiser with an efficent warp drive, for sustained foward engagements.^Combat Power settings:^265%/8 Beams,    100%/0 Tubes ^100%/0 Impulse,  100%/0 Warp ^250%/4 F shield, 150%/0 R shield"/>
+  </vessel>
+  
+  <vessel uniqueID="1705" side="1" classname="Allegiance Class" broadType="medium warship">
+    <art meshfile="dat/TSN/Player/Battlecruiser.dxs" diffuseFile="dat/artemis_diffuse.png" glowFile="dat/artemis_illum.png" specularFile="dat/artemis_specular.png" scale="0.2" pushRadius="150" />
+    <internal_data file="dat/TSN/Player/Battlecruiser.snt" />
+	<!-- Weapons and Shields modified (1/4)-->
+    <shields front="100" back="36" />
+    <performance turnrate="0.004" topspeed="2" shipefficiency="0.6" warpefficiency="0.3" jumpefficiency="1.0" />
+    <beam_port x="0" y="-6.1" z="278.9" damage="0.7143" playerdamage="5" arcwidth="0.15" cycletime="1.7143" range="1500" />
+    <beam_port x="-102.14" y="8.35" z="258.74" damage="0.4286" playerdamage="3" arcwidth="0.4" cycletime=".857" range="1000" />
+    <beam_port x=" 102.14" y="8.35" z="258.74" damage="0.4286" playerdamage="3" arcwidth="0.4" cycletime=".857" range="1000" />
+	<drone_port x="0" y="8.35" z="258.74" damage="25" cycletime="5.76" range="4500"/>
+	<drone_port x="0" y="8.35" z="258.74" damage="70" cycletime="5.86" range="4000"/>
+    <engine_port x="84.93" y="63" z="-242.89" />
+    <engine_port x="-84.93" y="63" z="-242.89" />
+    <engine_port x="0" y="-9.22" z="-280" />
+    <engine_port x="0" y="29.64" z="-300" />
+    <engine_port x="0" y="69.64" z="-260" />
+    <impulse_point x="-75.88" y="70.2" z="-235.28"/><!-- Port UE Dec2019 -->
+    <impulse_point x="75.88" y="70.2" z="-235.28"/> <!-- Starboard UE Dec2019 -->
+    <impulse_point x="0" y="30" z="-280.4"/> <!-- UpMid Main UE Dec2019 -->
+    <maneuver_point x="-146.05" y="10" z="79.11" /> <!-- Port UE Dec2019 -->
+    <maneuver_point x="146.05" y="10" z="79.11" /> <!-- Starboard UE Dec2019 -->
+    <long_desc text="Allegiance Class Battlecruiser^Fast heavy combatant, well rounded with extended range Excaliber Beam^Combat Power settings:^265%/8 Beams,    100%/0 Tubes ^100%/0 Impulse,  100%/0 Warp ^250%/4 F shield, 150%/0 R shield" />
+  </vessel>
+  
+    <vessel uniqueID="1706" side="1" classname="Ares II Class" broadType="medium warship">
+    <art meshfile="dat/TSN/Player/frigate.dxs" diffuseFile="dat/artemis_diffuse.png" glowFile="dat/artemis_illum.png" specularFile="dat/artemis_specular.png" scale="0.2" pushRadius="150" />
+        <internal_data file="dat/TSN/Player/frigate.snt" />
+		<!-- Weapons and Shields modified (1/4)-->
+    <shields front="40" back="40" />
+    <performance turnrate="0.004" topspeed="2.0" shipefficiency="0.6" warpefficiency="0.3" jumpefficiency="1.0" />
+    <beam_port x="0.00" y="-8.35" z="220.0" damage="10.5" playerdamage="73.5" arcwidth="0.12" cycletime="30.0" range="800" />
+	<beam_port x="185.4" y="-13.75" z="-133.35" damage="10.5" playerdamage="73.5" arcwidth="0.12" cycletime="30.0" range="800" />
+	<beam_port x="-185.4" y="-13.75" z="-133.35" damage="10.5" playerdamage="73.5" arcwidth="0.12" cycletime="30.0" range="800" />
+    <beam_port x="0.0" y="24.00" z="170.0" damage="0.3215" playerdamage="2.25" arcwidth="0.58" cycletime=".7143" range="1000" />
+	<drone_port x="0" y="8.35" z="258.74" damage="1" cycletime="6.0" range="5000"/>   
+    <engine_port x="145.93" y="-15" z="-200.89" />
+    <engine_port x="-145.93" y="-15" z="-200.89" />
+    <engine_port x="45" y="-9.22" z="-250" />
+    <engine_port x="45" y="29.64" z="-250" />
+    <engine_port x="-45" y="-9.22" z="-250" />
+    <engine_port x="-45" y="29.64" z="-250" />
+    <impulse_point x="45" y="29.64" z="-250"/> <!-- Starboard Main -->
+    <impulse_point x="-45" y="29.64" z="-250"/> <!-- Port Main-->
+    <maneuver_point x="146.21" y="8.86" z="81.51"/> <!-- Starboard -->
+    <maneuver_point x="-146.21" y="8.86" z="81.51"/> <!-- Port -->
+    <long_desc text="Ares II Class Fighter-Interdiction Light Cruiser^A fast interdictor with deadly, long charging RAM arrays.^Combat System Power:^265%/8 Beams,    125%/0 Tubes ^100%/0 Impulse,  100%/0 Warp ^200%/2 F shield, 200%/2 R shield"/>
+  </vessel>
+  
   <!-- ****************************** Kralien VESSELS 2000 - 2099**************************************** -->
   <vessel    uniqueID="2000"    side="2"       classname="Cruiser" broadType="small">
     <art     meshfile="dat/ENE_RoundA.dxs"    diffuseFile="dat/roundA_diffuse.png"
