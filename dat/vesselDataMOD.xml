@@ -1736,9 +1736,9 @@
   </vessel>
   
   <vessel    uniqueID="1701"    side="1"       classname="Athena Class" broadType="medium warship">
-    <art     meshfile="dat/Cataphract.dxs"    diffuseFile="dat/artemis_diffuse.png"
+    <art     meshfile="dat/TSN/Player/Cataphract.dxs"    diffuseFile="dat/artemis_diffuse.png"
              glowFile="dat/artemis_illum.png"    specularFile="dat/artemis_specular.png" scale="0.28" pushRadius="150"/>
-    <internal_data file="dat/Cataphract2.snt"/>
+    <internal_data file="dat/TSN/Player/Cataphract2.snt"/>
 	<!-- Weapons and Shields modified (1/4)-->
     <shields front="80" back="45"/>
 	<!-- PC Shields front="40" back="30" -->
