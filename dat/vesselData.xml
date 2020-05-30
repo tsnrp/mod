@@ -1,5 +1,5 @@
 <!-- vessel_data is the big wrapper for all the vessel objects -->
-<!-- TSN Mod Version 2.013 -->
+<!-- TSN Mod Version 2.014 -->
 <!--
  See GitHub reference for patch notes: https://github.com/tsnrp/mod
 -->
@@ -126,6 +126,24 @@
     <taunt immunity="is a decorated hero who ignores taunts about her bravery" text="Only a coward hides in a massive battlewagon like that!"/>
     <taunt immunity="is a human who has never even seen the Ximni homeworld" text="The only thing that smells worse than dragon breath is the Ximni home planet!"/>
   </hullRace>
+	
+	  <hullRace ID="20" name="Dinkuno" keys="FactionDinkuno">
+    <taunt immunity="Belongs to the Uphan religious group" text="Didn’t you have your large meal yesterday?"/>
+    <taunt immunity="Has binocular mutation" text="Your four eyes are your most disgusting feature"/>
+    <taunt immunity="Led infantry forces on surface engagements on various worlds" text="You’re so weak my grandmother could take you!"/>
+  </hullRace>
+	
+	  <hullRace ID="21" name="Budon" keys="FactionBudron">
+    <taunt immunity="has particularly good stealth organs" text="I can seee you!"/>
+    <taunt immunity="Has a first in digestive chemistry" text="Was that deliberate or did you just fart and explode half your crew?"/>
+    <taunt immunity="Is mild-mannered" text="Hey, you need to take a chill pill"/>
+  </hullRace>
+	
+		  <hullRace ID="22" name="Sechatzal" keys="FactionSechatzal">
+    <taunt immunity="has particularly good stealth organs" text="I can seee you!"/>
+    <taunt immunity="is ancient" text="Should you not still be in the spawning pools?"/>
+    <taunt immunity="is a recon expert" text="Look the point is to get the info.. Not display it!"/>
+  </hullRace>
 
     <!-- ****************************** TSN capital ships 0 - 7**************************************** -->
   <vessel    uniqueID="0"    side="0"       classname="Artemis Class" broadType="player">
@@ -152,10 +170,10 @@
     <engine_port x="-82.93" y="5" z="-240.89"/>
     <engine_port x="0" y="-9.22" z="-300"/>
     <engine_port x="0" y="29.64" z="-300"/>
-	<maneuver_point x=" 82.93" y="5" z="-240.89"/>
-	<maneuver_point x="-82.93" y="5" z="-240.89"/>
-	<impulse_point x="0" y="-9.22" z="-300"/> 
-    <impulse_point x="0" y="29.64" z="-300"/>
+    <impulse_point x="0" y="29.64" z="-256.6"/> <!-- UpMid Main -->
+    <impulse_point x="0" y="-9.22" z="-256"/> <!-- LowMid Main-->
+    <maneuver_point x="145" y="10" z="79"/> <!-- Starboard -->
+    <maneuver_point x="-145" y="10" z="79"/> <!-- Port -->
 	<drone_port x="0" y="8.35" z="258.74" damage="20" cycletime="30.0" range="5000"/>  
     <drone_port x="0" y="8.35" z="258.74" damage="20" cycletime="30.0" range="2000"/> 
     <long_desc text="Artemis Class Light Cruiser.^General purpose patrol vessel and first of the Light Cruiser classes to be designed.^2 Standard beams^2 Torpedo tubes^Stores for 2 nukes, 8 homing, 6 mines, 4 EMP, 4 PShock."/>
@@ -180,9 +198,11 @@
     <torpedo_storage type="tag" amount="8"/>  <!-- Tag"-->
     <engine_port x="0" y="-9.22" z="-300"/>
     <engine_port x="0" y="29.64" z="-300"/>
-	<drone_port x="0" y="8.35" z="258.74" damage="20" cycletime="30.0" range="5000"/>  
-    <impulse_point x="0" y="-9.22" z="-300"/>   
-    <impulse_point x="0" y="29.64" z="-300"/> 
+    <drone_port x="0" y="8.35" z="258.74" damage="20" cycletime="30.0" range="5000"/>
+    <impulse_point x="0" y="29.64" z="-262.75"/> <!-- UpMid Main -->
+    <impulse_point x="0" y="-9.22" z="-255.4"/> <!-- LowMid Main-->
+    <maneuver_point x="101.48" y="10" z="81"/> <!-- Starboard -->
+    <maneuver_point x="-101.48" y="10" z="81"/> <!-- Port -->
     <long_desc text="TSN Scout^Long range scout vessel of the TSN.^1 forward beam^1 Torpedo tube^Stores for 6 homing, 2 mines, 2 ECM, 1 PShock."/>
   </vessel>
 
@@ -212,7 +232,11 @@
     <engine_port x="-111.755783" y="-44.202168" z="-242.740082"/>
     <engine_port x="111.755783" y="-44.202168" z="-242.740082"/>
     <engine_port x="0" y="97.875313" z="-181.449524"/>
-    <long_desc text="TSN Battleship^Beam-heavy combat vessel of the TSN.^4 forward beams^2 Torpedo tubes^Stores for 2 nukes, 8 homing, 6 mines, 4 ECM, 5 PShock."/>
+        <impulse_point x="-111.755783" y="-44.202168" z="-242.740082"/>
+    <impulse_point x="111.755783" y="-44.202168" z="-242.740082"/>
+    <maneuver_point x="-146" y="8.75" z="79.37"/>
+    <maneuver_point x="146" y="8.75" z="79.37"/>
+	  <long_desc text="TSN Battleship^Beam-heavy combat vessel of the TSN.^4 forward beams^2 Torpedo tubes^Stores for 2 nukes, 8 homing, 6 mines, 4 ECM, 5 PShock."/>
   </vessel>
 
   <vessel    uniqueID="3"    side="0"       classname="Missile Cruiser" broadType="player">
@@ -240,6 +264,10 @@
     <engine_port x="0" y="29.64" z="-300"/>
     <engine_port x="0" y="99.1" z="-176.5"/>
     <engine_port x="0" y="-81.0" z="-173.7"/>
+    <impulse_point x="-82" y="22" z="-229.62"/>
+    <impulse_point x="82" y="22" z="-229.62"/>
+    <maneuver_point x="-145.75" y="8.35" z="85.2"/>
+    <maneuver_point x="145.75" y="8.35" z="85.2"/>
     <long_desc text="TSN Missile Cruiser^Specialized vessel of the TSN.^4 Torpedo tubes^Stores for 8 nukes, 20 homing, 14 mines, 12 ECM, 6 PShock."/>
   </vessel>
 
@@ -271,6 +299,10 @@
     <engine_port x="81.6" y="5.1" z="-235.4"/>
     <engine_port x="-153.0" y="10.9" z="-187.4"/>
     <engine_port x="153.0" y="10.9" z="-187.4"/>
+    <impulse_point x="-82" y="22" z="-233.7"/>
+    <impulse_point x="82" y="22" z="-233.7"/>
+    <maneuver_point x="-114.64" y="8.35" z="35.87"/>
+    <maneuver_point x="114.64" y="8.35" z="35.87"/>
     <long_desc text="TSN Dreadnought^Ultimate wartime vessel of the TSN.^3 primary beams^1 main beam cannon^3 Torpedo tubes^Stores for 4 nukes, 10 homing, 8 mines, 5 ECM, 4 PShock."/>
     <carrierload baycount="2"/>
   </vessel>
@@ -302,6 +334,10 @@
     <engine_port x="47.541462" y="-9.202737" z="-245.196808"/>
     <engine_port x="0" y="25.578470" z="-219.469696"/>
     <engine_port x="0" y="-9.545690" z="-216.306778"/>
+    <impulse_point x="0" y="25.578470" z="-219.469696"/>
+    <impulse_point x="0" y="-9.545690" z="-216.306778"/>
+    <maneuver_point x="-96.1" y="-3.73" z="-219.46"/>
+    <maneuver_point x="96.1" y="-3.73" z="-216.30"/>
       <long_desc text="TSN Medium Carrier^Standard carrier of the TSN.^2 primary beams^1 Torpedo tube^Stores for 1 nukes, 6 homing, 4 mines, 2 ECM, 2 PShock."/>
   </vessel>
 
@@ -331,6 +367,10 @@
     <engine_port x="67.803383" y="-4.989450" z="-238.086441"/>
     <engine_port x="-126.700760" y="-11.772187" z="-272.095581"/>
     <engine_port x="126.700760" y="-11.772187" z="-272.095581"/>
+    <impulse_point x="0" y="26.783722" z="-195.166214"/>
+    <impulse_point x="0" y="-19.618479" z="-191.015793"/>
+    <maneuver_point x="-113.75" y="-15" z="83.87"/>
+    <maneuver_point x="113.75" y="-15" z="83.87"/>
     <long_desc text="TSN Mine Layer^Specialized vessel of the TSN.  Fast and tough.^1 primary beam^4 Torpedo tubes^Stores for 10 homing and 25 mines."/>
   </vessel>
 
@@ -371,6 +411,10 @@
     <engine_port x="76.5" y="21.562883" z="-248.874771"/>
     <engine_port x="82.1" y="-6.105583" z="-241.444992"/>
     <engine_port x="116.3" y="-9.108684" z="-241.983398"/>
+    <impulse_point x="-47.7" y="6.489565" z="-210.410187"/>
+    <impulse_point x="47.7" y="6.489565" z="-210.410187"/>
+    <maneuver_point x="-123.13" y="3.2" z="142"/>
+    <maneuver_point x="123.13" y="3.2" z="142"/>
     <long_desc text="TSN Juggernaut^Secret REAL ultimate wartime vessel of the TSN.^2 primary beams^2 main beam cannons^4 Torpedo tubes^Massive stores and 3 fighters."/>
     <carrierload baycount="3"/>
   </vessel>
@@ -398,6 +442,10 @@
     <torpedo_storage type="tag" amount="5"/>  <!-- Tag"-->
     <engine_port x="-82" y="2" z="-249"/>
     <engine_port x="82" y="2" z="-249"/>
+    <impulse_point x="-82" y="2" z="-249.26"/>
+    <impulse_point x="82" y="2" z="-249.26"/>
+    <maneuver_point x="-85" y="-13.37" z="127.11"/>
+    <maneuver_point x="85" y="-13.37" z="127.11"/>
     <long_desc text="Ximni Cruiser^Standard vessel of the Ximni.^3 beams^2 Torpedo tubes^Stores for 2 nukes, 8 homing, 6 mines, 4 ECM, 2 PShock."/>
   </vessel>
 
@@ -422,6 +470,10 @@
     <engine_port x=" 48" y="0" z="0"/>
     <engine_port x="0" y="-48" z="0"/>
     <engine_port x="0" y=" 48" z="0"/>
+    <impulse_point x="-31" y="13.66" z="-25.12"/>
+    <impulse_point x="31" y="13.66" z="-25.12"/>
+    <maneuver_point x="-80" y="2.16" z="141.33"/>
+    <maneuver_point x="80" y="2.16" z="141.33"/>
     <long_desc text="Ximni Scout^Long range scout vessel of the Ximni.^1 forward beam^1 Torpedo tube^Stores for 6 homing, 2 mines, 2 ECM, 1 PShock."/>
   </vessel>
 
@@ -450,6 +502,10 @@
     <engine_port x=" 85.449120" y="-8.132334" z="-201.552475"/>
     <engine_port x=" 45.808228" y="-1.427677" z="-189.611588"/>
     <engine_port x=" 67.651352" y="-6.247528" z="-195.777618"/>
+    <impulse_point x="-67.651352" y="-6.247528" z="-195.777618"/>
+    <impulse_point x=" 67.651352" y="-6.247528" z="-195.777618"/>
+    <maneuver_point x="-70.89" y="-5.77" z="158.76"/>
+    <maneuver_point x=" 70.89" y="-5.77" z="158.76"/>
     <long_desc text="Ximni Missile Cruiser^Specialized vessel of the Ximni.^4 Torpedo tubes^Stores for 8 nukes, 20 homing, 14 mines, 12 ECM, 6 PShock."/>    
   </vessel>
 
@@ -480,6 +536,10 @@
     <engine_port x=" 109" y="-21.496468" z="-249.583313"/>
     <engine_port x="-134" y="-26.184715" z="-249.640533"/>
     <engine_port x=" 134" y="-26.184715" z="-249.640533"/>
+    <impulse_point x="-130" y="-25" z="-250.6"/>
+    <impulse_point x= "130" y="-25" z="-250.6"/>
+    <maneuver_point x="-149.76" y="-19.61" z="114.82"/>
+    <maneuver_point x= "149.76" y="-16.61" z="114.82"/>
     <long_desc text="Ximni Battleship^Beam-heavy combat vessel of the Ximni.^4 forward beams^2 Torpedo tubes^Stores for 2 nukes, 8 homing, 6 mines, 4 ECM, 5 PShock."/>
   </vessel>
 
@@ -506,6 +566,10 @@
     <engine_port x= "111" y="0" z="-96"/>
     <engine_port x="-64" y="-39" z="-128"/>
     <engine_port x= "64" y="-39" z="-128"/>
+    <impulse_point x="-50" y="-25" z="-105.75"/>
+    <impulse_point x= "50" y="-25" z="-105.75"/>
+    <maneuver_point x="-136.81" y="17.31" z="39"/>
+    <maneuver_point x= "136.81" y="17.31" z="39"/>
     <long_desc text="Ximni Carrier^Standard carrier of the Ximni.^2 forward beams^1 Torpedo tube^Stores for 1 nukes, 6 homing, 4 mines, 2 ECM, 2 PShock."/>
   </vessel>
 
@@ -538,6 +602,10 @@
     <engine_port x="59.196365" y="-35.144402" z="-115.391106"/>
     <engine_port x="-75.196365" y="-25.144402" z="-115.391106"/>
     <engine_port x="75.196365" y="-25.144402" z="-115.391106"/>
+    <impulse_point x="-74" y="-33.4" z="-115.391106"/>
+    <impulse_point x="74" y="-33.4" z="-115.391106"/>
+    <maneuver_point x="-150.66" y="18.46" z="19"/>
+    <maneuver_point x="150.66" y="18.46" z="19"/>
     <long_desc text="Ximni Dreadnought^Ultimate wartime vessel of the Ximni.^2 primary beams, long range and fast firing^3 Torpedo tubes^Stores for 4 nukes, 10 homing, 8 mines, 5 ECM, 4 PShock."/>
     <carrierload baycount="2"/>
   </vessel>
@@ -636,11 +704,11 @@
     <engine_port x=" 104.77" y="0" z="-274.73"/>
     <engine_port x="-139.85" y="0" z="-272.95"/>
     <engine_port x=" 139.85" y="0" z="-272.95"/>
-    <maneuver_point x="70.284142" y="32.676861" z="31.966228"/> <!--starry 6 dec-->
-    <maneuver_point x="-70.284142" y="32.676861" z="31.966228"/> <!--starry 6 dec-->
-    <impulse_point x="56.183533" y="17.352430" z="-300.475525"/> <!--starry 6 dec-->
-    <impulse_point x="-56.183533" y="17.352430" z="-300.475525"/> <!--starry 6 dec-->
-    <impulse_point x="1.143921" y="34.571262" z="-270.551270"/> <!--starry 6 dec-->
+    <maneuver_point x="70.284142" y="32.676861" z="31.966228"/>
+    <maneuver_point x="-70.284142" y="32.676861" z="31.966228"/>
+    <impulse_point x="56.183533" y="17.352430" z="-300.475525"/>
+    <impulse_point x="-56.183533" y="17.352430" z="-300.475525"/>
+    <impulse_point x="1.143921" y="34.571262" z="-270.551270"/>
     <carrierload baycount="4" />
     <long_desc text="Pirate Brigantine^Pirate corvette and light carrier.^2 forward beams, 1 rear beam^3 Torpedo tubes^Stores for 12 homing, 4 Mines, 12 ECM, 8 PShock."/>
   </vessel>
@@ -665,12 +733,16 @@
     <torpedo_storage type="bea" amount="4"/>  <!-- Beacon"-->
     <torpedo_storage type="pro" amount="8"/>  <!-- Probe"-->
     <torpedo_storage type="tag" amount="2"/>  <!-- Tag"-->
-	<engine_port x="0" y="-9.22" z="-240" />
-	<engine_port x="0"  y="29.64" z="-245"/>
-	<engine_port x="-90.755783" y="-35.202168" z="-145.740082"/>
-	<engine_port x="90.755783" y="-35.202168" z="-145.740082"/>
-	<engine_port x="-60" y="67.875313" z="-210.449524"/>
-	<engine_port x="60" y="67.875313" z="-210.449524"/>
+    <engine_port x="0" y="-9.22" z="-240" />
+    <engine_port x="0"  y="29.64" z="-245"/>
+    <engine_port x="-90.755783" y="-35.202168" z="-145.740082"/>
+    <engine_port x="90.755783" y="-35.202168" z="-145.740082"/>
+    <engine_port x="-60" y="67.875313" z="-210.449524"/>
+    <engine_port x="60" y="67.875313" z="-210.449524"/>
+    <impulse_point x="0" y="29.25" z="-242"/> <!-- MidHigh Z-242.68 -->
+    <impulse_point x="0" y="-8" z="-230"/> <!-- MidLow X0.45 Z-230.72"-->
+    <maneuver_point x="94.61" y="-33.77" z="-143.99"/> <!-- Starboard -->
+    <maneuver_point x="-94.61" y="-33.77" z="-143.99"/> <!-- Port -->
 	<long_desc text="Nemesis Class Interceptor^Combat scout designed for high-speed interception and strafing runs.^2 standard beams, configured for narrow firing arc, longer range, and reduced intensity.^2 low-intensity beams.^1 Torpedo tube with stores for 8 Homing, 2 EMP, 1 Mine, 8 PShock."/>
   </vessel>
   
@@ -694,6 +766,10 @@
     <torpedo_storage type="tag" amount="8"/>  <!-- Tag"-->
     <engine_port x="0" y="-9.22" z="-300"/>
     <engine_port x="0" y="29.64" z="-300"/>
+    <impulse_point x="0" y="29.64" z="-262.75"/> <!-- UpMid Main -->
+    <impulse_point x="0" y="-9.22" z="-255.4"/> <!-- LowMid Main-->
+    <maneuver_point x="101.48" y="10" z="81"/> <!-- Starboard -->
+    <maneuver_point x="-101.48" y="10" z="81"/> <!-- Port -->
     <long_desc text="TSN Scout, 2239 refit^Long range scout vessel of the TSN.^1 forward beam, networked point defense beam^1 Torpedo tube^Stores for 8 homing, 2 mines, 4 EMPs, 3 PShock."/>
   </vessel>
 
@@ -703,10 +779,10 @@
 		<!-- Weapons and Shields modified (1/4)-->
     <shields front="20" back="20" />
     <performance turnrate="0.004" topspeed="0.6" shipefficiency="0.6" warpefficiency="0.3" jumpefficiency="1.0" />
-    <beam_port x="0.00" y="-8.35" z="220.0" damage="0.38" playerdamage="3.75" arcwidth="0.12" cycletime="30.0" range="800" />
-	<beam_port x="0.00" y="-8.35" z="220.0" damage="0.38" playerdamage="3.75" arcwidth="0.12" cycletime="30.0" range="800" />
-	<beam_port x="0.00" y="-8.35" z="220.0" damage="0.38" playerdamage="3.75" arcwidth="0.12" cycletime="30.0" range="800" />
-    <beam_port x="0.0" y="24.00" z="170.0" damage="0.25" playerdamage="2.25" arcwidth="0.4" cycletime="5.0" range="1000" />
+<beam_port x="0.00" y="0" z="287" damage="0.38" playerdamage="3.75" arcwidth="0.12" cycletime="30.0" range="800" />
+	<beam_port x="0.00" y="0" z="287" damage="0.38" playerdamage="3.75" arcwidth="0.12" cycletime="30.0" range="800" />
+	<beam_port x="0.00" y="0" z="287" damage="0.38" playerdamage="3.75" arcwidth="0.12" cycletime="30.0" range="800" />
+    <beam_port x="0.0" y="50" z="224" damage="0.25" playerdamage="2.25" arcwidth="0.4" cycletime="5.0" range="1000" />
     <torpedo_tube x="0" y="8.35" z="258.74" />
     <torpedo_tube x="0" y="8.35" z="258.74" />
 	<torpedo_storage type="trp" amount="10"/>  <!-- Homing"-->
@@ -723,6 +799,10 @@
     <engine_port x="45" y="29.64" z="-250" />
     <engine_port x="-45" y="-9.22" z="-250" />
     <engine_port x="-45" y="29.64" z="-250" />
+    <impulse_point x="45" y="29.64" z="-250"/> <!-- Starboard Main -->
+    <impulse_point x="-45" y="29.64" z="-250"/> <!-- Port Main-->
+    <maneuver_point x="146.21" y="8.86" z="81.51"/> <!-- Starboard -->
+    <maneuver_point x="-146.21" y="8.86" z="81.51"/> <!-- Port -->
     <long_desc text="Ares Class Light Cruiser^Strike cruiser designed to blast foes at point blank range in a single volley.^Triple R.A.M. Ion beam^1 Standard beam, reduced intensity.^2 Torpedo tubes^Stores for 10 Homing, 2 Nuke, 4 Mine, 4 EMP, 10 PShock."/>
   </vessel>
 
@@ -732,8 +812,8 @@
 	<!-- Weapons and Shields modified (1/4)-->
     <shields front="18" back="18" />
     <performance turnrate="0.004" topspeed="0.6" shipefficiency="0.6" warpefficiency="0.3" jumpefficiency="1.0" />
-    <beam_port x="-110" y="8.35" z="258.74" damage="0.25" playerdamage="2.8" arcwidth="0.5" cycletime="6.0" range="1000" />
-    <beam_port x="110" y="8.35" z="258.74" damage="0.25" playerdamage="2.8" arcwidth="0.5" cycletime="6.0" range="1000" />
+    <beam_port x="-117" y="8.35" z="272.63" damage="0.25" playerdamage="2.8" arcwidth="0.5" cycletime="6.0" range="1000" />
+    <beam_port x="117" y="8.35" z="272.63" damage="0.25" playerdamage="2.8" arcwidth="0.5" cycletime="6.0" range="1000" />
     <torpedo_tube x="0" y="8.35" z="258.74" />
     <torpedo_tube x="0" y="8.35" z="258.74" />
     <torpedo_tube x="0" y="8.35" z="258.74" />
@@ -751,6 +831,10 @@
     <engine_port x="0" y="34.64" z="-240" />
     <engine_port x="0" y="99.1" z="-255.5" />
     <engine_port x="0" y="-81.0" z="-173.7" />
+    <impulse_point x="0" y="30" z="-240"/> <!-- UpMid Main -->
+    <impulse_point x="0" y="-7.4" z="-230"/> <!-- LowMid Main-->
+    <maneuver_point x="145.63" y="10" z="97"/> <!-- Starboard -->
+    <maneuver_point x=" -145.63" y="10" z="97"/> <!-- Port -->
     <long_desc text="Valkyrie Class Light Cruiser^Torpedo cruiser designed to engage foes at any range.^2 Standard beams, reduced intensity.^3 Torpedo tubes^Stores for 18 Homing, 4 Nuke, 3 Mine, 6 EMP, 18 PShock." />
   </vessel>
   
@@ -776,6 +860,10 @@
     <engine_port x="-82.93" y="5" z="-240.89" />
     <engine_port x="0" y="-9.22" z="-300" />
     <engine_port x="0" y="29.64" z="-300" />
+    <impulse_point x="0" y="29.64" z="-256.6"/> <!-- UpMid Main -->
+    <impulse_point x="0" y="-9.22" z="-256"/> <!-- LowMid Main-->
+    <maneuver_point x="145" y="10" z="79"/> <!-- Starboard -->
+    <maneuver_point x="-145" y="10" z="79"/> <!-- Port -->
     <long_desc text="Apollo Class Light Cruiser^Assault cruiser designed for sustained close-quarters fighting.^2 heavy beams, configured for close range^2 Torpedo tubes^Stores for 10 Homing, 1 Nuke, 2 Mine, 6 EMP, 6 PShock." />
   </vessel>
   
@@ -803,6 +891,11 @@
     <engine_port x="0" y="-9.22" z="-280" />
     <engine_port x="0" y="29.64" z="-300" />
     <engine_port x="0" y="69.64" z="-260" />
+    <impulse_point x="-75.88" y="70.2" z="-235.28"/><!-- Port -->
+    <impulse_point x="75.88" y="70.2" z="-235.28"/> <!-- Starboard -->
+    <impulse_point x="0" y="30" z="-280.4"/> <!-- UpMid Main -->
+    <maneuver_point x="-146.05" y="10" z="79.11" /> <!-- Port -->
+    <maneuver_point x="146.05" y="10" z="79.11" /> <!-- Starboard -->
     <long_desc text="Allegiance Class Battlecruiser^Advanced battlecruiser designed for long duration patrols^2 Standard beams^1 Heavy beam^2 Torpedo tubes^Stores for 10 Homing, 2 Nuke, 6 Mine, 4 EMP, 8 PShock." />
   </vessel>
   
@@ -823,11 +916,11 @@
     <beam_port x="-70.60" y="7.42" z="-19.08" damage="10.5" playerdamage="73.5" arcwidth="0.1" cycletime="210.0" range="600"/>
     <torpedo_tube x="0" y="122" z="-176"/>
     <torpedo_tube x="0" y="122" z="-176"/>
-    <torpedo_storage type="trp" amount="15"/>  <!-- Homing"-->
+    <torpedo_storage type="trp" amount="10"/>  <!-- Homing"-->
     <torpedo_storage type="nuk" amount="3"/>  <!-- LR Nuke-->
-    <torpedo_storage type="min" amount="5"/>  <!-- Mine"-->
-    <torpedo_storage type="emp" amount="8"/>  <!-- EMP"-->
-    <torpedo_storage type="shk" amount="15"/>  <!-- Plasma Shock"-->
+    <torpedo_storage type="min" amount="3"/>  <!-- Mine"-->
+    <torpedo_storage type="emp" amount="6"/>  <!-- EMP"-->
+    <torpedo_storage type="shk" amount="10"/>  <!-- Plasma Shock"-->
     <torpedo_storage type="bea" amount="2"/>  <!-- Beacon"-->
     <torpedo_storage type="pro" amount="4"/>  <!-- Probe"-->
     <torpedo_storage type="tag" amount="1"/>  <!-- Tag"-->
@@ -836,11 +929,11 @@
     <engine_port x="-111.755783" y="-44.202168" z="-242.740082"/>
     <engine_port x="111.755783" y="-44.202168" z="-242.740082"/>
     <engine_port x="0" y="97.875313" z="-181.449524"/>
-    <impulse_point x="-111.755783" y="-44.202168" z="-242.740082"/> <!-- UE Dec2019 -->
-    <impulse_point x="111.755783" y="-44.202168" z="-242.740082"/> <!-- UE Dec2019 -->
-    <maneuver_point x="-146" y="8.75" z="79.37"/> <!-- UE Dec2019 -->
-    <maneuver_point x="146" y="8.75" z="79.37"/> <!-- UE Dec2019 -->
-    <long_desc text="Athena class System Defense Battleship^2 Light Beams, 1 Heavy beam, ^1 Inertial Artillery hardpoint, 2 fighter defense RAMs^ 1 Torpedo tube, Stores for 3 nuke, 15 homing, 5 mines, 8 EMP, 15 PShock.^Battle hardened systems and redundant shield nodes."/>
+    <impulse_point x="-111.755783" y="-44.202168" z="-242.740082"/>
+    <impulse_point x="111.755783" y="-44.202168" z="-242.740082"/>
+    <maneuver_point x="-146" y="8.75" z="79.37"/>
+    <maneuver_point x="146" y="8.75" z="79.37"/>
+    <long_desc text="Athena class System Defense Battleship^2 Light Beams, 1 Heavy beam, ^1 Inertial Artillery hardpoint, 2 fighter defense RAMs^ 2 Torpedo tube, Stores for 3 nuke, 10 homing, 3 mines, 6 EMP, 10 PShock.^Battle hardened systems and redundant shield nodes."/>
   </vessel>
   
       <vessel    uniqueID="24"    side="0"       classname="Zeus class" broadType="player carrier">
@@ -863,11 +956,11 @@
     <torpedo_tube x="0" y="8.35" z="258.74"/>
     <torpedo_tube x="0" y="8.35" z="258.74"/>
     <torpedo_tube x="0" y="8.35" z="258.74"/>
-    <torpedo_storage type="trp" amount="30"/>  <!-- Homing"-->
-    <torpedo_storage type="nuk" amount="8"/>  <!-- LR Nuke-->
-    <torpedo_storage type="min" amount="6"/>  <!-- Mine"-->
-    <torpedo_storage type="emp" amount="12"/>  <!-- EMP"-->
-    <torpedo_storage type="shk" amount="20"/>  <!-- Plasma Shock"-->
+    <torpedo_storage type="trp" amount="20"/>  <!-- Homing"-->
+    <torpedo_storage type="nuk" amount="6"/>  <!-- LR Nuke-->
+    <torpedo_storage type="min" amount="4"/>  <!-- Mine"-->
+    <torpedo_storage type="emp" amount="10"/>  <!-- EMP"-->
+    <torpedo_storage type="shk" amount="15"/>  <!-- Plasma Shock"-->
     <torpedo_storage type="bea" amount="2"/>  <!-- Beacon"-->
     <torpedo_storage type="pro" amount="2"/>  <!-- Probe"-->
     <torpedo_storage type="tag" amount="2"/>  <!-- Tag"-->
@@ -877,10 +970,10 @@
     <engine_port x="81.6" y="5.1" z="-235.4"/>
     <engine_port x="-153.0" y="10.9" z="-187.4"/>
     <engine_port x="153.0" y="10.9" z="-187.4"/>
-    <impulse_point x="-82" y="22" z="-233.7"/> <!-- UE Dec2019 -->
-    <impulse_point x="82" y="22" z="-233.7"/> <!-- UE Dec2019 -->
-    <maneuver_point x="-114.64" y="8.35" z="35.87"/> <!-- UE Dec2019 -->
-    <maneuver_point x="114.64" y="8.35" z="35.87"/> <!-- UE Dec2019 -->
+    <impulse_point x="-82" y="22" z="-233.7"/>
+    <impulse_point x="82" y="22" z="-233.7"/>
+    <maneuver_point x="-114.64" y="8.35" z="35.87"/>
+    <maneuver_point x="114.64" y="8.35" z="35.87"/>
     <long_desc text="Zeus class Dreadnought^Standard TSN Heavy Division Flagship^2 heavy beams, 1 Main Beam Cannon^ 2 Fighter defense RAM arrays, 2 rear defense beams^3 Torpedo tubes, 2 cloak-defense Fighter bays^Stores for 8 nukes, 30 homing, 6 mines, 12 ECM, 20 PShock."/>
     <carrierload baycount="2" bomber="0"/>
   </vessel>
@@ -1358,6 +1451,30 @@
 	<fleet_ai commonality="1"/>
     <long_desc text="Comms relay node used by hegemony forces for long range communications."/>
   </vessel>
+  
+  <vessel uniqueID="1353" side="15" classname="Antenna" broadType="static network">
+    <art meshfile="dat/TSN/Gates/KralienSlingShotFocusAntenna.dxs" diffuseFile="dat/TSN/Gates/KralienSlingShotdif.png" glowFile="dat/TSN/Gates/KralienSlingShotdif.png" specularFile="dat/TSN/Gates/KralienSlingShotdif.png" scale="1" pushRadius="25" />
+	<!-- Weapons and Shields modified (1/4)-->
+    <shields front="200" back="200" />
+    <performance turnrate="0" topspeed="0" />
+    <long_desc text="Antenna array for Hegemony Slingshot systems. The antenna can be deployed independently to act as a target point for incoming ships." />
+  </vessel>
+  
+  <vessel uniqueID="1354" side="15" classname="Power" broadType="static network">
+    <art meshfile="dat/TSN/Gates/KralienSlingShotPower.dxs" diffuseFile="dat/TSN/Gates/KralienSlingShotdif.png" glowFile="dat/TSN/Gates/KralienSlingShotdif.png" specularFile="dat/TSN/Gates/KralienSlingShotdif.png" scale="1" pushRadius="25" />
+	<!-- Weapons and Shields modified (1/4)-->
+    <shields front="600" back="600" />
+    <performance turnrate="0" topspeed="0" />
+    <long_desc text="Power module for hegemony slingshot array installations. Heavily shielded." />
+  </vessel>
+  
+  <vessel uniqueID="1355" side="15" classname="Platform" broadType="static network">
+    <art meshfile="dat/TSN/Gates/SlingshotPlatform.dxs" diffuseFile="dat/TSN/Gates/KralienSlingShotdif.png" glowFile="dat/TSN/Gates/KralienSlingShotdif.png" specularFile="dat/TSN/Gates/KralienSlingShotdif.png" scale="1" pushRadius="25" />
+	<!-- Weapons and Shields modified (1/4)-->
+    <shields front="100" back="100" />
+    <performance turnrate="0" topspeed="0" />
+    <long_desc text="The main platform of hegemony slingshot array installations. The platform focuses energy to effectively catapult ships towards a target point. An antenna can be used at the target point to create a more accurate arrival location." />
+  </vessel>
 
    <!--**Free/Ulikai Bases 1400 - 1450**-->  
   <vessel    uniqueID="1400"    side="19"       classname="Station" broadType="base">
@@ -1514,6 +1631,10 @@
     <beam_port x=" 102.14" y="8.35" z="258.74" damage="1.8" arcwidth="0.4" cycletime="6.0" range="1000"/>
     <engine_port x="0" y="-9.22" z="-300"/>
     <engine_port x="0" y="29.64" z="-300"/>
+    <impulse_point x="0" y="-9.22" z="-271.16"/>
+    <impulse_point x="0" y="29.64" z="-278.53"/>
+    <maneuver_point x="-145.5" y="8" z="81.64"/>
+    <maneuver_point x="-145.5" y="8" z="81.64"/>
     <long_desc text="Light warship with forward beam weapons. Used to escort Earth's important cargos."/>
   </vessel>
 
@@ -1528,6 +1649,9 @@
     <engine_port x="0" y="29.64" z="-200"/>
     <beam_port x="-102.14" y="8.35" z="258.74" damage="2.0" arcwidth="0.4" cycletime="2.0" range="1000"/>
     <beam_port x=" 102.14" y="8.35" z="258.74" damage="2.0" arcwidth="0.4" cycletime="2.0" range="1000"/>
+    <impulse_point x="0" y="42.93" z="-158.13"/>
+    <maneuver_point x="-145.5" y="8" z="81.64"/>
+    <maneuver_point x="145.5" y="8" z="81.64"/>
     <long_desc text="Medium warship with rapid fire beam weapons. Earth's most common system defense vessel, trading FTL Drive for speed and firepower."/>
   </vessel>
 
@@ -1541,6 +1665,10 @@
     <fleet_ai commonality="100"/>
     <engine_port x="-51" y="-3.155422" z="26.135927"/>
     <engine_port x=" 51" y="-3.155422" z="26.135927"/>
+    <impulse_point x="-51" y="-3.155422" z="26.135927"/>
+    <impulse_point x=" 51" y="-3.155422" z="26.135927"/>
+    <maneuver_point x="-13.54" y="-2.47" z="-98.41"/>
+    <maneuver_point x="13.54" y="-2.47" z="-98.41"/>
     <long_desc text="An unarmed, long-range exploration ship. The hull is a Ximni design."/>
   </vessel>
 
@@ -1560,6 +1688,12 @@
     <engine_port x="63.478695" y="1.709533" z="-240.778183"/>
     <engine_port x="91.280312" y="2.732927" z="-226.381104"/>
     <engine_port x="91.280312" y="2.732927" z="-226.381104"/>
+    <impulse_point x="-36.569798" y="1.519395" z="-261.916901"/>
+    <impulse_point x="36.569798" y="1.519395" z="-261.916901"/>
+    <impulse_point x="-63.478695" y="1.709533" z="-240.778183"/>
+    <impulse_point x="63.478695" y="1.709533" z="-240.778183"/>
+    <maneuver_point x="-91.280312" y="2.732927" z="-226.381104"/>
+    <maneuver_point x="91.280312" y="2.732927" z="-226.381104"/>
     <long_desc text="An unarmed bulk freighter, slowly moving cheap cargo between the stars."/>
   </vessel>
 
@@ -1577,6 +1711,14 @@
     <engine_port x="-38.461231" y="-39.984001" z="-13.113809"/>
     <engine_port x="14.653028" y="-57.441185" z="-13.352610"/>
     <engine_port x="38.461231" y="-39.984001" z="-13.113809"/>
+    <impulse_point x="0.077280" y="11.006388" z="-252.707397"/>
+    <impulse_point x="0.197185" y="31.179333" z="-265.912628"/>
+    <impulse_point x="-14.653028" y="-57.441185" z="-13.352610"/>
+    <impulse_point x="14.653028" y="-57.441185" z="-13.352610"/>
+    <impulse_point x="-38.461231" y="-39.984001" z="-13.113809"/>
+    <impulse_point x="38.461231" y="-39.984001" z="-13.113809"/>
+    <maneuver_point x="-53.66" y="20" z="-89.82"/>
+    <maneuver_point x="53.66" y="20" z="-89.82"/>
     <long_desc text="An unarmed travelling playground of the rich and powerful."/>
   </vessel>
 
@@ -1613,6 +1755,10 @@
     <engine_port x="-31" y="-6" z="-488"/>
     <engine_port x="0" y="29" z="-422"/>
     <engine_port x="0" y="29" z="-442"/>
+    <impulse_point x="31" y="-6" z="-488"/>
+    <impulse_point x="-31" y="-6" z="-488"/>
+    <maneuver_point x="-45.54" y="22.17" z="-90.62"/>
+    <maneuver_point x="45.54" y="22.17" z="-90.62"/>
     <long_desc text="Long range transport. More often seen in the core worlds on regular transport runs."/>
   </vessel>
 
@@ -1621,10 +1767,14 @@
     <!-- Weapons and Shields modified (1/4)-->
 	<shields front="13" back="3"/>
     <performance turnrate="0.0022" topspeed="0.2"/>
-    <beam_port x="0" y="0" z="10" damage="0.25" arcwidth="0.5" cycletime="12.0" range="1000"/>
+    <beam_port x="0" y="-41.86" z="368.37" damage="0.25" arcwidth="0.5" cycletime="12.0" range="1000"/>
     <fleet_ai commonality="45"/>
     <engine_port x="-18" y="144" z="-355"/>
     <engine_port x="18" y="144" z="-355"/>
+    <impulse_point x="-55" y="144" z="-296"/>
+    <impulse_point x="55" y="144" z="-296"/>
+    <maneuver_point x="-151.71" y="14.35" z="215.75"/>
+    <maneuver_point x="151.71" y="14.35" z="215.75"/>
     <long_desc text="Gaspode Class Mining Ship. Designed to break up asteroids, then store and transport the valuable ores to a refining facility."/>
   </vessel>
   
@@ -1641,6 +1791,10 @@
     <beam_port x="-82.14" y="8.35" z="230.74" damage="1.8" arcwidth="0.4" cycletime="3.0" range="700"/>
     <beam_port x=" 82.14" y="8.35" z="230.74" damage="1.8" arcwidth="0.4" cycletime="3.0" range="700"/>
     <beam_port x="0" y="8.35" z="-230.74" damage="2.0" arcwidth="0.4" cycletime="3.0" range="700"/>
+    <impulse_point x="0" y="29.64" z="-300"/>
+    <impulse_point x="0" y="-8.3" z="-271.43"/>
+    <maneuver_point x="-126.3" y="10" z="81.63"/>
+    <maneuver_point x="126.3" y="-10" z="81.63"/>
     <long_desc text="Small police or customs inspection boat, used mainly to inspect ships and run down smugglers."/>
   </vessel>
   
@@ -1650,10 +1804,14 @@
 	<shields front="20" back="20"/>
     <performance turnrate="0.008" topspeed="1.0"/>
     <fleet_ai commonality="25"/>
-    <beam_port x="-102.14" y="8.35" z="258.74" damage="2.0" arcwidth="0.4" cycletime="6.0" range="1000"/>
-    <beam_port x=" 102.14" y="8.35" z="258.74" damage="2.0" arcwidth="0.4" cycletime="6.0" range="1000"/>
+    <beam_port x="-89.89" y="9.6" z="226.93" damage="2.0" arcwidth="0.4" cycletime="6.0" range="1000"/>
+    <beam_port x=" 89.89" y="9.6" z="226.93" damage="2.0" arcwidth="0.4" cycletime="6.0" range="1000"/>
     <engine_port x="0" y="-9.22" z="-300"/>
     <engine_port x="0" y="29.64" z="-300"/>
+    <impulse_point x="0" y="-9.22" z="-271.2"/>
+    <impulse_point x="0" y="29.64" z="-278.5"/>
+    <maneuver_point x="-102" y="10" z="84"/>
+    <maneuver_point x="102" y="10" z="84"/>
     <long_desc text="Fast and manoeuvrable warship with forward beam weapons and medium shields. Used for wartime patrols."/>
   </vessel>
   
@@ -1664,6 +1822,10 @@
     <fleet_ai commonality="10"/>
     <engine_port x="0" y="22" z="-246"/>
     <engine_port x="0" y="-35" z="-238"/>
+    <impulse_point x="0" y="22" z="-246"/>
+    <impulse_point x="0" y="-35" z="-238"/>
+    <maneuver_point x="-73.27" y="5" z="123.34"/>
+    <maneuver_point x="73.27" y="5" z="123.34"/>
     <long_desc text="Armoured Supply Ship. Unarmed."/>
   </vessel>
   
@@ -1672,9 +1834,13 @@
     <shields front="38" back="38"/>
     <performance turnrate="0.008" topspeed="1.5"/>
     <fleet_ai commonality="5"/>
-    <beam_port x="0" y="0" z="250.0" damage="0.5" arcwidth="0.3" cycletime="6.0" range="1000"/>
+    <beam_port x="0" y="-13.79" z="271" damage="0.5" arcwidth="0.3" cycletime="6.0" range="1000"/>
     <engine_port x="0" y="22" z="-246"/>
     <engine_port x="0" y="-35" z="-238"/>
+    <impulse_point x="0" y="22" z="-246"/>
+    <impulse_point x="0" y="-35" z="-238"/>
+    <maneuver_point x="-73.19" y="-6" z="124.8"/>
+    <maneuver_point x="73.19" y="-6" z="124.8"/>
     <long_desc text="Armoured Supply Ship. Fitted with a weak foward beam to disuade pirates."/>
   </vessel>
   
@@ -1684,8 +1850,12 @@
     <performance turnrate="0.003" topspeed="0.4"/>
     <fleet_ai commonality="5"/>
     <long_desc text="Scow for moving... the more unpleasnt things...."/>
-    <engine_port x="0" y="-32" z="-272"/>
-    <engine_port x="0" y="32" z="-272"/>
+    <engine_port x="-32" y="0" z="-272"/>
+    <engine_port x="32" y="0" z="-272"/>
+    <impulse_point x="-32" y="0" z="-253.2"/>
+    <impulse_point x="32" y="0" z="-253.2"/>
+    <maneuver_point x="-23.74" y="0" z="195.82"/>
+    <maneuver_point x="32" y="0" z="195.82"/>
   </vessel>
   
   <vessel uniqueID="1607" side="1" classname="Mobile Ship Yard" broadType="medium cargo">
@@ -1694,8 +1864,12 @@
     <shields front="38" back="38" />
     <performance turnrate="0.001" topspeed="0.2" />
 	<engine_port x="0.023621" y="110.925163" z="346.862885"/>
-	<maneuver_point x="-1.222128" y="122.503403" z="189.080658"/>
-	<maneuver_point x="1.882262" y="122.503403" z="-186.591629"/>
+    <engine_port x="-32" y="0" z="-272"/>
+    <engine_port x="32" y="0" z="-272"/>
+    <impulse_point x="-32" y="0" z="-253.2"/>
+    <impulse_point x="32" y="0" z="-253.2"/>
+    <maneuver_point x="-23.74" y="0" z="195.82"/>
+    <maneuver_point x="32" y="0" z="195.82"/>
     <long_desc text="Small mobile shipyard suitable for major repairs, and refits of most TSN vessels." />
   </vessel>
   
@@ -1728,10 +1902,10 @@
     <engine_port x="81.6" y="5.1" z="-235.4"/>
     <engine_port x="-153.0" y="10.9" z="-187.4"/>
     <engine_port x="153.0" y="10.9" z="-187.4"/>
-    <impulse_point x="-82" y="22" z="-233.7"/> <!-- UE Dec2019 -->
-    <impulse_point x="82" y="22" z="-233.7"/> <!-- UE Dec2019 -->
-    <maneuver_point x="-114.64" y="8.35" z="35.87"/> <!-- UE Dec2019 -->
-    <maneuver_point x="114.64" y="8.35" z="35.87"/> <!-- UE Dec2019 -->
+    <impulse_point x="-82" y="22" z="-233.7"/>
+    <impulse_point x="82" y="22" z="-233.7"/>
+    <maneuver_point x="-114.64" y="8.35" z="35.87"/>
+    <maneuver_point x="114.64" y="8.35" z="35.87"/>
     <long_desc text="Zeus class Dreadnought, fully crewed for optimum performance.^Inefficient warp geometry gives it great combat power but poor cruising range.^Combat Power settings: ^265%/8 Beams,    100%/0 Tubes, ^200%/4 Impulse,  100%/0 Warp ^300%/0 F shield, 200%/0 R shield"/>
   </vessel>
   
@@ -1757,10 +1931,10 @@
     <engine_port x="-111.755783" y="-44.202168" z="-242.740082"/>
     <engine_port x="111.755783" y="-44.202168" z="-242.740082"/>
     <engine_port x="0" y="97.875313" z="-181.449524"/>
-    <impulse_point x="-111.755783" y="-44.202168" z="-242.740082"/> <!-- UE Dec2019 -->
-    <impulse_point x="111.755783" y="-44.202168" z="-242.740082"/> <!-- UE Dec2019 -->
-    <maneuver_point x="-146" y="8.75" z="79.37"/> <!-- UE Dec2019 -->
-    <maneuver_point x="146" y="8.75" z="79.37"/> <!-- UE Dec2019 -->
+    <impulse_point x="-111.755783" y="-44.202168" z="-242.740082"/>
+    <impulse_point x="111.755783" y="-44.202168" z="-242.740082"/>
+    <maneuver_point x="-146" y="8.75" z="79.37"/>
+    <maneuver_point x="146" y="8.75" z="79.37"/>
     <long_desc text="Athena class System Defense Battleship^Well armed and shielded, but lacking cruising range for deployments requiring stellar cartography^Combat Power/coolant settings: ^265%/8 Beams,    100%/0 Tubes ^200%/4 Impulse,  100%/0 Warp ^200%/0 F shield, 150%/0 R shield"/>
   </vessel>
   
@@ -1850,11 +2024,11 @@
     <engine_port x="0" y="-9.22" z="-280" />
     <engine_port x="0" y="29.64" z="-300" />
     <engine_port x="0" y="69.64" z="-260" />
-    <impulse_point x="-75.88" y="70.2" z="-235.28"/><!-- Port UE Dec2019 -->
-    <impulse_point x="75.88" y="70.2" z="-235.28"/> <!-- Starboard UE Dec2019 -->
-    <impulse_point x="0" y="30" z="-280.4"/> <!-- UpMid Main UE Dec2019 -->
-    <maneuver_point x="-146.05" y="10" z="79.11" /> <!-- Port UE Dec2019 -->
-    <maneuver_point x="146.05" y="10" z="79.11" /> <!-- Starboard UE Dec2019 -->
+    <impulse_point x="-75.88" y="70.2" z="-235.28"/><!-- Port -->
+    <impulse_point x="75.88" y="70.2" z="-235.28"/> <!-- Starboard -->
+    <impulse_point x="0" y="30" z="-280.4"/> <!-- UpMid Main -->
+    <maneuver_point x="-146.05" y="10" z="79.11" /> <!-- Port -->
+    <maneuver_point x="146.05" y="10" z="79.11" /> <!-- Starboard -->
     <long_desc text="Allegiance Class Battlecruiser^Fast heavy combatant, well rounded with extended range Excaliber Beam^Combat Power settings:^265%/8 Beams,    100%/0 Tubes ^100%/0 Impulse,  100%/0 Warp ^250%/4 F shield, 150%/0 R shield" />
   </vessel>
   
@@ -2178,11 +2352,33 @@
     <engine_port x="-55" y="52" z="-288"/>
     <engine_port x=" 75" y="0" z="-288"/>
     <engine_port x="-75" y="0" z="-288"/>
-    <impulse_point x=" 70" y="0" z="-250"/>
-    <impulse_point x=" -70" y="0" z="-250"/>
+    <impulse_point x=" 70.6" y="-63.42" z="-179.3"/>
+    <impulse_point x=" -70.6" y="-63.42" z="-179.3"/>
+    <maneuver_point x=" 50" y="31.73" z="-37.6"/>
+    <maneuver_point x="-50" y="31.73" z="-37.6"/>
+    <long_desc text="Displacement: 200 kt. Armement: 10 standard beams, 1 drone launcher"/>
+  </vessel>
+	
+	  <vessel uniqueID="4101" side="17" classname="MineSweeper" broadType="Sweeper">
+    <art meshfile="dat/TSN/Hegemony/TorgothSweeper.dxs" diffuseFile="dat/ship1A_diffuse.png" glowFile="dat/ship1A_illum.png" specularFile="dat/ship1A_specular.png" scale="0.4" pushRadius="250"/>
+    <!-- Weapons and Shields modified (1/4)-->
+	<shields front="1500" back="300"/>
+    <performance turnrate="0.002" topspeed="0.3"/>
+    <fleet_ai commonality="0"/>
+    <beam_port x="0" y="30" z="8" damage="0.04" arcwidth="1.0" cycletime="1.0" range="1800"/>
+    <beam_port x="0" y="-30" z="8" damage="0.25" arcwidth="0.3" cycletime="3.0" range="1000"/>
+    <drone_port x="0" y="-10" z="-399" damage="7.5" cycletime="30.0" range="1000"/>
+    <engine_port x="-108" y="55" z="-340"/>
+    <engine_port x="-108" y="55" z="-349"/>
+   <engine_port x="108" y="55" z="-340"/>
+    <engine_port x="108" y="55" z="-349"/>
+    <engine_port x="0" y="-68" z="-375"/>
+    <engine_port x="0" y="-68" z="-384"/>
+    <impulse_point  x="-108" y="55" z="-140"/>
+    <impulse_point  x="-108" y="55" z="-140"/>
     <maneuver_point x=" 50" y="31" z="0"/>
     <maneuver_point x="-50" y="31" z="0"/>
-    <long_desc text="Displacement: 200 kt. Armement: 10 standard beams, 1 drone launcher"/>
+    <long_desc text="Hegmony Designed from an outdated Torgoth hull. Has a weak point defence anti material beam and single main heavy beam. Or as a last resort can bulldoze forward with its command ship level forward shield and ablative armour."/>
   </vessel>
 
   <!-- ****************************** Skaraan VESSELS 5000 - 5100**************************************** -->
@@ -2199,10 +2395,11 @@
     <engine_port x="-22" y="3" z="-211"/>
     <engine_port x=" 90" y="6" z="-83"/>
     <engine_port x="-90" y="6" z="-83"/>
-    <impulse_point x="-121.355705" y="30.381374" z="-20.283379"/>
-    <impulse_point x="121.355705" y="30.381374" z="-20.283379"/>
-    <maneuver_point x="-52.359570" y="7.509293" z="98.323151"/>
-    <maneuver_point x="52.359570" y="7.509293" z="98.323151"/>
+    <impulse_point x="-100" y="20" z="-262.26"/>
+    <impulse_point x="100" y="20" z="-262.26"/>
+    <impulse_point x="0" y="20" z="-134"/>
+    <maneuver_point x="-94.84" y="17.14" z="120.53"/>
+    <maneuver_point x="94.84" y="17.14" z="120.53"/>
     <long_desc text="Displacement: 40 kt. Armament: 2 medium beams. The Skaraan's lightest warship."/>
   </vessel>
 
@@ -2344,12 +2541,14 @@
 	<shields front="35" back="25"/>
     <performance turnrate="0.004" topspeed="0.4"/>
     <fleet_ai commonality="10"/>
-    <engine_port x="5" y="-40" z="-400"/>
-    <engine_port x="5" y="40" z="-400"/>
-    <engine_port x="0" y="46" z="-400"/>
-	<impulse_point x="5" y="-40" z="-400"/>
-    <impulse_point x="5" y="40" z="-400"/>
-    <maneuver_point x="0" y="46" z="-400"/>
+    <engine_port x="0" y="38" z="-389.32"/>
+    <engine_port x="-40" y="5" z="-385"/>
+    <engine_port x="40" y="5" z="-385"/>
+	<impulse_point x="0" y="38" z="-389.32"/>
+    <impulse_point x="-40" y="5" z="-385"/>
+    <impulse_point x="40" y="5" z="-385"/>
+    <maneuver_point x="-58.4" y="14" z="182"/>
+    <maneuver_point x="58.4" y="14" z="182"/>
     <long_desc text="Standard sub-light cargo ship for the Hjorden."/>
   </vessel>
 
@@ -2382,8 +2581,8 @@
     <beam_port x="0" y="-1.030540" z="105.320435" damage="0.25" arcwidth="0.3" cycletime="2.5" range="900"/>
     <engine_port x="15.611187" y="0.405153" z="-47.204124"/>
     <engine_port x="-15.611187" y="0.405153" z="-47.204124"/>
-    <impulse_point x="15.611187" y="0.405153" z="-27.204124"/>
-    <impulse_point x="-15.611187" y="0.405153" z="-27.204124"/>
+    <impulse_point x="-16.19" y="0.91" z="-47.2"/>
+    <impulse_point x=" 16.19" y="0.91" z="-47.2"/>
     <maneuver_point x="-75.676590" y="0.539589" z="-10.798063"/>
     <maneuver_point x="75.676590" y="0.539589" z="-10.798063"/>
     <long_desc text="Imperial fighter. Displacement: 0.015 kt. Armament: 2 light beams."/>
@@ -2395,11 +2594,15 @@
 	<shields front="0" back="0" />
     <!-- for fighters, front shield here is actually total HP-->
     <performance turnrate="0.010" topspeed="2.0" shipefficiency="1.0" warpefficiency="1.0" jumpefficiency="1.0"/>
-    <beam_port x="0" y="0" z="0" damage="1.2" arcwidth="0.1" cycletime="8" range="700"/>
+    <beam_port x="0" y="-10" z="74.15" damage="1.2" arcwidth="0.1" cycletime="8" range="700"/>
     <engine_port x="-15.533172" y="-3.027038" z="-50.354633"/>
     <engine_port x=" 15.533172" y="-3.027038" z="-50.354633"/>
     <torpedo_storage type="trp" amount="1"/>
     <!-- Type 1 Homing"-->
+    <impulse_point x="-16.19" y="0.91" z="-47.2"/>
+    <impulse_point x=" 16.19" y="0.91" z="-47.2"/>
+    <maneuver_point x="-75" y="0" z="-11.6"/>
+    <maneuver_point x=" 75" y="0" z="-11.6"/>
     <long_desc text="Imperial Bunker Buster^Armoured strike craft with a miniaturized Triple Ion beam and single torpedo."/>
   </vessel>
 
@@ -2439,21 +2642,26 @@
     <engine_port x="-98" y="43" z="-326"/>
     <engine_port x="-110" y="21" z="-326"/>
     <engine_port x="-86" y="21" z="-326"/>
+	  <impulse_point x="-105.051376" y="33.399231" z="-310.554413"/>
     <!--Top Right-->
     <engine_port x="98" y="43" z="-326"/>
     <engine_port x="110" y="21" z="-326"/>
     <engine_port x="86" y="21" z="-326"/>
+	   <impulse_point x="105.051376" y="33.399231" z="-310.554413"/>
     <!--Bottom Left-->
     <engine_port x="-83" y="-13" z="-280"/>
     <engine_port x="-65" y="-14" z="-280"/>
     <engine_port x="-73" y="-30" z="-280"/>
+	  <impulse_point x="-73" y="-30" z="-280"/>
     <!--Bottom Right-->
     <engine_port x="83" y="-13" z="-280"/>
     <engine_port x="65" y="-14" z="-280"/>
     <engine_port x="73" y="-30" z="-280"/>
+	  <impulse_point x="73" y="-30" z="-280"/>
     <!--Center-->
     <engine_port x="0" y="15" z="-284"/>
     <engine_port x="0" y="-17" z="-284"/>
+	  <impulse_point x="0" y="15" z="-284"/>
     <long_desc text="Gallu class cruiser^Displacement: 15Kt "/>
   </vessel>
   
@@ -2463,14 +2671,14 @@
 	<shields front="250" back="250"/>
     <performance turnrate="0.0020" topspeed="0.33"/>
     <fleet_ai commonality="10"/>
-    <beam_port x="0" y="5" z="350" damage="1.75" arcwidth="0.3" cycletime="6.0" range="1200"/>
-    <beam_port x="220" y="-5" z="200" damage="1.25" arcwidth="0.45" cycletime="4.0" range="1200"/>
-    <beam_port x="-220" y="-5" z="200" damage="1.25" arcwidth="0.45" cycletime="4.0" range="1200"/>
+    <beam_port x="0" y="5" z="402.19" damage="1.75" arcwidth="0.3" cycletime="6.0" range="1200"/>
+    <beam_port x="220" y="-15" z="200" damage="1.25" arcwidth="0.45" cycletime="4.0" range="1200"/>
+    <beam_port x="-220" y="-15" z="200" damage="1.25" arcwidth="0.45" cycletime="4.0" range="1200"/>
     <drone_port x="0" y="0" z="-97" damage="6.25" cycletime="25.0" range="1500"/>
-    <impulse_point x="70" y="70" z="-200"/>
-    <impulse_point x="-70" y="70" z="-200"/>
-    <maneuver_point x="70" y="-70" z="-200"/>
-    <maneuver_point x="-70" y="-70" z="-200"/>
+    <impulse_point x="-0.91" y="106.11" z="-373.08"/>
+    <impulse_point x="-0.91" y="-107.97" z="-338.09"/>
+    <maneuver_point x="-256.54" y="-5" z="128"/>
+    <maneuver_point x="256.54" y="-5" z="128"/>
     <!--Left-->
     <engine_port x="-150" y="3" z="-386"/>
     <engine_port x="-121" y="0" z="-386"/>
@@ -2480,6 +2688,10 @@
     <!--Center-->
     <engine_port x="0" y="36" z="-381"/>
     <engine_port x="0" y="-36" z="-381"/>
+	      <impulse_point x="0" y="18.94" z="-314.04"/>
+    <impulse_point x="0" y="-10.52" z="-303.12"/>
+    <maneuver_point x="-112.87" y="0" z="124.64"/>
+    <maneuver_point x="112.87" y="0" z="124.64"/>
     <long_desc text="Emu class battleship^Displacement: 20Kt "/>
   </vessel>
   
@@ -2516,10 +2728,10 @@
     <beam_port x="-184" y="-15" z="191" damage="1.25" arcwidth="0.45" cycletime="3.0" range="2000"/>
     <drone_port x="-62" y="0" z="260" damage="13.75" cycletime="40.0" range="5400"/>
     <drone_port x="62" y="0" z="260" damage="13.75" cycletime="40.0" range="3000"/>
-    <impulse_point x="70" y="70" z="-200"/>
-    <impulse_point x="-70" y="70" z="-200"/>
-    <maneuver_point x="70" y="-70" z="-200"/>
-    <maneuver_point x="-70" y="-70" z="-200"/>
+    <impulse_point x="70" y="70" z="-282.81"/>
+    <impulse_point x="-70" y="70" z="-282.81"/>
+    <maneuver_point x="70" y="-70" z="-282.81"/> 
+    <maneuver_point x="-70" y="-70" z="-282.81"/>
     <!--Top Left-->
     <engine_port x="-70" y="70" z="-296"/>
     <engine_port x="-94" y="61" z="-296"/>
@@ -2563,10 +2775,10 @@
     <drone_port x="62" y="0" z="260" damage="15" cycletime="41.0" range="5000"/>
     <drone_port x="80" y="0" z="260" damage="15" cycletime="47.0" range="5000"/>
     <drone_port x="100" y="0" z="260" damage="15" cycletime="54.0" range="5000"/>
-    <impulse_point x="60" y="13" z="-170"/>
-    <impulse_point x="-60" y="13" z="-170"/>
-    <maneuver_point x="60" y="-9" z="-90"/>
-    <maneuver_point x="-60" y="-9" z="-90"/>
+    <impulse_point x="53.63" y="14.68" z="-196"/>
+    <impulse_point x="-53.69" y="14.68" z="-196"/>
+    <maneuver_point x="46.25" y="15.39" z="-48.42"/>
+    <maneuver_point x="-46.25" y="15.39" z="-48.42"/>
     <!--MAIN ENGINE TOP-->
     <engine_port x="0" y="26" z="-285"/>
     <engine_port x="5" y="26" z="-280"/>
@@ -2597,6 +2809,11 @@
     <performance turnrate="0.004" topspeed="0.65"/>
     <beam_port x="132" y="-2" z="300" damage="0.75" arcwidth="0.4" cycletime="6.0" range="1000"/>
     <beam_port x="-132" y="-2" z="300" damage="0.75" arcwidth="0.4" cycletime="6.0" range="1000"/>
+	      <maneuver_point x="-167.4" y="0" z="84.84"/>
+    <maneuver_point x="167.4" y="0" z="84.84"/>
+	     <impulse_point x="-73" y="-30" z="-280"/>
+	   <impulse_point x="73" y="-30" z="-280"/>
+	   <impulse_point x="0" y="15" z="-284"/>
     <!--Bottom Left-->
     <engine_port x="-83" y="-13" z="-280"/>
     <engine_port x="-65" y="-14" z="-280"/>
@@ -2620,6 +2837,11 @@
     <beam_port x="-118.15" y="0" z="313.19" damage="0.75" arcwidth="0.35" cycletime="6.0" range="1100"/>
     <beam_port x="164.87" y="0" z="105.74" damage="1.0" arcwidth="0.25" cycletime="12.0" range="950"/>
     <beam_port x="-164.87" y="0" z="105.74" damage="1.0" arcwidth="0.25" cycletime="12.0" range="950"/>
+	      <maneuver_point x="-167.4" y="0" z="84.84"/>
+    <maneuver_point x="167.4" y="0" z="84.84"/>
+	      <impulse_point x="-105.051376" y="33.399231" z="-310.554413"/>
+	      <impulse_point x="-105.051376" y="33.399231" z="-310.554413"/>
+	      <impulse_point x="-105.051376" y="33.399231" z="-310.554413"/>
     <!--Top Left-->
     <engine_port x="-98" y="43" z="-326"/>
     <engine_port x="-110" y="21" z="-326"/>
@@ -2643,6 +2865,12 @@
     <performance turnrate="0.0035" topspeed="0.6"/>
     <beam_port x="132" y="-2" z="300" damage="1.0" arcwidth="0.4" cycletime="6.0" range="1000"/>
     <beam_port x="-132" y="-2" z="300" damage="1.0" arcwidth="0.4" cycletime="6.0" range="1000"/>
+	     <maneuver_point x="-167.4" y="0" z="84.84"/>
+    <maneuver_point x="167.4" y="0" z="84.84"/>
+	 <impulse_point x="-105.051376" y="33.399231" z="-310.554413"/>
+	 <impulse_point x="105.051376" y="33.399231" z="-310.554413"/>
+	 <impulse_point x="-73" y="-30" z="-280"/>
+	  <impulse_point x="73" y="-30" z="-280"/>
     <!--Bottom Left-->
     <engine_port x="-83" y="-13" z="-280"/>
     <engine_port x="-65" y="-14" z="-280"/>
@@ -2695,6 +2923,10 @@
     <beam_port x="43.08" y="2.20" z="308.31" damage="0.2" arcwidth="0.33" cycletime="6.0" range="1100" />
 	<drone_port x=" 84" y="-4" z="286" damage="5" cycletime="60.0" range="2700"/>
     <drone_port x="-84" y="-3" z="286" damage="5" cycletime="65.0" range="7000"/>
+	      <impulse_point x="0" y="18.94" z="-314.04"/>
+    <impulse_point x="0" y="-10.52" z="-303.12"/>
+    <maneuver_point x="-112.87" y="0" z="124.64"/>
+    <maneuver_point x="112.87" y="0" z="124.64"/>
     <!--Center-->
     <engine_port x="0" y="18.94" z="-314.05"/>
     <engine_port x="0" y="-10.52" z="-303.11"/>
@@ -2714,10 +2946,12 @@
     <beam_port x="144.87" y="0" z="105.74" damage="0.2" playerdamage="1.0" arcwidth="0.34" cycletime="4.8" range="1100"/>
     <beam_port x="-144.87" y="0" z="105.74"  damage="0.2" playerdamage="1.0" arcwidth="0.34" cycletime="4.8" range="1100"/>
     <!--Center-->
-    <engine_port x="0" y="11" z="-271"/>
-    <engine_port x="0" y="-7" z="-271"/>
-	<engine_port x="60" y="0" z="-100"/>
-    <engine_port x="-60" y="0" z="-100"/>
+ <engine_port x="0" y="15" z="-271"/>
+    <engine_port x="0" y="-10" z="-271"/>
+	<impulse_point x="0" y="15" z="-266.94"/>
+    <impulse_point x="0" y="-10" z="-259.61"/>
+    <maneuver_point x="-186.27" y="0" z="78.76"/>
+    <maneuver_point x="186.27" y="0" z="78.76"/>
     <long_desc text="Strike Cruiser^Attack cruiser suited for devastating hit-and-run attacks^3 Close range slow-firing heavy beams and 2 side-mounted gatling beams."/>
   </vessel>
 
@@ -2775,8 +3009,8 @@
     <beam_port x="0" y="-10" z="1" damage="0.25" arcwidth="0.50" cycletime="5.0" range="2000"/>
     <beam_port x="19" y="-10" z="1" damage="0.25" arcwidth="0.50" cycletime="5.0" range="2000"/>
     <beam_port x="19" y="-10" z="1" damage="0.25" arcwidth="0.50" cycletime="5.0" range="2000"/>
-    <impulse_point x="19" y="0" z="-4"/>
-    <impulse_point x="-19" y="0" z="-4"/>
+    <impulse_point x="9.27" y="0.47" z="-11.3"/>
+    <impulse_point x="-9.27" y="0.47" z="-11.3"/>
     <engine_port x="0" y="0" z="-4"/>
     <engine_port x="-19" y="0" z="-4"/>
     <engine_port x="19" y="0" z="-4"/>
@@ -2820,9 +3054,9 @@
     <beam_port x="19" y="-10" z="-29" damage="0.25" arcwidth="0.20" cycletime="3.0" range="1000"/>
     <beam_port x="0" y="-10" z="-10" damage="0.25" arcwidth="0.20" cycletime="3.0" range="1000"/>
     <beam_port x="-19" y="-10" z="-29" damage="0.25" arcwidth="0.20" cycletime="3.0" range="1000"/>
-    <impulse_point x="0" y="-10" z="-29"/>
-    <impulse_point x="0" y="0" z="0"/>
-    <impulse_point x="-19" y="0" z="-10"/>
+       <impulse_point x="19.5" y="-10" z="-32.48"/>
+    <impulse_point x="0" y="10" z="-32.48"/>
+    <impulse_point x="-19.5" y="-10" z="-32.48"/>
     <engine_port x="0" y="-10" z="-29"/>
     <engine_port x="0" y="-10" z="29"/>
     <engine_port x="0" y="-10" z="-29"/>
@@ -2951,6 +3185,9 @@
     <beam_port x="0" y="8.35" z="200" damage="0.33" arcwidth="1.0" cycletime="12.0" range="600"/>
     <beam_port x="0" y="8.35" z="-200" damage="0.33" arcwidth="1.0" cycletime="12.0" range="600"/>
     <engine_port x="0" y="0" z="-324"/>
+    <impulse_point x="0" y="0" z="-312.4"/>
+    <maneuver_point x="-72.4" y="0" z="231.54"/>
+    <maneuver_point x="72.4" y="0" z="231.54"/>	  
     <long_desc text="Light Ship. Has dual omni-directional beam weapons that seem to be optimised for mining."/>
   </vessel>
 
@@ -2964,6 +3201,10 @@
     <beam_port x=" 102.14" y="8.35" z="258.74" damage="0.5" arcwidth="0.4" cycletime="7.0" range="1500"/>
     <engine_port x="81" y="-5" z="237"/>
     <engine_port x="-81" y="-5" z="237"/>
+    <impulse_point x="-38" y="-9" z="-177.34"/>
+    <impulse_point x="38" y="-9" z="-177.34"/>
+    <maneuver_point x="-75.28" y="-9.03" z="185.69"/>
+    <maneuver_point x="75.28" y="-9.03" z="185.69"/>
     <long_desc text="Light warship with 2 forward beam weapons."/>
   </vessel>
 
@@ -3002,6 +3243,8 @@
     <engine_port x="-40" y="30" z="-50"/>
 	<impulse_point x="40" y="30" z="-50"/>
 	<impulse_point x="-40" y="30" z="-50"/>
+	      <maneuver_point x="-74.57" y="0" z="66.76"/>
+    <maneuver_point x="74.57" y="0" z="66.76"/>
     <long_desc text="Small transport ship. Capacity estimated at 5Kt"/>
   </vessel>
   
@@ -3019,6 +3262,10 @@
     <drone_port x="53" y="41" z="175" damage="7.5" cycletime="60.0" range="2000"/>
     <engine_port x="-82" y="2" z="-249"/>
     <engine_port x="82" y="2" z="-249"/>
+	     <impulse_point x="-82" y="2" z="-249.26"/>
+    <impulse_point x="82" y="2" z="-249.26"/>
+    <maneuver_point x="-85" y="-13.37" z="127.11"/>
+    <maneuver_point x="85" y="-13.37" z="127.11"/>
     <long_desc text="Ximni Light Cruiser^Standard vessel of the Ximni.^3 beams^2 Torpedo tubes^Stores for 2 nukes, 8 homing, 6 mines, 4 ECM, 2 PShock."/>
   </vessel>
 
@@ -3035,6 +3282,10 @@
     <engine_port x=" 48" y="0" z="0"/>
     <engine_port x="0" y="-48" z="0"/>
     <engine_port x="0" y=" 48" z="0"/>
+	      <impulse_point x="-31" y="13.66" z="-25.12"/>
+    <impulse_point x="31" y="13.66" z="-25.12"/>
+    <maneuver_point x="-80" y="2.16" z="141.33"/>
+    <maneuver_point x="80" y="2.16" z="141.33"/>
     <long_desc text="Ximni Scout^Long range scout vessel of the Ximni.^1 forward beam^1 Torpedo tube^Stores for 6 homing, 2 mines, 2 ECM, 1 PShock."/>
   </vessel>
 
@@ -3053,6 +3304,10 @@
     <engine_port x=" 85.449120" y="-8.132334" z="-201.552475"/>
     <engine_port x=" 45.808228" y="-1.427677" z="-189.611588"/>
     <engine_port x=" 67.651352" y="-6.247528" z="-195.777618"/>
+    <impulse_point x="-31" y="13.66" z="-25.12"/>
+    <impulse_point x="31" y="13.66" z="-25.12"/>
+    <maneuver_point x="-80" y="2.16" z="141.33"/>
+    <maneuver_point x="80" y="2.16" z="141.33"/>
     <long_desc text="Ximni Missile Cruiser^Specialized vessel of the Ximni.^4 Torpedo tubes^Stores for 8 nukes, 20 homing, 14 mines, 12 ECM, 6 PShock."/>    
   </vessel>
 
@@ -3074,6 +3329,10 @@
     <engine_port x=" 109" y="-21.496468" z="-249.583313"/>
     <engine_port x="-134" y="-26.184715" z="-249.640533"/>
     <engine_port x=" 134" y="-26.184715" z="-249.640533"/>
+    <impulse_point x="-130" y="-25" z="-250.6"/>
+    <impulse_point x= "130" y="-25" z="-250.6"/>
+    <maneuver_point x="-149.76" y="-19.61" z="114.82"/>
+    <maneuver_point x= "149.76" y="-16.61" z="114.82"/>
     <long_desc text="Ximni Battleship^Beam-heavy combat vessel of the Ximni.^4 forward beams^2 Torpedo tubes^Stores for 2 nukes, 8 homing, 6 mines, 4 ECM, 5 PShock."/>
   </vessel>
 
@@ -3092,6 +3351,10 @@
     <engine_port x= "111" y="0" z="-96"/>
     <engine_port x="-64" y="-39" z="-128"/>
     <engine_port x= "64" y="-39" z="-128"/>
+    <impulse_point x="-50" y="-25" z="-105.75"/>
+    <impulse_point x= "50" y="-25" z="-105.75"/>
+    <maneuver_point x="-136.81" y="17.31" z="39"/>
+    <maneuver_point x= "136.81" y="17.31" z="39"/>
     <long_desc text="Ximni Carrier^Standard carrier of the Ximni.^2 forward beams^1 Torpedo tube^Stores for 1 nukes, 6 homing, 4 mines, 2 ECM, 2 PShock."/>
   </vessel>
 
@@ -3115,6 +3378,10 @@
     <engine_port x="59.196365" y="-35.144402" z="-115.391106"/>
     <engine_port x="-75.196365" y="-25.144402" z="-115.391106"/>
     <engine_port x="75.196365" y="-25.144402" z="-115.391106"/>
+    <impulse_point x="-74" y="-33.4" z="-115.391106"/>
+    <impulse_point x="74" y="-33.4" z="-115.391106"/>
+    <maneuver_point x="-150.66" y="18.46" z="19"/>
+    <maneuver_point x="150.66" y="18.46" z="19"/>
     <long_desc text="Ximni Dreadnought^Ultimate wartime vessel of the Ximni.^2 primary beams, long range and fast firing^3 Torpedo tubes^Stores for 4 nukes, 10 homing, 8 mines, 5 ECM, 4 PShock."/>
   </vessel>  
   
@@ -3174,5 +3441,394 @@
     <engine_port x="0" y="7.4" z="-21.2"/>
     <long_desc text="Ximni Long Range Shuttle^Armed only with a small laser, this shuttle is known as the Party Ride."/>
   </vessel>
+	
+	<!--Kzinti Ships-->
+	
+<vessel uniqueID="7600" side="20" classname="Warbird" broadType="small">
+    <art meshfile="dat/TSN/Neutrals/TriRev.dxs" diffuseFile="dat/TSN/Neutrals/tri_dif.png" glowFile="dat/TSN/Neutrals/tri_glow.png" specularFile="dat/TSN/Neutrals/tri_Spec.png" scale="0.25" pushRadius="175"/>
+    <!-- Weapons and Shields modified (1/4)-->
+	<shields front="40" back="30"/>
+    <performance turnrate="0.004" topspeed="0.75"/>
+    <fleet_ai commonality="10"/>
+    <drone_port x=" 84" y="-4" z="286" damage="3.5" cycletime="2.0" range="2000"/>
+    <beam_port x="0" y="2.5" z="-371.50" damage="5.5" arcwidth="0.175" cycletime="1.0" range="750"/>
+    <beam_port x="0" y="2.5" z="-371.50" damage="4.25" arcwidth="0.03" cycletime="1.0" range="1500"/>
+    <beam_port x="134.42" y="0" z="100.82" damage="5" arcwidth="0.03" cycletime="4.0" range="1000"/>
+    <beam_port x="-134.42" y="0" z="100.82" damage="5" arcwidth="0.03" cycletime="4.0" range="1000"/>
+    <engine_port x="0" y="2.5" z="-371.50"/>
+    <engine_port x="0" y="2.5" z="-401.50"/>
+    <engine_port x="0" y="2.5" z="-431.50"/>
+    <engine_port x="0" y="2.5" z="-461.50"/>
+    <engine_port x="0" y="2.5" z="-491.50"/>
+    <engine_port x="0" y="2.5" z="-521.50"/>
+    <engine_port x="0" y="2.5" z="-551.50"/>
+    <engine_port x="0" y="2.5" z="-581.50"/>
+    <engine_port x="0" y="2.5" z="-611.50"/>
+    <engine_port x="0" y="2.5" z="-641.50"/>
+    <engine_port x="0" y="2.5" z="-671.50"/>
+    <engine_port x="0" y="2.5" z="-701.50"/>
+    <engine_port x="0" y="2.5" z="-731.50"/>
+    <engine_port x="0" y="2.5" z="-761.50"/>
+    <engine_port x="0" y="2.5" z="-791.50"/>
+    <engine_port x="0" y="2.5" z="-821.50"/>
+    <engine_port x="0" y="2.5" z="-851.50"/>
+    <engine_port x="0" y="2.5" z="-881.50"/>
+    <engine_port x="0" y="2.5" z="-911.50"/>
+    <engine_port x="0" y="2.5" z="-941.50"/>
+    <engine_port x="0" y="2.5" z="-971.50"/>
+    <engine_port x="0" y="2.5" z="-1001.50"/>
+    <engine_port x="0" y="2.5" z="-1031.50"/>
+    <engine_port x="0" y="2.5" z="-1061.50"/>
+    <engine_port x="0" y="2.5" z="-1091.50"/>
+    <engine_port x="0" y="2.5" z="-1121.50"/>
+    <engine_port x="0" y="2.5" z="-1151.50"/>
+    <engine_port x="0" y="2.5" z="-1181.50"/>
+    <engine_port x="0" y="2.5" z="-1211.50"/>
+    <engine_port x="0" y="2.5" z="-1241.50"/>
+    <engine_port x="0" y="2.5" z="-1271.50"/>
+    <engine_port x="0" y="2.5" z="-1301.50"/>
+    <engine_port x="0" y="2.5" z="-1331.50"/>
+    <engine_port x="0" y="2.5" z="-1361.50"/>
+    <engine_port x="0" y="2.5" z="-1391.50"/>
+    <engine_port x="0" y="2.5" z="-1421.50"/>
+    <engine_port x="0" y="2.5" z="-1451.50"/>
+    <engine_port x="0" y="2.5" z="-1481.50"/>
+    <impulse_point x="0" y="2.5" z="-371.50"/>
+    <maneuver_point x="134.42" y="0" z="100.82"/>
+    <maneuver_point x="-134.42" y="0" z="100.82"/>
+    <long_desc text="Unknown vessel. Shields match Skarran export models. Reaction drive system is highly energetic, avoid zones in red. Vessel primary armamant appears to be short range, low damage drone launchers."/> 
+  </vessel>    
+  
+  <vessel uniqueID="7601" side="20" classname="Transport" broadType="small">
+    <art meshfile="dat/TSN/Neutrals/TriRev.dxs" diffuseFile="dat/TSN/Neutrals/tri_dif.png" glowFile="dat/TSN/Neutrals/tri_glow.png" specularFile="dat/TSN/Neutrals/tri_Spec.png" scale="0.25" pushRadius="175"/>
+    <!-- Weapons and Shields modified (1/4)-->
+	<shields front="45" back="45"/>
+    <performance turnrate="0.003" topspeed="0.5"/>
+    <fleet_ai commonality="10"/>
+    <drone_port x=" 84" y="-4" z="286" damage="4" cycletime="6.0" range="3000"/>
+    <beam_port x="56.31" y="-16.16" z="-409.5" damage="0.25" arcwidth="0.03" cycletime="1.0" range="1500"/>
+    <beam_port x="-56.31" y="-16.16" z="-409.5" damage="0.25" arcwidth="0.03" cycletime="1.0" range="1500"/>
+    <beam_port x="182.37" y="-17.78" z="202.89" damage="0.6" arcwidth="0.03" cycletime="4.0" range="1000"/>
+    <beam_port x="-182.37" y="-17.78" z="202.89" damage="0.6" arcwidth="0.03" cycletime="4.0" range="1000"/>
+    <engine_port x="56.31" y="-16.16" z="-409.5"/>
+    <engine_port x="63.31" y="-16.16" z="-459.5"/>
+    <engine_port x="70.31" y="-16.16" z="-509.5"/>
+    <engine_port x="77.31" y="-16.16" z="-559.5"/>
+    <engine_port x="84.31" y="-16.16" z="-609.5"/>
+    <engine_port x="91.31" y="-16.16" z="-659.5"/>
+    <engine_port x="98.31" y="-16.16" z="-709.5"/>
+    <engine_port x="105.31" y="-16.16" z="-759.5"/>
+    <engine_port x="112.31" y="-16.16" z="-809.5"/>
+    <engine_port x="119.31" y="-16.16" z="-859.5"/>
+    <engine_port x="126.31" y="-16.16" z="-909.5"/>
+    <engine_port x="133.31" y="-16.16" z="-959.5"/>
+    <engine_port x="140.31" y="-16.16" z="-1009.5"/>
+    <engine_port x="147.31" y="-16.16" z="-1059.5"/>
+    <engine_port x="154.31" y="-16.16" z="-1109.5"/>
+    <engine_port x="161.31" y="-16.16" z="-1159.5"/>
+    <engine_port x="168.31" y="-16.16" z="-1209.5"/>
+    <engine_port x="175.31" y="-16.16" z="-1259.5"/>
+    <engine_port x="182.31" y="-16.16" z="-1309.5"/>
+    <engine_port x="189.31" y="-16.16" z="-1359.5"/>
+    <engine_port x="196.31" y="-16.16" z="-1409.5"/>
+    <engine_port x="203.31" y="-16.16" z="-1459.5"/>
+    <engine_port x="-56.31" y="-16.16" z="-409.5"/>
+    <engine_port x="-63.31" y="-16.16" z="-459.5"/>
+    <engine_port x="-70.31" y="-16.16" z="-509.5"/>
+    <engine_port x="-77.31" y="-16.16" z="-559.5"/>
+    <engine_port x="-84.31" y="-16.16" z="-609.5"/>
+    <engine_port x="-91.31" y="-16.16" z="-659.5"/>
+    <engine_port x="-98.31" y="-16.16" z="-709.5"/>
+    <engine_port x="-105.31" y="-16.16" z="-759.5"/>
+    <engine_port x="-112.31" y="-16.16" z="-809.5"/>
+    <engine_port x="-119.31" y="-16.16" z="-859.5"/>
+    <engine_port x="-126.31" y="-16.16" z="-909.5"/>
+    <engine_port x="-133.31" y="-16.16" z="-959.5"/>
+    <engine_port x="-140.31" y="-16.16" z="-1009.5"/>
+    <engine_port x="-147.31" y="-16.16" z="-1059.5"/>
+    <engine_port x="-154.31" y="-16.16" z="-1109.5"/>
+    <engine_port x="-161.31" y="-16.16" z="-1159.5"/>
+    <engine_port x="-168.31" y="-16.16" z="-1209.5"/>
+    <engine_port x="-175.31" y="-16.16" z="-1259.5"/>
+    <engine_port x="-182.31" y="-16.16" z="-1309.5"/>
+    <engine_port x="-189.31" y="-16.16" z="-1359.5"/>
+    <engine_port x="-196.31" y="-16.16" z="-1409.5"/>
+    <engine_port x="-203.31" y="-16.16" z="-1459.5"/>
+    <impulse_point x="56.31" y="-16.16" z="-409.5"/>
+    <impulse_point x="-56.31" y="-16.16" z="-409.5"/>
+    <maneuver_point x="182.37" y="-17.78" z="202.89"/>
+    <maneuver_point x="-182.37" y="-17.78" z="202.89"/>
+    <long_desc text="Unknown Transport. Shields match Skarran export models. Reaction drive system is highly energetic, avoid zones in red. Vessel primary armamant appears to be short range, low damage drone launchers."/> 
+   </vessel>
+	
+	<!-- Ingratus Ships-->
+	
+	
+    <vessel uniqueID="7700" side="21" classname="Haughty" broadType="small">
+    <art meshfile="dat/TSN/Neutrals/P3.dxs" diffuseFile="dat/TSN/Neutrals/P3_Dif.png" glowFile="dat/TSN/Neutrals/P3_Glow.png" specularFile="dat/TSN/Neutrals/P3_Spec.png" scale="0.25" pushRadius="250"/>
+    <shields front="50" back="40"/>
+    <performance turnrate="0.0045" topspeed="0.5"/>
+    <fleet_ai commonality="90"/>
+    <beam_port x="0" y="-0" z="1" damage="0.5" arcwidth="0.25" cycletime="4.5" range="1100"/>
+    <beam_port x="0" y="-0" z="300" damage="0.5" arcwidth="0.1" cycletime="4.5" range="1200"/>		
+    <engine_port x= "0" y="-7" z="-363"/>
+    <engine_port x= "37" y="-7" z="-357"/>
+    <engine_port x= "-37" y="-7" z="-357"/>
+    <impulse_point x="149" y="-140" z="-500"/>
+    <impulse_point x="-149" y="-100" z="-500"/>
+    <maneuver_point x="182.37" y="-17.78" z="202.89"/>
+    <maneuver_point x="-182.37" y="-17.78" z="202.89"/>
+    <long_desc text="Haughty Class Frigate. 2 X Pulse Lasers"/> 
+  </vessel>
 
+    <vessel uniqueID="7701" side="21" classname="Aloof" broadType="small">
+    <art meshfile="dat/TSN/Neutrals/P3.dxs" diffuseFile="dat/TSN/Neutrals/P3_Dif.png" glowFile="dat/TSN/Neutrals/P3_Glow.png" specularFile="dat/TSN/Neutrals/P3_Spec.png" scale="0.25" pushRadius="250"/>
+    <shields front="63" back="63"/>
+    <performance turnrate="0.0040" topspeed="0.5"/>
+    <fleet_ai commonality="90"/>
+    <beam_port x="0" y="-0" z="1" damage="0.6" arcwidth="0.25" cycletime="4.0" range="1100"/>
+    <engine_port x= "0" y="-7" z="-363"/>
+    <engine_port x= "37" y="-7" z="-357"/>
+    <engine_port x= "-37" y="-7" z="-357"/>
+    <impulse_point x="149" y="-140" z="-500"/>
+    <impulse_point x="-149" y="-100" z="-500"/>
+    <maneuver_point x="182.37" y="-17.78" z="202.89"/>
+    <maneuver_point x="-182.37" y="-17.78" z="202.89"/>
+    <long_desc text="Aloof Class Destroyer. 1 X Overcharged, Gas cooled Beam"/> 
+  </vessel>
+			
+    <vessel uniqueID="7702" side="21" classname="Disdainful" broadType="small">
+    <art meshfile="dat/TSN/Neutrals/G3.dxs" diffuseFile="dat/TSN/Neutrals/G3_Dif.png" glowFile="dat/TSN/Neutrals/G3_Glow.png" specularFile="dat/TSN/Neutrals/G3_Spec.png" scale="0.25" pushRadius="250"/>
+    <shields front="50" back="40"/>
+    <performance turnrate="0.0035" topspeed="0.44"/>
+    <fleet_ai commonality="90"/>
+    <beam_port x="50" y="-0" z="1" damage="0.7" arcwidth="0.25" cycletime="4.0" range="1200"/>
+    <beam_port x="-50" y="-0" z="100" damage="0.7" arcwidth="0.25" cycletime="4.0" range="1200"/>		
+    <engine_port x= "-149" y="161" z="-508"/>
+    <engine_port x= "149" y="161" z="-508"/>
+    <engine_port x= "-149" y="-161" z="-508"/>
+    <engine_port x= "149" y="-161" z="-508"/>
+    <impulse_point x="149" y="-140" z="-500"/>
+    <impulse_point x="-149" y="-100" z="-500"/>
+    <maneuver_point x="182.37" y="-17.78" z="202.89"/>
+    <maneuver_point x="-182.37" y="-17.78" z="202.89"/>
+    <long_desc text="Disdainful Class Cruiser. 2 X upgraded Pulse Lasers"/> 
+  </vessel>
+
+    <vessel uniqueID="7703" side="21" classname="Annoyed" broadType="small">
+    <art meshfile="dat/TSN/Neutrals/G3.dxs" diffuseFile="dat/TSN/Neutrals/G3_Dif.png" glowFile="dat/TSN/Neutrals/G3_Glow.png" specularFile="dat/TSN/Neutrals/G3_Spec.png" scale="0.25" pushRadius="250"/>
+    <shields front="80" back="80"/>
+    <performance turnrate="0.0034" topspeed="0.44"/>
+    <fleet_ai commonality="90"/>
+    <beam_port x="100" y="-0" z="1" damage="0.6" arcwidth="0.25" cycletime="3.5" range="1000"/>
+<beam_port x="-100" y="-0" z="1" damage="0.6" arcwidth="0.25" cycletime="3.5" range="1000"/>
+<beam_port x="0" y="0" z="-200" damage="0.6" arcwidth="0.5" cycletime="3.5" range="1000"/>
+<engine_port x= "-49" y="161" z="-508"/>
+<engine_port x= "49" y="161" z="-508"/>
+<engine_port x= "0" y="-161" z="-508"/>
+<engine_port x= "149" y="-161" z="-508"/>
+    <impulse_point x="149" y="-140" z="-500"/>
+    <impulse_point x="-149" y="-100" z="-500"/>
+    <maneuver_point x="182.37" y="-17.78" z="202.89"/>
+    <maneuver_point x="-182.37" y="-17.78" z="202.89"/>
+    <long_desc text="Annoyed Class Cruiser. 3 X Pulse Lasers"/> 
+  </vessel>
+
+    <vessel uniqueID="7704" side="21" classname="Wretched" broadType="Large">
+    <art meshfile="dat/TSN/Neutrals/F3.dxs" diffuseFile="dat/TSN/Neutrals/F3_Dif.png" glowFile="dat/TSN/Neutrals/F3_Glow.png" specularFile="dat/TSN/Neutrals/F3_Spec.png" scale="0.25" pushRadius="250"/>
+    <shields front="82" back="82"/>
+    <performance turnrate="0.0025" topspeed="0.44"/>
+    <fleet_ai commonality="10"/>
+    <beam_port x="0" y="0" z="50" damage="1.75" arcwidth="0.25" cycletime="3.5" range="1000"/>
+    <beam_port x="-0" y="0" z="-50" damage="0.75" arcwidth="0.25" cycletime="3.5" range="1000"/>
+    <engine_port x="136" y="-73" z="-465"/>
+    <engine_port x= "-136" y="-73" z="-465"/>
+    <engine_port x="91" y="-73" z="-465"/>
+    <engine_port x= "-91" y="-73" z="-465"/>
+   <engine_port x="136" y="73" z="-465"/>
+    <engine_port x= "-136" y="73" z="-465"/>
+    <engine_port x="91" y="73" z="-465"/>
+    <engine_port x= "-91" y="73" z="-465"/>
+    <impulse_point x="56.31" y="-16.16" z="-409.5"/>
+    <impulse_point x="-56.31" y="-16.16" z="-409.5"/>
+    <maneuver_point x="182.37" y="-17.78" z="202.89"/>
+    <maneuver_point x="-182.37" y="-17.78" z="202.89"/>
+    <long_desc text="Wretched Class Battlecruiser. 1 X High Power Pulse Laser Fore, 1 X Medium Power Pulse Laser Aft"/> 
+  </vessel>
+	
+		<vessel uniqueID="7705" side="21" classname="Vehement" broadType="Large">
+    <art meshfile="dat/TSN/Neutrals/F3.dxs" diffuseFile="dat/TSN/Neutrals/F3_Dif.png" glowFile="dat/TSN/Neutrals/F3_Glow.png" specularFile="dat/TSN/Neutrals/F3_Spec.png" scale="0.25" pushRadius="250"/>
+    <shields front="70" back="70"/>
+    <performance turnrate="0.002" topspeed="0.4"/>
+    <fleet_ai commonality="10"/>
+    <beam_port x="0" y="0" z="50" damage="2.75" arcwidth="0.25" cycletime="3.0" range="1700"/>
+ <drone_port x="84" y="-4" z="286" damage="10" cycletime="30.0" range="4000"/>
+    <engine_port x="136" y="-73" z="-465"/>
+    <engine_port x= "-136" y="-73" z="-465"/>
+    <engine_port x="91" y="-73" z="-465"/>
+    <engine_port x= "-91" y="-73" z="-465"/>
+   <engine_port x="136" y="73" z="-465"/>
+    <engine_port x= "-136" y="73" z="-465"/>
+    <engine_port x="91" y="73" z="-465"/>
+    <engine_port x= "-91" y="73" z="-465"/>
+    <impulse_point x="56.31" y="-16.16" z="-409.5"/>
+    <impulse_point x="-56.31" y="-16.16" z="-409.5"/>
+    <maneuver_point x="182.37" y="-17.78" z="202.89"/>
+    <maneuver_point x="-182.37" y="-17.78" z="202.89"/>
+    <long_desc text="Vehement Class Stand off Battleship. 1 X High Power gas cooled pulse Laser, 1 X Drone Launcher"/> 
+  </vessel>	
+	
+     <vessel uniqueID="7710" side="21" classname="Cargo" broadType="small">
+    <art meshfile="dat/TSN/Neutrals/F4.dxs" diffuseFile="dat/TSN/Neutrals/F3_Dif.png" glowFile="dat/TSN/Neutrals/F3_Glow.png" specularFile="dat/TSN/Neutrals/F3_Spec.png" scale="0.25" pushRadius="250"/>
+    <shields front="40" back="30"/>
+    <performance turnrate="0.003" topspeed="0.5"/>
+    <fleet_ai commonality="90"/>
+    <beam_port x="0" y="-16.16" z="-0" damage="0.1" arcwidth="0.3" cycletime="6.0" range="500"/>
+    <engine_port x= "-246" y="82" z="-472"/>
+    <engine_port x= "-206" y="82" z="-472"/>
+    <engine_port x= "-226" y="82" z="-490"/>
+    <engine_port x= "-246" y="-79" z="-472"/>
+    <engine_port x= "-206" y="-79" z="-472"/>
+    <engine_port x= "-226" y="-79" z="-490"/>
+    <engine_port x= "246" y="82" z="-472"/>
+    <engine_port x= "206" y="82" z="-472"/>
+    <engine_port x= "226" y="82" z="-490"/>
+    <engine_port x= "246" y="-79" z="-472"/>
+    <engine_port x= "206" y="-79" z="-472"/>
+    <engine_port x= "226" y="-79" z="-490"/>
+    <impulse_point x="168" y="-108" z="-212.5"/>
+    <impulse_point x="-168" y="-108" z="-212.5"/>
+    <maneuver_point x="182.37" y="-17.78" z="202.89"/>
+    <maneuver_point x="-182.37" y="-17.78" z="202.89"/>
+    <long_desc text="Mixed Passanger and cargo Ship"/> 
+  </vessel>
+	
+				<vessel uniqueID="7711" side="21" classname="Cargo" broadType="carrier">
+    <art meshfile="dat/TSN/Neutrals/F4.dxs" diffuseFile="dat/TSN/Neutrals/F3_Dif.png" glowFile="dat/TSN/Neutrals/F3_Glow.png" specularFile="dat/TSN/Neutrals/F3_Spec.png" scale="0.25" pushRadius="250"/>
+    <shields front="40" back="30"/>
+	<carrierload baycount="4" bomber="2"/>				
+    <performance turnrate="0.003" topspeed="0.5"/>
+    <fleet_ai commonality="2"/>
+    <beam_port x="0" y="-16.16" z="-0" damage="0.25" arcwidth="0.4" cycletime="6.0" range="1000"/>
+    <engine_port x= "-246" y="82" z="-472"/>
+    <engine_port x= "-206" y="82" z="-472"/>
+    <engine_port x= "-226" y="82" z="-490"/>
+    <engine_port x= "-246" y="-79" z="-472"/>
+    <engine_port x= "-206" y="-79" z="-472"/>
+    <engine_port x= "-226" y="-79" z="-490"/>
+    <engine_port x= "246" y="82" z="-472"/>
+    <engine_port x= "206" y="82" z="-472"/>
+    <engine_port x= "226" y="82" z="-490"/>
+    <engine_port x= "246" y="-79" z="-472"/>
+    <engine_port x= "206" y="-79" z="-472"/>
+    <engine_port x= "226" y="-79" z="-490"/>
+    <impulse_point x="168" y="-108" z="-212.5"/>
+    <impulse_point x="-168" y="-108" z="-212.5"/>
+    <maneuver_point x="182.37" y="-17.78" z="202.89"/>
+    <maneuver_point x="-182.37" y="-17.78" z="202.89"/>
+    <long_desc text="Mixed Passanger and cargo Ship with outsized cargo hatches and 10% higher energy readings"/> 
+  </vessel>
+	
+	  <vessel    uniqueID="7712"    side="21"       classname="Fighter" broadType="singleseat">
+    <art     meshfile="dat/ENE_Matt3A.dxs"    diffuseFile="dat/ship4A_diffuse.png"
+             glowFile="dat/ship4A_glow.png"    specularFile="dat/ship4A_specular.png" scale="0.05" pushRadius="80"/>
+   <!-- Weapons and Shields modified (1/4)-->
+	<shields front="0" back="0"/>
+    <performance turnrate="0.01" topspeed="1.2"/>
+    <fleet_ai commonality="99"/>
+    <beam_port x=" 111" y="-1" z="217" damage="0.25" arcwidth="0.3" cycletime="5.0" range="800"/>
+    <beam_port x="-111" y="-1" z="217" damage="0.25" arcwidth="0.3" cycletime="5.0" range="800"/>
+    <engine_port x="0" y="0" z="-230"/>
+    <engine_port x="92" y="-7" z="-240"/>
+    <engine_port x="-92" y="-7" z="-240"/>
+    <impulse_point x="-124" y="-6" z="-248"/>
+    <impulse_point x=" 124" y="-6" z="-248"/>
+    <maneuver_point x="-177" y="-6" z="-132"/>
+    <maneuver_point x=" 177" y="-6" z="-132"/>
+    <long_desc text="Displacement: 0.015 kt. Armament: 2 light beams."/>
+  </vessel>
+	
+    <vessel    uniqueID="7713"    side="21"       classname="Bomber" broadType="singleseat">
+    <art     meshfile="dat/TSN/Neutrals/Bomber.dxs"    diffuseFile="dat/ship4A_diffuse.png"
+             glowFile="dat/ship4A_glow.png"    specularFile="dat/ship4A_specular.png" scale="0.05" pushRadius="80"/>
+   <!-- Weapons and Shields modified (1/4)-->
+	<shields front="1" back="1"/>
+    <performance turnrate="0.01" topspeed="1.2"/>
+    <fleet_ai commonality="75"/>
+	<drone_port x=" 84" y="-4" z="286" damage="10" cycletime="15.0" range="1700"/>
+    <beam_port x="0" y="-1" z="217" damage="0.25" arcwidth="0.3" cycletime="5.0" range="800"/>
+    <engine_port x="0" y="0" z="-230"/>
+    <engine_port x="92" y="-7" z="-240"/>
+    <engine_port x="-92" y="-7" z="-240"/>
+    <impulse_point x="-124" y="-6" z="-248"/>
+    <impulse_point x=" 124" y="-6" z="-248"/>
+    <maneuver_point x="-177" y="-6" z="-132"/>
+    <maneuver_point x=" 177" y="-6" z="-132"/>
+    <long_desc text="Displacement: 0.015 kt. Armament: 1 light beams. 4 Wingmounted Drones"/>
+  </vessel>
+	
+     <vessel uniqueID="7714" side="21" classname="Platform" broadType="carrier">
+    <art meshfile="dat/TSN/Neutrals/F2S.dxs" diffuseFile="dat/TSN/Neutrals/F3_Dif.png" glowFile="dat/TSN/Neutrals/F3_Glow.png" specularFile="dat/TSN/Neutrals/F3_Spec.png" scale="0.25" pushRadius="250"/>
+    <shields front="40" back="30"/>
+    <performance turnrate="0.00001" topspeed="0.0"/>
+    <carrierload baycount="6" bomber="2"/>	
+    <fleet_ai commonality="90"/>
+    <drone_port x=" 84" y="-4" z="286" damage="10" cycletime="20.0" range="4000"/>
+    <beam_port x="10" y="16.16" z="-0" damage="4.25" arcwidth="1.0" cycletime="6.0" range="4000"/>
+    <beam_port x="0" y="-16.16" z="-0" damage="4.25" arcwidth="1.0" cycletime="6.0" range="1500"/>
+    <impulse_point x="56.31" y="-16.16" z="-409.5"/>
+    <impulse_point x="-56.31" y="-16.16" z="-409.5"/>
+    <maneuver_point x="182.37" y="-17.78" z="202.89"/>
+    <maneuver_point x="-182.37" y="-17.78" z="202.89"/>
+    <long_desc text="Static Multi Role Platform Varied Armament"/>
+  </vessel>
+	
+	<!--Stealth Race Ships-->
+	
+				<vessel uniqueID="7750" side="22" classname="Dusk" broadType="small">
+    <art meshfile="dat/TSN/Neutrals/Stealth_Frigate.dxs" diffuseFile="dat/TSN/Neutrals/shipHull14.png" glowFile="dat/TSN/Neutrals/shipHull14.png" specularFile="dat/TSN/Neutrals/shipHull14.png" scale="0.4" pushRadius="250"/>
+    <shields front="25" back="35"/>
+    <performance turnrate="0.004" topspeed="0.4"/>
+    <fleet_ai commonality="90"/>
+<beam_port x="20" y="0" z="178" damage="0.4" arcwidth="0.3" cycletime="6.0" range="1100"/>
+    <beam_port x="-20" y="0" z="178" damage="0.4" arcwidth="0.3" cycletime="6.0" range="1100"/>
+    <beam_port x="0" y="0" z="-183" damage="0.4" arcwidth="0.3" cycletime="6.0" range="1100"/>
+    <impulse_point x="56.31" y="-16.16" z="-409.5"/>
+    <impulse_point x="-56.31" y="-16.16" z="-409.5"/>
+    <maneuver_point x="182.37" y="-17.78" z="202.89"/>
+    <maneuver_point x="-182.37" y="-17.78" z="202.89"/>
+    <long_desc text="Dusk class Frigate"/> 
+  </vessel>
+	
+					<vessel uniqueID="7751" side="22" classname="Umbra" broadType="Medium">
+    <art meshfile="dat/TSN/Neutrals/Stealth_Cruiser.dxs" diffuseFile="dat/TSN/Neutrals/shipHull14.png" glowFile="dat/TSN/Neutrals/shipHull14.png" specularFile="dat/TSN/Neutrals/shipHull14.png" scale="0.5" pushRadius="250"/>
+    <shields front="50" back="75"/>
+    <performance turnrate="0.003" topspeed="0.4"/>
+    <fleet_ai commonality="90"/>
+<beam_port x="20" y="0" z="178" damage="0.6" arcwidth="0.3" cycletime="6.0" range="1100"/>
+    <beam_port x="-20" y="0" z="178" damage="0.6" arcwidth="0.3" cycletime="6.0" range="1100"/>
+    <beam_port x="0" y="0" z="-183" damage="0.6" arcwidth="0.3" cycletime="6.0" range="1100"/>
+	    <beam_port x="0" y="0" z="1" damage="1.6" arcwidth="1.0" cycletime="5.5" range="800"/>
+    <impulse_point x="56.31" y="-16.16" z="-409.5"/>
+    <impulse_point x="-56.31" y="-16.16" z="-409.5"/>
+    <maneuver_point x="182.37" y="-17.78" z="202.89"/>
+    <maneuver_point x="-182.37" y="-17.78" z="202.89"/>
+    <long_desc text="Umbra class Cruiser"/> 
+  </vessel>
+	
+    <vessel uniqueID="7752" side="22" classname="Eclipse" broadType="Medium">
+    <art meshfile="dat/TSN/Neutrals/Stealth_Dread.dxs" diffuseFile="dat/TSN/Neutrals/shipHull14.png" glowFile="dat/TSN/Neutrals/shipHull14.png" specularFile="dat/TSN/Neutrals/shipHull14.png" scale="0.6" pushRadius="250"/>
+    <shields front="75" back="100"/>
+    <performance turnrate="0.002" topspeed="0.3"/>
+    <fleet_ai commonality="90"/>
+<beam_port x="40" y="0" z="178" damage="0.6" arcwidth="0.3" cycletime="4.5" range="1100"/>
+    <beam_port x="-40" y="0" z="178" damage="0.6" arcwidth="0.3" cycletime="4.5" range="1100"/>
+    <beam_port x="0" y="0" z="-183" damage="0.6" arcwidth="0.3" cycletime="4.5" range="1100"/>
+	<beam_port x="0" y="0" z="1" damage="1.6" arcwidth="1.0" cycletime="4.0" range="750"/>
+    <impulse_point x="56.31" y="-16.16" z="-409.5"/>
+    <impulse_point x="-56.31" y="-16.16" z="-409.5"/>
+    <maneuver_point x="182.37" y="-17.78" z="202.89"/>
+    <maneuver_point x="-182.37" y="-17.78" z="202.89"/>
+    <long_desc text="Eclipse class Stealthed Dreadnought"/> 
+  </vessel>
 </vessel_data>

@@ -1,0 +1,32 @@
+Tri
+
+    <engine_port x="15" y="0" z="-350"/>
+    <engine_port x= "-15" y="0" z="-350"/>
+
+
+F3
+
+    <engine_port x="136" y="-73" z="-465"/>
+    <engine_port x= "-136" y="-73" z="-465"/>
+    <engine_port x="91" y="-73" z="-465"/>
+    <engine_port x= "-91" y="-73" z="-465"/>
+   <engine_port x="136" y="73" z="-465"/>
+    <engine_port x= "-136" y="73" z="-465"/>
+    <engine_port x="91" y="73" z="-465"/>
+    <engine_port x= "-91" y="73" z="-465"/>
+
+
+G3
+
+<engine_port x= "-149" y="161" z="-508"/>
+<engine_port x= "149" y="161" z="-508"/>
+<engine_port x= "-149" y="-161" z="-508"/>
+<engine_port x= "149" y="-161" z="-508"/>
+
+
+P3
+
+<engine_port x= "50" y="-14" z="427"/>
+<engine_port x= "-50" y="-14" z="427"/>
+<engine_port x= "0" y="-14" z="427"/>
+<engine_port x= "0" y="11" z="427"/>
