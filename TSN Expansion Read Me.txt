@@ -1,6 +1,6 @@
 About:
 The Terran Stellar Navy Expansion
-Version 2.014, May 2020
+Version 2.016, Nov 2020
 For Artemis Version 2.7.5
 
 -----------------Credits ------------------
@@ -38,26 +38,31 @@ Modifications
 ------------------------------------------------
 Additional and up-to-date notes can be found on the GitHub repository: https://github.com/tsnrp/mod
 
+This Version 2.016
+Replaced Texture files changed for Races 20-22 down to 1K and saved with no layering to reduce posible cause of crashes
+Changed Veseldata - spelling, typographical
+Changed Vesseldata - Budron AI cominality to include some ships at 100 (previously 90) and a fighter at 100 Previously 99  as posible cuases of crashes
+New Nemiese SNT (Lancer) as per useability request from Lancer Engineer and TSDA Group.
+
+------------------------------------------------
 File Additions/Changes (excluding those relating to new vessels)
-Changed: clientShipIcon.png reset to original
-Changed: overheat-warning.wav - changed to something more audible for VOIP situations.
-Changed: Logo512.png set to TSN logo and version number
-Added: marker.dxs generic mesh and marker.png (updated 16/2/19 to improve visibility)
-Added: Jump gate models
-Added: Planet models and textures
-Changed: icon-blackhole.png, icon-nebula.png, scienceReticle.png, tacShldA1.png, tacShldA2.png, tacShldA3.png, targetReticle2.png
+
+This Version 2.016
+Replaced Texture files changed for Races 20-22 down to 1K and saved with no layering to reduce posible cause of crashes
+New Nemiese SNT (Lancer) as per useability request from Lancer Engineer and TSDA Group.
 
 ------------------------------------------------
 VesselData Changes:
-This Version 2.014
+Changed Veseldata - spelling, typographical
+Changed Vesseldata - Budron AI cominality to include some ships at 100 (previously 90) and a fighter at 100 Previously 99  as posible cuases of crashes
+
+Older
 Changed: many NPC node locations to work - thanks to  Yooey, Rakaydos & Starry
 Changed: Torpedo and Phase Shock Torpedo stats now back in line with mirror universe edition now that the option works again, to be monitored as may reqire further fine tuneing!
 Added Slingshot components
 Added MineSweeper (Hull 4101)
 Added new races 20-22
 Changed: Stats on Zeus Athena (nerf) and new internal for Zeus.
-
-Older
 Changed: hullRace 'Terran' to 'USFP'
 Added hullRace 9 - 18: USFP, N'Tani, Hjorden, Unakalhai, Caltron, Euphini Pirates, Kralien, Arvonian, Torgoth, Rumarian
 Added Player ships 17 - 25: Nemesis Interceptor, Ares Class Light Cruiser, Valkyrie Class Light Cruiser, Apollo Class Light Cruiser, Orion Class Scout, Scout Mk2
@@ -83,6 +88,9 @@ Added: Additional assets - Hegemony Sensor Buoy and Comms Relay, USFP Sensor Buo
 
 ------------------------------------------------
 Artemis.ini Changes:
+Nill
+
+Older
 playerShieldRechargeRate set to 0.1
 enemyShieldRechargeRate set to 0.05
 energyUseCoeff set to 0.6
