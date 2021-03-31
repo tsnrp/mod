@@ -1,6 +1,6 @@
 About:
 The Terran Stellar Navy Expansion
-Version 2.016, Nov 2020
+Version 2.017, March 2021
 For Artemis Version 2.7.5
 
 -----------------Credits ------------------
@@ -15,6 +15,7 @@ For Artemis Version 2.7.5
   Assistance from          Gebbens, Matsiyan and other members the TSN RP Community
   Executive Producer       Xavier Wise
 -------------------------------------------
+
 
 Installation
 To install drag and drop all files into the Artemis directory
@@ -34,20 +35,31 @@ To Enable just the UI elements, run the "zUI Enable.bat" file. This will replace
 --- If you would like to view what files are being replace, simply open the "zUI Enable.bat" or "zUI Disable.bat" files using Notepad.---
 
 ==================================================
+Details of Licensed Use of Models
+------------------------------------------------
+1) GasExtractor, TSNGateMk2, ScanPost & Hegmony Dry Dock are Licensed models and textures. License held by Fish Evans on behalf of TSN Mod CGTR 3278806 from CGtrader Package ID 446961. Useage reserved for TSN Mod/ TSN Community Projects. 2021-01-25 
+
+
+
+==================================================
 Modifications
 ------------------------------------------------
 Additional and up-to-date notes can be found on the GitHub repository: https://github.com/tsnrp/mod
 
-This Version 2.016
-Replaced Texture files changed for Races 20-22 down to 1K and saved with no layering to reduce posible cause of crashes
-Changed Veseldata - spelling, typographical
-Changed Vesseldata - Budron AI cominality to include some ships at 100 (previously 90) and a fighter at 100 Previously 99  as posible cuases of crashes
-New Nemiese SNT (Lancer) as per useability request from Lancer Engineer and TSDA Group.
+This Version 2.017
+New: TSNGateMk2 Files
+New: GasExtractor Hegmony industrial facility for placment in nebulars
+New: Logistics Post Hegmony industrial facility
+New: Hegmony Dry Dock
+New: Kralian Tug ship
+New: Kralian Astro Cannon + shell
+Modified: Arvonian fighter to a Wing with assotiated changes to carrier load of Arvionian Carriers (Lag reduction effort)
+Fixed: Removed double slashes in file paths of a number of vesselData entrys, may or may not of been causeing issues for some systems.
 
 ------------------------------------------------
 File Additions/Changes (excluding those relating to new vessels)
 
-This Version 2.016
+Version 2.016
 Replaced Texture files changed for Races 20-22 down to 1K and saved with no layering to reduce posible cause of crashes
 New Nemiese SNT (Lancer) as per useability request from Lancer Engineer and TSDA Group.
 
@@ -57,6 +69,10 @@ Changed Veseldata - spelling, typographical
 Changed Vesseldata - Budron AI cominality to include some ships at 100 (previously 90) and a fighter at 100 Previously 99  as posible cuases of crashes
 
 Older
+Replaced: Texture files changed for Races 20-22 down to 1K and saved with no layering to reduce posible cause of crashes
+Changed: Veseldata - spelling, typographical
+Changed: Vesseldata - Budron AI cominality to include some ships at 100 (previously 90) and a fighter at 100 Previously 99  as posible cuases of crashes
+Replaced: Nemiese SNT (Lancer) as per useability request from Lancer Engineer and TSDA Group.
 Changed: many NPC node locations to work - thanks to  Yooey, Rakaydos & Starry
 Changed: Torpedo and Phase Shock Torpedo stats now back in line with mirror universe edition now that the option works again, to be monitored as may reqire further fine tuneing!
 Added Slingshot components
