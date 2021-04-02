@@ -1273,7 +1273,7 @@
     <shields front="100" back="100"/>
 	<performance turnrate="0.0" topspeed="0.0"/>
     <!-- the base has only one shield facing, the "front" -->
-    <beam_port x="0" y="250" z="0" damage="1.75" arcwidth="0.4" cycletime="6.0" range="1000"/>
+    <beam_port x="0" y="250" z="0" damage="1.75" arcwidth="1.0" cycletime="6.0" range="1000"/>
     <production coeff="1.0"/>
     <long_desc text="Starbase with strong shields. It is armed with a standard base beam, and can manufacture torpedoes for your ship. May need help if attacked."/>
   </vessel>
@@ -1298,7 +1298,7 @@
     <shields front="200" back="200"/>
     <performance turnrate="0.0" topspeed="0.0"/>
 	<!-- the base has only one shield facing, the "front" -->
-    <beam_port x="0" y="150" z="0" damage="1.75" arcwidth="0.4" cycletime="6.0" range="1000"/>
+    <beam_port x="0" y="150" z="0" damage="1.75" arcwidth="1.0" cycletime="6.0" range="1000"/>
     <torpedo_station_port x="0" y="-10" z="0" damage="7.5" cycletime="30.0" range="5000"/>
     <production coeff="2.0"/>
     <long_desc text="Command Starbase with very strong shields. It is armed with a base beam and torpedoes, and can manufacture torps at twice the normal rate."/>
@@ -1336,7 +1336,7 @@
     <shields front="100" back="100"/>
     <performance turnrate="0.0" topspeed="0.0"/>
 	<!-- the base has only one shield facing, the "front" -->
-    <beam_port x="0" y="300" z="0" damage="1.75" arcwidth="0.4" cycletime="6.0" range="1000"/>
+    <beam_port x="0" y="300" z="0" damage="1.75" arcwidth="1.0" cycletime="6.0" range="1000"/>
     <long_desc text="Kralien Starbase. It has standard shields, and a base beam."/>
   </vessel>
 
@@ -1347,7 +1347,7 @@
     <shields front="125" back="125"/>
     <performance turnrate="0.0" topspeed="0.0"/>
 	<!-- the base has only one shield facing, the "front" -->
-    <beam_port x="0" y="55" z="0" damage="1.75" arcwidth="0.4" cycletime="6.0" range="1000"/>
+    <beam_port x="0" y="55" z="0" damage="1.75" arcwidth="1.0" cycletime="6.0" range="1000"/>
     <carrierload baycount="14"/>
     <long_desc text="Arvonian Starbase. It has strong shields, a base beam, and carries a complement of 10 fighters."/>
   </vessel>
@@ -1359,7 +1359,7 @@
     <shields front="200" back="200"/>
     <performance turnrate="0.0" topspeed="0.0"/>
 	<!-- the base has only one shield facing, the "front" -->
-    <beam_port x="0" y="2100" z="0" damage="1.75" arcwidth="0.4" cycletime="6.0" range="1500"/>
+    <beam_port x="0" y="2100" z="0" damage="1.75" arcwidth="1.0" cycletime="6.0" range="1500"/>
     <drone_port x="0" y="-10" z="0" damage="7.5" cycletime="15.0" range="5000"/>
     <long_desc text="Torgoth Starbase. It has very powerful shields, a long range base beam, and can fire drones."/>
   </vessel>
@@ -1454,7 +1454,7 @@
   </vessel>
 
   <vessel uniqueID="1058" side="9" classname="Docking Port" broadType="static">
-    <art meshfile="dat/TSN/USFP/marker.dxs" diffuseFile="dat/TSN/USFP/marker.png" glowFile="dat/TSN/USFP/marker.png" specularFile="dat/TSN/USFP/marker.png" scale="0.9" pushRadius="0" />
+    <art meshfile="dat/TSN/USFP/marker.dxs" diffuseFile="dat/TSN/USFP/marker.png" glowFile="dat/TSN/USFP/marker.png" specularFile="dat/TSN/USFP/marker.png" scale="0.01" pushRadius="0" />
 	<!-- Weapons and Shields modified (1/4)-->
     <shields front="10" back="10" />
     <performance turnrate="0.0" topspeed="0.0" />
