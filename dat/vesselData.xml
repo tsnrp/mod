@@ -2360,7 +2360,7 @@
     <long_desc text="Wing of 4 Fighters Displacement: 0.015 kt. Armament: 2 light beams."/>
   </vessel>
 
-  <vessel    uniqueID=" "    side="3"       classname="Light Carrier" broadType="carrier">
+  <vessel    uniqueID="3001"    side="3"       classname="Light Carrier" broadType="carrier">
     <art     meshfile="dat/ENE_Matt3B.dxs"    diffuseFile="dat/ship4B_diffuse.png"
              glowFile="dat/ship4B_glow.png"    specularFile="dat/ship4B_specular.png" scale="0.2" pushRadius="200"/>
    <!-- Weapons and Shields modified (1/4)-->
