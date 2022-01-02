@@ -19,9 +19,9 @@
   </hullRace>
   
   <hullRace ID="2" name="Kralien" keys="enemy standard">
-    <taunt immunity="does not practice the Kralien religion faithfully" text="Hey wormface! Can I borrow your Holy Scroll of Amborax? I need to wipe my stinky feet!"/>
-    <taunt immunity="complained to Kralien High Command that Kralien ships are too weak" text="You call that a warship? I could crush that toy with my bare hands."/>
-    <taunt immunity="is unmarried" text="You're so ugly that your wife will thank me for killing you!"/>
+    <taunt immunity="is a devout follower of the Kralien Order" text="Your claim to this galaxy is built upon the lies of your ancestors."/>
+    <taunt immunity="is a decorated hero of the Kralien Order" text="Surrender now, or face defeat."/>
+    <taunt immunity="is a veteran of many campaigns" text="Do not throw away your life needlessly. Retreat now and retain your honour and your life."/>
   </hullRace>
   
   <hullRace ID="3" name="Arvonian" keys="enemy support whalelover">
@@ -98,9 +98,9 @@
   </hullRace>
   
   <hullRace ID="15" name="Kralien" keys="FactionKralien">
-    <taunt immunity="does not practice the Kralien religion faithfully" text="Hey wormface! Can I borrow your Holy Scroll of Amborax? I need to wipe my stinky feet!"/>
-    <taunt immunity="complained to Kralien High Command that Kralien ships are too weak" text="You call that a warship? I could crush that toy with my bare hands."/>
-    <taunt immunity="is unmarried" text="You're so ugly that your wife will thank me for killing you!"/>
+    <taunt immunity="is a devout follower of the Kralien Order" text="Your claim to this galaxy is built upon the lies of your ancestors."/>
+    <taunt immunity="is a decorated hero of the Kralien Order" text="Surrender now, or face defeat."/>
+    <taunt immunity="is a veteran of many campaigns" text="Do not throw away your life needlessly. Retreat now and retain your honour and your life."/>
   </hullRace>
   
   <hullRace ID="16" name="Arvonian" keys="FactionArvonian">
@@ -127,19 +127,19 @@
     <taunt immunity="is a human who has never even seen the Ximni homeworld" text="The only thing that smells worse than dragon breath is the Ximni home planet!"/>
   </hullRace>
 	
-  <hullRace ID="20" name="Dinkuno" keys="FactionDinkuno">
+  <hullRace ID="20" name="Dhvarahn" keys="FactionDhvarahn">
     <taunt immunity="Belongs to the Uphan religious group" text="Didn’t you have your large meal yesterday?"/>
     <taunt immunity="Has binocular mutation" text="Your four eyes are your most disgusting feature"/>
     <taunt immunity="Led infantry forces on surface engagements on various worlds" text="You’re so weak my grandmother could take you!"/>
   </hullRace>
 	
-  <hullRace ID="21" name="Budon" keys="FactionBudron">
+  <hullRace ID="21" name="Bohraam" keys="FactionBohraam">
     <taunt immunity="is known to soak daily" text="You are lookng a bit prunish!"/>
     <taunt immunity="Has a first in digestive chemistry" text="Was that deliberate or did you just fart and explode half your crew?"/>
     <taunt immunity="Is mild-mannered" text="Hey, you need to take a chill pill"/>
   </hullRace>
 	
-  <hullRace ID="22" name="Sechatzal" keys="FactionSechatzal">
+  <hullRace ID="22" name="Solaith" keys="FactionSolaith">
     <taunt immunity="has particularly good stealth organs" text="I can seee you!"/>
     <taunt immunity="is ancient" text="Should you not still be in the spawning pools?"/>
     <taunt immunity="is a recon expert" text="Look the point is to get the info.. Not display it!"/>
@@ -3562,9 +3562,9 @@
     <long_desc text="Ximni Long Range Shuttle^Armed only with a small laser, this shuttle is known as the Party Ride."/>
   </vessel>
 	
-  <!--Dinkuno Ships-->
+  <!--Dhvarahn Ships-->
   <vessel uniqueID="7600" side="20" classname="Warbird" broadType="small">
-    <art meshfile="dat/TSN/Neutrals/TriRev.dxs" diffuseFile="dat/TSN/Neutrals/tri_dif.png" glowFile="dat/TSN/Neutrals/tri_glow.png" specularFile="dat/TSN/Neutrals/tri_Spec.png" scale="0.25" pushRadius="175"/>
+    <art meshfile="dat/TSN/Neutrals/Dhvarahn.dxs" diffuseFile="dat/TSN/Neutrals/Dhvarahn_dif.png" glowFile="dat/TSN/Neutrals/Dhvarahn_glow.png" specularFile="dat/TSN/Neutrals/Dhvarahn_Spec.png" scale="0.25" pushRadius="175"/>
     <!-- Weapons and Shields modified (1/4)-->
 	<shields front="40" back="30"/>
     <performance turnrate="0.004" topspeed="0.75"/>
@@ -3596,7 +3596,7 @@
   </vessel>    
   
   <vessel uniqueID="7601" side="20" classname="Transport" broadType="small">
-    <art meshfile="dat/TSN/Neutrals/TriRev.dxs" diffuseFile="dat/TSN/Neutrals/tri_dif.png" glowFile="dat/TSN/Neutrals/tri_glow.png" specularFile="dat/TSN/Neutrals/tri_Spec.png" scale="0.25" pushRadius="175"/>
+    <art meshfile="dat/TSN/Neutrals/Dhvarahn.dxs" diffuseFile="dat/TSN/Neutrals/Dhvarahn_dif.png" glowFile="dat/TSN/Neutrals/Dhvarahn_glow.png" specularFile="dat/TSN/Neutrals/Dhvarahn_Spec.png" scale="0.25" pushRadius="175"/>
     <!-- Weapons and Shields modified (1/4)-->
 	<shields front="45" back="45"/>
     <performance turnrate="0.003" topspeed="0.5"/>
@@ -3637,9 +3637,9 @@
     <long_desc text="Unknown Transport. Shields match Skaraan export models.^Reaction drive system is highly energetic - avoid zones in red.^Vessel primary armamant appears to be short range, low damage drone launchers."/> 
    </vessel>
 	
-  <!-- Budron Ships-->
-  <vessel uniqueID="7700" side="21" classname="Haughty" broadType="small">
-    <art meshfile="dat/TSN/Neutrals/P3.dxs" diffuseFile="dat/TSN/Neutrals/P3_Dif.png" glowFile="dat/TSN/Neutrals/P3_Glow.png" specularFile="dat/TSN/Neutrals/P3_Spec.png" scale="0.25" pushRadius="250"/>
+  <!-- Bohraam Ships-->
+  <vessel uniqueID="7700" side="21" classname="Destruction" broadType="small">
+    <art meshfile="dat/TSN/Neutrals/Bohraam3.dxs" diffuseFile="dat/TSN/Neutrals/Bohraam3_Dif.png" glowFile="dat/TSN/Neutrals/Bohraam3_Glow.png" specularFile="dat/TSN/Neutrals/Bohraam3_Spec.png" scale="0.25" pushRadius="250"/>
     <shields front="50" back="40"/>
     <performance turnrate="0.0045" topspeed="0.5"/>
     <fleet_ai commonality="100"/>
@@ -3651,10 +3651,10 @@
     <impulse_point x="0" y="-32" z="-108.8"/>
     <maneuver_point x="205" y="-27" z="-18.25"/>
     <maneuver_point x="-205" y="-27" z="-18.25"/>
-    <long_desc text="Haughty class frigate. 2x pulse lasers"/> 
+    <long_desc text="Destruction class frigate. 2x pulse lasers"/>
   </vessel>
 
-  <vessel uniqueID="7701" side="21" classname="Aloof" broadType="small">
+  <vessel uniqueID="7701" side="21" classname="Devastator" broadType="small">
     <art meshfile="dat/TSN/Neutrals/P3.dxs" diffuseFile="dat/TSN/Neutrals/P3_Dif.png" glowFile="dat/TSN/Neutrals/P3_Glow.png" specularFile="dat/TSN/Neutrals/P3_Spec.png" scale="0.25" pushRadius="250"/>
     <shields front="63" back="63"/>
     <performance turnrate="0.0040" topspeed="0.5"/>
@@ -3666,10 +3666,10 @@
     <impulse_point x="0" y="-32" z="-108.8"/>
     <maneuver_point x="205" y="-27" z="-18.25"/>
     <maneuver_point x="-205" y="-27" z="-18.25"/>
-    <long_desc text="Aloof class destroyer.^1x overcharged, gas-cooled beam"/> 
+    <long_desc text="Devastator class destroyer.^1x overcharged, gas-cooled beam"/>
   </vessel>
 			
-  <vessel uniqueID="7702" side="21" classname="Disdainful" broadType="small">
+  <vessel uniqueID="7702" side="21" classname="Reaper" broadType="small">
     <art meshfile="dat/TSN/Neutrals/G3.dxs" diffuseFile="dat/TSN/Neutrals/G3_Dif.png" glowFile="dat/TSN/Neutrals/G3_Glow.png" specularFile="dat/TSN/Neutrals/G3_Spec.png" scale="0.25" pushRadius="250"/>
     <shields front="50" back="40"/>
     <performance turnrate="0.0035" topspeed="0.44"/>
@@ -3684,10 +3684,10 @@
     <impulse_point x=" 139" y="102.8" z="-380.9"/>
     <maneuver_point x="-308.7" y="-64" z="80"/>
     <maneuver_point x=" 308.7" y="-64" z="80"/>
-    <long_desc text="Disdainful class cruiser.^2x wide-angle beam lasers"/> 
+    <long_desc text="Reaper class cruiser.^2x wide-angle beam lasers"/>
   </vessel>
 
-  <vessel uniqueID="7703" side="21" classname="Annoyed" broadType="small">
+  <vessel uniqueID="7703" side="21" classname="Havoc" broadType="small">
     <art meshfile="dat/TSN/Neutrals/G3.dxs" diffuseFile="dat/TSN/Neutrals/G3_Dif.png" glowFile="dat/TSN/Neutrals/G3_Glow.png" specularFile="dat/TSN/Neutrals/G3_Spec.png" scale="0.25" pushRadius="250"/>
     <shields front="80" back="80"/>
     <performance turnrate="0.0034" topspeed="0.44"/>
@@ -3704,10 +3704,10 @@
     <impulse_point x=" 139" y="102.8" z="-380.9"/>
     <maneuver_point x="-308.7" y="-64" z="80"/>
     <maneuver_point x=" 308.7" y="-64" z="80"/>
-    <long_desc text="Annoyed class escort cruiser.^4x pulse lasers"/>
+    <long_desc text="Havoc class escort cruiser.^4x pulse lasers"/>
   </vessel>
 
-  <vessel uniqueID="7704" side="21" classname="Wretched" broadType="Large">
+  <vessel uniqueID="7704" side="21" classname="Desolation" broadType="Large">
     <art meshfile="dat/TSN/Neutrals/F3.dxs" diffuseFile="dat/TSN/Neutrals/F3_Dif.png" glowFile="dat/TSN/Neutrals/F3_Glow.png" specularFile="dat/TSN/Neutrals/F3_Spec.png" scale="0.25" pushRadius="250"/>
     <shields front="82" back="82"/>
     <performance turnrate="0.0025" topspeed="0.44"/>
@@ -3726,10 +3726,10 @@
     <impulse_point x="-56.31" y="-16.16" z="-409.5"/>
     <maneuver_point x="182.37" y="-17.78" z="202.89"/>
     <maneuver_point x="-182.37" y="-17.78" z="202.89"/>
-    <long_desc text="Wretched class Battlecruiser.^1x high intensity pulse laser (Fore), 1x medium intensity pulse laser (Aft)"/> 
+    <long_desc text="Desolation class Battlecruiser.^1x high intensity pulse laser (Fore), 1x medium intensity pulse laser (Aft)"/>
   </vessel>
 
-  <vessel uniqueID="7705" side="21" classname="Vehement" broadType="Large">
+  <vessel uniqueID="7705" side="21" classname="Demolition" broadType="Large">
     <art meshfile="dat/TSN/Neutrals/F3.dxs" diffuseFile="dat/TSN/Neutrals/F3_Dif.png" glowFile="dat/TSN/Neutrals/F3_Glow.png" specularFile="dat/TSN/Neutrals/F3_Spec.png" scale="0.25" pushRadius="250"/>
     <shields front="70" back="70"/>
     <performance turnrate="0.002" topspeed="0.4"/>
@@ -3748,7 +3748,7 @@
     <impulse_point x="-56.31" y="-16.16" z="-409.5"/>
     <maneuver_point x="182.37" y="-17.78" z="202.89"/>
     <maneuver_point x="-182.37" y="-17.78" z="202.89"/>
-    <long_desc text="Vehement class, stand-off battleship.^1x high intensity, gas-cooled, pulse laser. 1x drone launcher"/> 
+    <long_desc text="Demolition class, stand-off battleship.^1x high intensity, gas-cooled, pulse laser. 1x drone launcher"/>
   </vessel>	
 	
   <vessel uniqueID="7710" side="21" classname="Cargo" broadType="small">
@@ -3844,7 +3844,7 @@
     <long_desc text="Static, multi-role platform. Various armaments. ^Has a shuttle/fighter launch bay."/>
   </vessel>
 	
-  <!--Sechatzal Ships-->
+  <!--Solaith Ships-->
   <vessel uniqueID="7750" side="22" classname="Spectre" broadType="small">
     <art meshfile="dat/TSN/Neutrals/Stealth_Frigate.dxs" diffuseFile="dat/TSN/Neutrals/shipHull14.png" glowFile="dat/TSN/Neutrals/shipHull14.png" specularFile="dat/TSN/Neutrals/shipHull14.png" scale="0.4" pushRadius="250"/>
     <shields front="25" back="35"/>
