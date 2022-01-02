@@ -2274,15 +2274,28 @@
 	<shields front="10" back="10"/>
     <performance turnrate="0.01" topspeed="1.2"/>
     <fleet_ai commonality="100"/>
-    <beam_port x=" 111" y="-1" z="217" damage="0.4" arcwidth="0.35" cycletime="2.5" range="900"/>
-    <beam_port x="-111" y="-1" z="217" damage="0.4" arcwidth="0.35" cycletime="2.5" range="900"/>
-    <engine_port x="0" y="0" z="-230"/>
-    <engine_port x="92" y="-7" z="-240"/>
-    <engine_port x="-92" y="-7" z="-240"/>
-    <impulse_point x="-124" y="-6" z="-248"/>
-    <impulse_point x=" 124" y="-6" z="-248"/>
-    <maneuver_point x="-177" y="-6" z="-132"/>
-    <maneuver_point x=" 177" y="-6" z="-132"/>
+    <beam_port x=" 65" y="15" z="130" damage="0.4" arcwidth="0.35" cycletime="2.5" range="900"/>
+    <beam_port x="-86" y="15" z="172" damage="0.4" arcwidth="0.35" cycletime="2.5" range="900"/>
+    <impulse_point x="-160" y="-97" z="-80"/>
+    <impulse_point x=" 234.5" y=" 50.5" z="-256"/>
+    <maneuver_point x="-256" y=" 87.5" z="-122.7"/>
+    <maneuver_point x="-5.5" y="-96" z="-25.5"/>
+    <!-- front fighter -->
+    <engine_port x="-19" y="10" z="64"/>
+    <engine_port x="-64" y="3" z="48"/>
+    <engine_port x=" 26" y="3" z="48"/>
+    <!-- bottom fighter -->
+    <engine_port x="-94.8" y="-91" z="-70"/>
+    <engine_port x="-139.8" y="-98" z="-86"/>
+    <engine_port x="-49.8" y="-98" z="-86"/>
+    <!-- starboard fighter -->
+    <engine_port x="169" y="54.5" z="-245.4"/>
+    <engine_port x="124" y="47.5" z="-261.4"/>
+    <engine_port x="214" y="47.5" z="-261.4"/>
+    <!-- port fighter -->
+    <engine_port x="-169.5" y="92.3" z="-169.4"/>
+    <engine_port x="-214.5" y="85.3" z="-185.4"/>
+    <engine_port x="-124.5" y="85.3" z="-185.4"/>
     <long_desc text="Wing of 4 Fighters Displacement: 0.015 kt. Armament: 2 light beams."/>
   </vessel>
 
