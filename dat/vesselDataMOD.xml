@@ -19,9 +19,9 @@
   </hullRace>
   
   <hullRace ID="2" name="Kralien" keys="enemy standard">
-    <taunt immunity="does not practice the Kralien religion faithfully" text="Hey wormface! Can I borrow your Holy Scroll of Amborax? I need to wipe my stinky feet!"/>
-    <taunt immunity="complained to Kralien High Command that Kralien ships are too weak" text="You call that a warship? I could crush that toy with my bare hands."/>
-    <taunt immunity="is unmarried" text="You're so ugly that your wife will thank me for killing you!"/>
+    <taunt immunity="is a devout follower of the Kralien Order" text="Your claim to this galaxy is built upon the lies of your ancestors."/>
+    <taunt immunity="is a decorated hero of the Kralien Order" text="Surrender now, or face defeat."/>
+    <taunt immunity="is a veteran of many campaigns" text="Do not throw away your life needlessly. Retreat now and retain your honour and your life."/>
   </hullRace>
   
   <hullRace ID="3" name="Arvonian" keys="enemy support whalelover">
@@ -98,9 +98,9 @@
   </hullRace>
   
   <hullRace ID="15" name="Kralien" keys="FactionKralien">
-    <taunt immunity="does not practice the Kralien religion faithfully" text="Hey wormface! Can I borrow your Holy Scroll of Amborax? I need to wipe my stinky feet!"/>
-    <taunt immunity="complained to Kralien High Command that Kralien ships are too weak" text="You call that a warship? I could crush that toy with my bare hands."/>
-    <taunt immunity="is unmarried" text="You're so ugly that your wife will thank me for killing you!"/>
+    <taunt immunity="is a devout follower of the Kralien Order" text="Your claim to this galaxy is built upon the lies of your ancestors."/>
+    <taunt immunity="is a decorated hero of the Kralien Order" text="Surrender now, or face defeat."/>
+    <taunt immunity="is a veteran of many campaigns" text="Do not throw away your life needlessly. Retreat now and retain your honour and your life."/>
   </hullRace>
   
   <hullRace ID="16" name="Arvonian" keys="FactionArvonian">
@@ -127,7 +127,7 @@
     <taunt immunity="is a human who has never even seen the Ximni homeworld" text="The only thing that smells worse than dragon breath is the Ximni home planet!"/>
   </hullRace>
 	
-  <hullRace ID="20" name="Dinkuno" keys="FactionDinkuno">
+  <hullRace ID="20" name="Dhvarahn" keys="FactionDhvarahn">
     <taunt immunity="Belongs to the Uphan religious group" text="Didn’t you have your large meal yesterday?"/>
     <taunt immunity="Has binocular mutation" text="Your four eyes are your most disgusting feature"/>
     <taunt immunity="Led infantry forces on surface engagements on various worlds" text="You’re so weak my grandmother could take you!"/>
@@ -3562,9 +3562,9 @@
     <long_desc text="Ximni Long Range Shuttle^Armed only with a small laser, this shuttle is known as the Party Ride."/>
   </vessel>
 	
-  <!--Dinkuno Ships-->
+  <!--Dhvarahn Ships-->
   <vessel uniqueID="7600" side="20" classname="Warbird" broadType="small">
-    <art meshfile="dat/TSN/Neutrals/TriRev.dxs" diffuseFile="dat/TSN/Neutrals/tri_dif.png" glowFile="dat/TSN/Neutrals/tri_glow.png" specularFile="dat/TSN/Neutrals/tri_Spec.png" scale="0.25" pushRadius="175"/>
+    <art meshfile="dat/TSN/Neutrals/Dhvarahn.dxs" diffuseFile="dat/TSN/Neutrals/Dhvarahn_dif.png" glowFile="dat/TSN/Neutrals/Dhvarahn_glow.png" specularFile="dat/TSN/Neutrals/Dhvarahn_Spec.png" scale="0.25" pushRadius="175"/>
     <!-- Weapons and Shields modified (1/4)-->
 	<shields front="40" back="30"/>
     <performance turnrate="0.004" topspeed="0.75"/>
@@ -3596,7 +3596,7 @@
   </vessel>    
   
   <vessel uniqueID="7601" side="20" classname="Transport" broadType="small">
-    <art meshfile="dat/TSN/Neutrals/TriRev.dxs" diffuseFile="dat/TSN/Neutrals/tri_dif.png" glowFile="dat/TSN/Neutrals/tri_glow.png" specularFile="dat/TSN/Neutrals/tri_Spec.png" scale="0.25" pushRadius="175"/>
+    <art meshfile="dat/TSN/Neutrals/Dhvarahn.dxs" diffuseFile="dat/TSN/Neutrals/Dhvarahn_dif.png" glowFile="dat/TSN/Neutrals/Dhvarahn_glow.png" specularFile="dat/TSN/Neutrals/Dhvarahn_Spec.png" scale="0.25" pushRadius="175"/>
     <!-- Weapons and Shields modified (1/4)-->
 	<shields front="45" back="45"/>
     <performance turnrate="0.003" topspeed="0.5"/>
