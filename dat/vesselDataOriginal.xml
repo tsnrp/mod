@@ -12,36 +12,43 @@
     <taunt immunity="has no living family" text="Your father is so stupid he thinks planets are tiny plans!"/>
     <taunt immunity="is decorated for strategic thinking and is not interested in offering a challenge in battle" text="You chicken-hearted cowards! I've had more challenging battles with a space bug!"/>
   </hullRace>
+
   <hullRace ID="2" name="Kralien" keys="enemy standard">
     <taunt immunity="does not practice the Kralien religion faithfully" text="Hey wormface! Can I borrow your Holy Scroll of Amborax? I need to wipe my stinky feet!"/>
     <taunt immunity="complained to Kralien High Command that Kralien ships are too weak" text="You call that a warship? I could crush that toy with my bare hands."/>
     <taunt immunity="is unmarried" text="You're so ugly that your wife will thank me for killing you!"/>
   </hullRace>
+
   <hullRace ID="3" name="Arvonian" keys="enemy support whalelover">
     <taunt immunity="openly dislikes the Arvonian Royal Family" text="Queen Marah looks like a hideous pustule and smells like a flatulent Space Whale."/>
     <taunt immunity="is unmarried" text="Your husband dresses like a Situlan scum slug!"/>
     <taunt immunity="does not care about space whales" text="I'll kill you later, Arvonian. Right now I'm enjoying a bowl of space whale soup."/>
   </hullRace>
+
   <hullRace ID="4" name="Torgoth" keys="enemy support whalehater">
     <taunt immunity="runs a tidy ship and has no insecurity about hygiene" text="Do us all a favor and take a bath, you fungus-infested pachyderm!"/>
     <taunt immunity="has already mourned his dead father and will not react to taunts about him" text="Your father is a Space Whale!"/>
     <taunt immunity="has the highest Torgoth efficiency rating and will not react to taunts about his ship's condition" text="That broken down rust bucket guarantees victory for Earth."/>
   </hullRace>
+
   <hullRace ID="5" name="Skaraan" keys="enemy loner hasspecials">
     <taunt immunity="has no living family" text="Your father is a flea-bitten Laparian mule!"/>
     <taunt immunity="does not care about his ship's appearance" text="Your ship is so ugly my eyeballs burn just looking at it!"/>
     <taunt immunity="often disagrees with Skaraan corporate leadership" text="Your corporate bosses are dimwitted, money-losing morons!"/>
   </hullRace>
+
   <hullRace ID="6" name="BioMech" keys="enemy loner biomech">
     <taunt immunity="smnewi4f5jH#5ld3@(#k"     text="Scramble signal 1"/>
     <taunt immunity="Mk40gH(*HGl45gj3p;32ll0-" text="Scramble signal 2"/>
     <taunt immunity="NNRnjh3h49@98%^km%%%m"    text="Scramble signal 3"/>
   </hullRace>
+
   <hullRace ID="7" name="Ximni" keys="player jumpmaster">
     <taunt immunity="has no visible mutations on his face" text="The deadliest weapon on your ship is your ugly, mutant face!"/>
     <taunt immunity="is a decorated hero who ignores taunts about her bravery" text="Only a coward hides in a massive battlewagon like that!"/>
     <taunt immunity="is a human who has never even seen the Ximni homeworld" text="The only thing that smells worse than dragon breath is the Ximni home planet!"/>
   </hullRace>
+
   <hullRace ID="8" name="Pirate" keys="player jumpmaster">
     <taunt immunity="is proud of his laid back crew with lax discipline" text="Your crew is a sloppy bunch of disrespectful layabouts!"/>
     <taunt immunity="isn't familiar with Terran animals" text="You're nothing but pirhana bait!"/>

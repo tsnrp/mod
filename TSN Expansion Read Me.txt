@@ -1,7 +1,7 @@
 About:
 The Terran Stellar Navy Expansion
-Version 2.017, March 2021
-For Artemis Version 2.7.5
+Version 3.0, January 2022
+For Artemis Version 2.8
 
 -----------------Credits ------------------
   3D Design and Creation   Maurice (JMR) (NPC Ships: Hijordan, N'tani, Euphine Pirates, various static models)
@@ -29,16 +29,10 @@ To Disable the mod, run the "zDisable Expansion.bat" file. This will replace all
 To Enable the mod, run the "zEnable Expansion.bat" file. This will replace all relavant files in the Artemis folder with modified files from the Expansion.
 --- If you would like to view what files are being replace, simply open the "zEnable Expansion.bat" or "zDisable Expansion.bat" files using Notepad.---
 
-Enable/Disable the UI elements ONLY
-To Disable just the UI elements (target reticle, science/captain's reticle and shield UI), run the "zUI Disable.bat" file. This will replace the relevant files in the Artemis folder with the original game files.
-To Enable just the UI elements, run the "zUI Enable.bat" file. This will replace the relevant files in the Artemis folder with the relevant modified files from the Expansion.
---- If you would like to view what files are being replace, simply open the "zUI Enable.bat" or "zUI Disable.bat" files using Notepad.---
-
 ==================================================
 Details of Licensed Use of Models
 ------------------------------------------------
 1) GasExtractor, TSNGateMk2, ScanPost & Hegmony Dry Dock are Licensed models and textures. License held by Fish Evans on behalf of TSN Mod CGTR 3278806 from CGtrader Package ID 446961. Useage reserved for TSN Mod/ TSN Community Projects. 2021-01-25 
-
 
 
 ==================================================
@@ -60,7 +54,7 @@ Fixed: Removed double slashes in file paths of a number of vesselData entrys, ma
 File Additions/Changes (excluding those relating to new vessels)
 
 Version 2.016
-Replaced Texture files changed for Races 20-22 down to 1K and saved with no layering to reduce posible cause of crashes
+Replaced Texture files changed for Races 20-22 down to 1K and saved with no layering to reduce possible cause of crashes
 New Nemiese SNT (Lancer) as per useability request from Lancer Engineer and TSDA Group.
 
 ------------------------------------------------
