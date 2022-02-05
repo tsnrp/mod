@@ -3564,7 +3564,7 @@
 	
   <!--Dhvarahn Ships-->
   <vessel uniqueID="7600" side="20" classname="Warbird" broadType="small">
-    <art meshfile="dat/TSN/Neutrals/Dhvarahn.dxs" diffuseFile="dat/TSN/Neutrals/Dhvarahn_dif.png" glowFile="dat/TSN/Neutrals/Dhvarahn_glow.png" specularFile="dat/TSN/Neutrals/Dhvarahn_Spec.png" scale="0.25" pushRadius="175"/>
+    <art meshfile="dat/TSN/Neutrals/TriRev.dxs" diffuseFile="dat/TSN/Neutrals/tri_dif.png" glowFile="dat/TSN/Neutrals/tri_glow.png" specularFile="dat/TSN/Neutrals/tri_Spec.png" scale="0.25" pushRadius="175"/>
     <!-- Weapons and Shields modified (1/4)-->
 	<shields front="40" back="30"/>
     <performance turnrate="0.004" topspeed="0.75"/>
@@ -3596,7 +3596,7 @@
   </vessel>    
   
   <vessel uniqueID="7601" side="20" classname="Transport" broadType="small">
-    <art meshfile="dat/TSN/Neutrals/Dhvarahn.dxs" diffuseFile="dat/TSN/Neutrals/Dhvarahn_dif.png" glowFile="dat/TSN/Neutrals/Dhvarahn_glow.png" specularFile="dat/TSN/Neutrals/Dhvarahn_Spec.png" scale="0.25" pushRadius="175"/>
+    <art meshfile="dat/TSN/Neutrals/TriRev.dxs" diffuseFile="dat/TSN/Neutrals/tri_dif.png" glowFile="dat/TSN/Neutrals/tri_glow.png" specularFile="dat/TSN/Neutrals/tri_Spec.png" scale="0.25" pushRadius="175"/>
     <!-- Weapons and Shields modified (1/4)-->
 	<shields front="45" back="45"/>
     <performance turnrate="0.003" topspeed="0.5"/>
@@ -3639,7 +3639,7 @@
 	
   <!-- Bohraam Ships-->
   <vessel uniqueID="7700" side="21" classname="Destruction" broadType="small">
-    <art meshfile="dat/TSN/Neutrals/Bohraam3.dxs" diffuseFile="dat/TSN/Neutrals/Bohraam3_Dif.png" glowFile="dat/TSN/Neutrals/Bohraam3_Glow.png" specularFile="dat/TSN/Neutrals/Bohraam3_Spec.png" scale="0.25" pushRadius="250"/>
+    <art meshfile="dat/TSN/Neutrals/P3.dxs" diffuseFile="dat/TSN/Neutrals/P3_Dif.png" glowFile="dat/TSN/Neutrals/P3_Glow.png" specularFile="dat/TSN/Neutrals/P3_Spec.png" scale="0.25" pushRadius="250"/>
     <shields front="50" back="40"/>
     <performance turnrate="0.0045" topspeed="0.5"/>
     <fleet_ai commonality="100"/>
