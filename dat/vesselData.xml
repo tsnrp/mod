@@ -825,9 +825,9 @@
     <internal_data file="dat/artemis.snt" />
 	<!-- Weapons and Shields modified (1/4)-->
     <shields front="33" back="18" />
-    <performance turnrate="0.004" topspeed="0.6" shipefficiency="0.6" warpefficiency="0.3" jumpefficiency="1.0" />
-    <beam_port x="-10" y="8.35" z="258.74" damage="0.3" playerdamage="3.75" arcwidth="0.35" cycletime="5.0" range="1000" />
-    <beam_port x="10" y="8.35" z="258.74" damage="0.3" playerdamage="3.75" arcwidth="0.35" cycletime="5.0" range="1000" />
+    <performance turnrate="0.004" topspeed="0.6" shipefficiency="0.7" warpefficiency="0.3" jumpefficiency="1.0" />
+    <beam_port x="-10" y="8.35" z="258.74" damage="0.3" playerdamage="3.75" arcwidth="0.35" cycletime="4.75" range="1000" />
+    <beam_port x="10" y="8.35" z="258.74" damage="0.3" playerdamage="3.75" arcwidth="0.35" cycletime="4.75" range="1000" />
     <torpedo_tube x="0" y="8.35" z="258.74" />
     <torpedo_tube x="0" y="8.35" z="258.74" />
   	<torpedo_storage type="trp" amount="10"/>  <!-- Homing"-->
